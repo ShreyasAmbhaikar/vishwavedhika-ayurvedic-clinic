@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* 1. LOCAL FONT DECLARATIONS FOR 100% RELIABILITY & EXACT RENDERING */
+@font-face {
+  font-family: 'El Messiri';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/elmessiri.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('/fonts/plusjakartasans.woff2') format('woff2');
+}
+
+:root {
+  --primary: #145E3F;
+  --secondary: #FDF4E5;
+  --accent: #48A547;
+  --text-color: #383838;
+  --heading-color: #000000;
+  --white: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FDF4E5;
+  color: #383838;
+}
+
+body {
+  background-color: #FDF4E5;
+  color: #383838;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Strict Typography Enforcement matching the original site */
+h1, h2, h3, h4, h5, h6, 
+.font-serif-heading, 
+.elementor-heading-title {
+  font-family: 'El Messiri', Georgia, serif !important;
+}
+
+p, span, a, button, input, select, textarea, div, li, 
+.font-sans-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* The Signature Ayurvedic Asymmetric Corner Radii */
+.corner-curve-hero {
+  border-radius: 20px 200px 20px 20px;
+}
+
+.corner-curve-slider {
+  border-radius: 20px 100px 20px 20px;
+}
+
+.corner-curve-medicine {
+  border-radius: 20px 75px 20px 20px;
+}
+
+.corner-curve-card-br {
+  border-radius: 20px 20px 100px 20px;
+}
+
+.corner-curve-card-tr {
+  border-radius: 20px 100px 20px 20px;
+}
+
+.corner-curve-image-tr {
+  border-radius: 20px 100px 0 0;
+}
+
+.corner-curve-contact {
+  border-radius: 20px 150px 20px 20px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FDF4E5;
+}
+::-webkit-scrollbar-thumb {
+  background: #145E3F;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #48A547;
+}
+
+/* Continuous Treatment Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
