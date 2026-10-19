@@ -8,14 +8,14 @@ import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Treatment Gallery | Shree Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+  title: "Treatment Gallery | Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
   description:
-    "Explore authentic Ayurvedic therapy facilities, Panchakarma suites, Kizhi treatments, Shirodhara setups, and healing care at Shree Vishwavedhika Ayurvedic Clinic, Kharadi, Pune.",
+    "Explore authentic Ayurvedic therapy facilities, Panchakarma suites, Kizhi treatments, Shirodhara setups, and healing care at Shri Vishwavedhika Ayurvedic Clinic, Kharadi, Pune.",
   alternates: {
     canonical: "/treatment-gallery",
   },
   openGraph: {
-    title: "Treatment Gallery | Shree Vishwavedhika Ayurvedic Clinic",
+    title: "Treatment Gallery | Shri Vishwavedhika Ayurvedic Clinic",
     description:
       "Visual journey into authentic Ayurvedic treatments, herbal therapies, and patient care in Kharadi, Pune.",
     url: "https://vishwavedhikaayurveda.com/treatment-gallery",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "/images/gallery/gallery-01.webp",
         width: 1200,
         height: 800,
-        alt: "Shree Vishwavedhika Ayurvedic Clinic Treatment Gallery",
+        alt: "Shri Vishwavedhika Ayurvedic Clinic Treatment Gallery",
       },
     ],
   },

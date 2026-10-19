@@ -42,8 +42,8 @@ export interface BlogPost {
 }
 
 export const siteConfig = {
-  name: "Shri Vishwawedhika Ayurvedic Center & Panchakarma Garbha Sanskar Center",
-  shortName: "Shri Vishwawedhika Ayurvedic Center",
+  name: "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center",
+  shortName: "Shri Vishwavedhika Ayurvedic Clinic",
   address:
     "Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014",
   streetAddress:
@@ -54,10 +54,10 @@ export const siteConfig = {
   postalCode: "411014",
   location: "Kharadi, Pune, Maharashtra 411014",
   googleMapsUrl:
-    "https://www.google.com/maps/place/Vishwavedhika+Ayurvedic+Clinic+%26+Garbhsanskar,+Panchkarma+centre/data=!4m2!3m1!1s0x0:0xe0ae9e237d066d5?sa=X&ved=1t:2428&hl=en&ictx=111",
-  tagline: "Authentic Ayurveda, Panchakarma & Garbha Sanskar in Kharadi, Pune",
+    "https://www.google.com/maps/place/Vishwavedhika+Ayurvedic+Clinic+%26+Garbhsanskar,+Panchkarma+center/data=!4m2!3m1!1s0x0:0xe0ae9e237d066d5?sa=X&ved=1t:2428&hl=en&ictx=111",
+  tagline: "Authentic Ayurveda, Panchakarma & Garbhsanskar in Kharadi, Pune",
   description:
-    "Shri Vishwawedhika Ayurvedic Center & Panchakarma Garbha Sanskar Center offers personalized, authentic Ayurvedic healing, traditional Panchakarma therapies, and Garbha Sanskar care in Kharadi, Pune under expert Ayurvedic guidance.",
+    "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center offers personalized, authentic Ayurvedic healing, traditional Panchakarma therapies, and Garbha Sanskar care in Kharadi, Pune under expert Ayurvedic guidance.",
   phone1: "096049 95998",
   phone2: "097302 93777",
   whatsapp: "+919604995998",
@@ -108,12 +108,8 @@ export const navItems: NavItem[] = [
 
 export const heroSlides = [
   {
-    src: "/images/slider-01.webp",
-    alt: "Shree Vishwavedhika Ayurvedic Clinic Exterior",
-  },
-  {
     src: "/images/slider-02.webp",
-    alt: "Shree Vishwavedhika Ayurvedic Clinic Building & Facility",
+    alt: "Shri Vishwavedhika Ayurvedic Clinic Facility",
   },
   {
     src: "/images/slider-03.webp",
@@ -125,7 +121,7 @@ export const heroSlides = [
   },
   {
     src: "/images/slider-05.webp",
-    alt: "Shree Vishwavedhika Ayurvedic Clinic Campus",
+    alt: "Shri Vishwavedhika Ayurvedic Clinic Center",
   },
 ];
 
@@ -238,7 +234,7 @@ export const patientTestimonials: Testimonial[] = [
   {
     id: "1",
     name: "Surobhi Deb",
-    location: "Local Guide",
+    location: "Patient — Kharadi, Pune",
     rating: 5,
     isLocalGuide: true,
     image: "/images/testimonials/surobhi-deb.png",
@@ -253,12 +249,12 @@ export const patientTestimonials: Testimonial[] = [
     isLocalGuide: false,
     image: "/images/testimonials/anagha-lanjankar.png",
     content:
-      "Excellent Ayurvedic clinic in Kharadi. Dr. Manjiri provides effective and personalized treatment with great care. 👍",
+      "Excellent Ayurvedic clinic in Kharadi. Dr. Majiri Musmade provides effective and personalized treatment with great care. 👍",
   },
   {
     id: "3",
     name: "Betha Sindhuja",
-    location: "Local Guide",
+    location: "Patient — Kharadi, Pune",
     rating: 5,
     isLocalGuide: true,
     image: "/images/testimonials/betha-sindhuja.png",

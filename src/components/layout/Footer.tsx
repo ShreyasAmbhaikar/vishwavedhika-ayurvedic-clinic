@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
               <div className="relative w-13 h-13 sm:w-16 sm:h-16 shrink-0 rounded-full overflow-hidden shadow-sm border-2 border-[#A4E88C]/35 bg-white">
                 <Image
                   src="/images/logo-emblem.png"
-                  alt="Shri Vishwawedhika Ayurvedic Center & Panchakarma Garbha Sanskar Center Logo"
+                  alt="Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center Logo"
                   fill
                   sizes="64px"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -24,19 +24,19 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-serif-heading text-lg sm:text-xl font-bold text-white leading-tight tracking-tight">
-                  Shri Vishwawedhika
+                  Shri Vishwavedhika
                 </span>
                 <span className="font-serif-heading text-sm sm:text-base font-semibold text-[#FDF4E5] leading-tight">
-                  Ayurvedic Center
+                  Ayurvedic Clinic
                 </span>
                 <span className="text-[10.5px] sm:text-xs font-medium text-[#A4E88C] leading-tight tracking-wide">
-                  &amp; Panchakarma Garbha Sanskar Center
+                  &amp; Garbhsanskar, Panchakarma Center
                 </span>
               </div>
             </Link>
 
             <p className="text-sm text-[#FDF4E5]/80 font-sans-body leading-relaxed max-w-sm">
-              Heal naturally with Shri Vishwawedhika Ayurvedic Center &amp; Panchakarma Garbha Sanskar Center! Providing personalized Ayurvedic healing, Panchakarma detoxification, and Garbha Sanskar care in Kharadi, Pune.
+              Heal naturally with Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center! Providing personalized Ayurvedic healing, Panchakarma detoxification, and Garbha Sanskar care in Kharadi, Pune.
             </p>
 
             <p className="text-xs text-[#A4E88C] font-serif-heading italic">
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Column 2: Useful Links & Policies (lg:col-span-2) */}
+          {/* Column 2: Useful Links (lg:col-span-2) */}
           <div className="lg:col-span-2">
             <div>
               <h3 className="font-serif-heading text-lg font-semibold text-white mb-4">
@@ -52,8 +52,8 @@ export const Footer: React.FC = () => {
               </h3>
               <ul className="space-y-2.5 text-sm text-[#FDF4E5]/80 font-sans-body">
                 <li>
-                  <Link href="/services" className="hover:text-[#A4E88C] transition-colors">
-                    Ayurvedic Treatments
+                  <Link href="/" className="hover:text-[#A4E88C] transition-colors">
+                    Home
                   </Link>
                 </li>
                 <li>
@@ -62,8 +62,13 @@ export const Footer: React.FC = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/services" className="hover:text-[#A4E88C] transition-colors">
+                    Services
+                  </Link>
+                </li>
+                <li>
                   <Link href="/treatment-gallery" className="hover:text-[#A4E88C] transition-colors">
-                    Treatment Gallery
+                    Gallery
                   </Link>
                 </li>
                 <li>
@@ -75,48 +80,56 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Column 3: Categories (lg:col-span-3) */}
+          {/* Column 3: Main Treatments Single Column (lg:col-span-3) */}
           <div className="lg:col-span-3">
             <h3 className="font-serif-heading text-lg font-semibold text-white mb-4">
-              Categories
+              Our Treatments
             </h3>
             <ul className="space-y-2.5 text-sm text-[#FDF4E5]/80 font-sans-body">
               <li>
-                <Link href="/services/panchakarma-treatment" className="hover:text-[#A4E88C] transition-colors">
-                  Panchakarma Therapy
+                <Link href="/services/panchakarma-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                  Panchakarma (5-Fold Detox)
                 </Link>
               </li>
               <li>
-                <Link href="/services/stroke-treatment" className="hover:text-[#A4E88C] transition-colors">
+                <Link href="/services/garbha-sanskar-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                  Garbha Sanskar Program
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/kati-basti-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                  Kati Basti (Back &amp; Sciatica)
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/janu-basti-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                  Janu Basti (Knee Joint Care)
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/shirodhara-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                  Shirodhara (Stress &amp; Sleep)
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/infertility-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                  Infertility &amp; PCOD Care
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/stroke-rehabilitation-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Stroke Rehabilitation
                 </Link>
               </li>
-              <li>
-                <Link href="/services/spine-and-joint-care" className="hover:text-[#A4E88C] transition-colors">
-                  Spine &amp; Joint Care
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/eye-care-treatments" className="hover:text-[#A4E88C] transition-colors">
-                  Eye Care Therapies
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/infertility-treatment" className="hover:text-[#A4E88C] transition-colors">
-                  Infertility Treatment
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/skin-and-hair-treatments" className="hover:text-[#A4E88C] transition-colors">
-                  Skin &amp; Hair Care
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/stress-and-rejuvenation" className="hover:text-[#A4E88C] transition-colors">
-                  Stress &amp; Rejuvenation
-                </Link>
-              </li>
             </ul>
+            <div className="mt-3.5 pt-2.5 border-t border-white/10">
+              <Link
+                href="/services"
+                className="text-xs font-semibold text-[#A4E88C] hover:underline inline-flex items-center gap-1"
+              >
+                <span>View Full 20 Treatments Directory &rarr;</span>
+              </Link>
+            </div>
           </div>
 
           {/* Column 4: Contact Us (lg:col-span-3) */}
@@ -184,7 +197,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm text-white/90 font-sans-body text-center sm:text-left">
             {/* Left: Copyright */}
             <p>
-              Copyright &copy; 2026 <span className="font-semibold text-white">Shri Vishwawedhika Ayurvedic Center &amp; Panchakarma Garbha Sanskar Center</span>, All rights reserved.
+              Copyright &copy; 2026 <span className="font-semibold text-white">Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</span>, All rights reserved.
             </p>
 
             {/* Right: Developed with Love by Quantum Reach Media with WhatsApp link & hover green */}

@@ -5,6 +5,7 @@ import { MapPin, Clock, Phone, ExternalLink, Navigation } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/layout/FloatingActions";
+import { GoogleGIcon } from "@/components/ui/GoogleGIcon";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Us | Shri Vishwawedhika Ayurvedic Center & Panchakarma Garbha Sanskar Center",
     description:
-      "Feel free to drop us a message. Reach Shri Vishwawedhika Ayurvedic Center in Kharadi, Pune via phone, WhatsApp, or visit our centre at Parmar Square.",
+      "Feel free to drop us a message. Reach Shri Vishwawedhika Ayurvedic Center in Kharadi, Pune via phone, WhatsApp, or visit our center at Parmar Square.",
     url: "https://vishwavedhikaayurveda.com/contact-us",
     siteName: siteConfig.name,
     images: [
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
 export default function ContactUsPage() {
   const googleMapsUrl = siteConfig.googleMapsUrl;
   const mapQuery = encodeURIComponent(
-    "Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma centre Kharadi Pune"
+    "Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center Kharadi Pune"
   );
 
   return (
@@ -46,17 +47,19 @@ export default function ContactUsPage() {
         {/* TOP HEADER SECTION */}
         <section className="pt-8 sm:pt-10 pb-6 sm:pb-8">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start">
-              {/* Left Column: Heading & Breadcrumb */}
-              <div className="lg:col-span-6 space-y-3">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-10 max-w-5xl">
+              {/* Left Side: Heading & Breadcrumb */}
+              <div className="max-w-md space-y-2.5">
                 <span className="text-xs font-bold tracking-[0.2em] text-[#145E3F] uppercase block">
                   GET IN TOUCH
                 </span>
-                <h1 className="font-serif-heading text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#16231B] leading-tight">
-                  Feel Free To <br className="hidden sm:inline" />
-                  Drop Us A Message
+                <h1 className="font-serif-heading text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#16231B] leading-[1.18]">
+                  Feel Free To Drop Us A Message
                 </h1>
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm pt-1">
+                <nav
+                  aria-label="Breadcrumb"
+                  className="flex items-center gap-2 text-sm pt-1"
+                >
                   <Link
                     href="/"
                     className="text-[#145E3F] font-semibold hover:text-[#48A547] transition-colors"
@@ -68,20 +71,21 @@ export default function ContactUsPage() {
                 </nav>
               </div>
 
-              {/* Right Column: Narrative Description */}
-              <div className="lg:col-span-6 lg:pt-5">
-                <p className="text-[#555555] text-sm sm:text-[15px] leading-relaxed max-w-xl">
-                  Shree Vishwavedhika Ayurvedic Clinic &amp; Panchakarma Garbhasanskar Center is committed to delivering
-                  authentic, results-driven Ayurvedic treatment in Kharadi, Pune. We provide strong personalized care for
-                  our patients. You can schedule an in-person or online consultation with our expert Ayurvedic doctors who are
-                  available to assist your healing journey.
+              {/* Right Side: Narrative Description */}
+              <div className="max-w-xl">
+                <p className="text-[#555555] text-sm sm:text-[15px] leading-relaxed">
+                  Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center is committed to delivering authentic,
+                  results-driven Ayurvedic treatment in Kharadi, Pune. We provide
+                  strong personalized care for our patients. You can schedule an
+                  in-person or online consultation with our expert Ayurvedic
+                  doctors who are available to assist your healing journey.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* THREE CONTACT CARDS ROW */}
+        {/* THREE CONTACT CARDS ROW - Clearly distinguishable with white background, clear borders and bold serif headings */}
         <section className="py-4 sm:py-6">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -90,60 +94,71 @@ export default function ContactUsPage() {
                 href={googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#FAF3E7] border border-[#EFE5D8] rounded-2xl p-6 sm:p-7 flex items-start gap-4 shadow-sm hover:shadow-md transition-all duration-200 group"
+                className="bg-white border border-[#E4D7C5] rounded-2xl p-6 sm:p-7 flex items-start gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-200 group"
               >
-                <div className="w-12 h-12 rounded-full bg-[#182B20] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:bg-[#145E3F] transition-colors">
-                  <MapPin size={20} className="text-[#FDF4E5]" />
+                <div className="w-12 h-12 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:bg-[#0E432D] transition-colors">
+                  <MapPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#145E3F] uppercase block mb-1">
-                    LOCATE US
-                  </span>
-                  <p className="text-xs sm:text-[13px] text-[#444444] font-medium leading-relaxed group-hover:text-[#145E3F] transition-colors">
-                    Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014
+                  <h3 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-1.5">
+                    Locate Us
+                  </h3>
+                  <p className="text-xs sm:text-[13px] text-[#555555] font-normal leading-relaxed group-hover:text-[#16231B] transition-colors">
+                    Flat no.104, IT Park, Parmar Square, near Zensar, above
+                    redchilli hotel, Kharadi, Pune, Maharashtra 411014
                   </p>
                 </div>
               </a>
 
               {/* Card 2: OPENING HOURS */}
-              <div className="bg-[#FAF3E7] border border-[#EFE5D8] rounded-2xl p-6 sm:p-7 flex items-start gap-4 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="w-12 h-12 rounded-full bg-[#182B20] text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <Clock size={20} className="text-[#FDF4E5]" />
+              <div className="bg-white border border-[#E4D7C5] rounded-2xl p-6 sm:p-7 flex items-start gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-200">
+                <div className="w-12 h-12 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm">
+                  <Clock size={20} className="text-white" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#145E3F] uppercase block mb-1.5">
-                    OPENING HOURS
-                  </span>
-                  <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-xs sm:text-[13px] leading-relaxed">
-                    <span className="font-semibold text-[#145E3F] whitespace-nowrap">Mon – Sat:</span>
-                    <span className="text-[#444444] font-medium whitespace-nowrap">11:30 AM – 5:30 PM</span>
-                    <span className="font-semibold text-[#145E3F] whitespace-nowrap">SUN:</span>
-                    <span className="text-[#444444] font-medium whitespace-nowrap">11:30 AM – 2:00 PM</span>
+                  <h3 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
+                    Opening Hours
+                  </h3>
+                  <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 text-xs sm:text-[13px] leading-relaxed">
+                    <span className="text-[#666666] font-medium whitespace-nowrap">
+                      Mon – Sat:
+                    </span>
+                    <span className="text-[#16231B] font-semibold whitespace-nowrap">
+                      11:30 AM – 5:30 PM
+                    </span>
+                    <span className="text-[#666666] font-medium whitespace-nowrap">
+                      Sunday:
+                    </span>
+                    <span className="text-[#16231B] font-semibold whitespace-nowrap">
+                      11:30 AM – 2:00 PM
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Card 3: CALL US */}
-              <div className="bg-[#FAF3E7] border border-[#EFE5D8] rounded-2xl p-6 sm:p-7 flex items-start gap-4 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="w-12 h-12 rounded-full bg-[#182B20] text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <Phone size={20} className="text-[#FDF4E5]" />
+              <div className="bg-white border border-[#E4D7C5] rounded-2xl p-6 sm:p-7 flex items-start gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-200">
+                <div className="w-12 h-12 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm">
+                  <Phone size={20} className="text-white" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-wider text-[#145E3F] uppercase block mb-1">
-                    CALL US
-                  </span>
-                  <a
-                    href={`tel:${siteConfig.phone1}`}
-                    className="text-sm font-semibold text-[#145E3F] hover:underline transition-colors block leading-tight"
-                  >
-                    {siteConfig.phone1}
-                  </a>
-                  <a
-                    href={`tel:${siteConfig.phone2}`}
-                    className="text-sm font-semibold text-[#145E3F] hover:underline transition-colors block leading-tight mt-1"
-                  >
-                    {siteConfig.phone2}
-                  </a>
+                  <h3 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
+                    Call Us
+                  </h3>
+                  <div className="space-y-1">
+                    <a
+                      href={`tel:${siteConfig.phone1}`}
+                      className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
+                    >
+                      {siteConfig.phone1}
+                    </a>
+                    <a
+                      href={`tel:${siteConfig.phone2}`}
+                      className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
+                    >
+                      {siteConfig.phone2}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -179,12 +194,13 @@ export default function ContactUsPage() {
                     {/* Google Maps Floating Info Badge Matching Screenshot */}
                     <div className="absolute top-3 left-3 z-10 max-w-[290px] sm:max-w-[320px] bg-white rounded-xl shadow-lg border border-gray-200 p-3.5 text-xs text-gray-700 pointer-events-auto">
                       <div className="font-bold text-gray-900 text-sm leading-tight mb-1">
-                        Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchkarma centre
+                        Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center
                       </div>
                       <p className="text-[11px] text-gray-500 leading-snug mb-1.5">
                         Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014
                       </p>
                       <div className="flex items-center gap-1.5 text-[11px] mb-2.5">
+                        <GoogleGIcon className="w-3.5 h-3.5 shrink-0" />
                         <span className="font-bold text-gray-800">5.0</span>
                         <span className="text-[#FFA300]">★</span>
                         <a

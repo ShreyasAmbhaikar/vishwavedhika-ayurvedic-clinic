@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { patientTestimonials } from "@/data/siteData";
+import { GoogleGIcon } from "@/components/ui/GoogleGIcon";
 
 export const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,7 +30,7 @@ export const Testimonials: React.FC = () => {
             <div className="relative w-full max-w-[460px] h-[400px] sm:h-[470px] corner-curve-slider overflow-hidden shadow-2xl bg-white border-2 border-[#E4E4E4]">
               <Image
                 src="/images/thumb-testimonials.webp"
-                alt="Ayurvedic Treatment & Panchakarma at Shree Vishwavedhika"
+                alt="Ayurvedic Treatment & Panchakarma at Shri Vishwavedhika"
                 fill
                 className="object-cover corner-curve-slider hover:scale-105 transition-transform duration-700 ease-out"
               />
@@ -51,26 +52,34 @@ export const Testimonials: React.FC = () => {
               </p>
             </div>
 
-            {/* Testimonial Card with signature corner-curve-card-br */}
-            <div className="bg-[#FDF4E5] corner-curve-card-br p-8 sm:p-10 border border-[#DBDBDB] shadow-md space-y-5">
-              {/* 5-Star Rating */}
-              <div className="flex items-center gap-1.5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    size={20}
-                    className="fill-[#FFA300] text-[#FFA300]"
-                  />
-                ))}
+            {/* Testimonial Card with strictly fixed size & signature corner-curve-card-br */}
+            <div className="bg-[#FDF4E5] corner-curve-card-br p-6 sm:p-8 lg:p-9 border border-[#DBDBDB] shadow-md flex flex-col justify-between w-full h-[380px] sm:h-[330px] lg:h-[310px] select-none">
+              <div className="space-y-4 overflow-hidden">
+                {/* 5-Star Rating & Google Verified Badge */}
+                <div className="flex items-center justify-between gap-3 flex-wrap">
+                  <div className="flex items-center gap-1.5">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star
+                        key={i}
+                        size={20}
+                        className="fill-[#FFA300] text-[#FFA300]"
+                      />
+                    ))}
+                  </div>
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-[#E0D5C1] text-xs font-bold text-[#145E3F] shadow-xs">
+                    <GoogleGIcon className="w-3.5 h-3.5 shrink-0" />
+                    <span>Google Review</span>
+                  </div>
+                </div>
+
+                {/* Review Text */}
+                <blockquote className="font-sans-body text-sm sm:text-[15px] text-[#383838] leading-[26px]">
+                  {current.content}
+                </blockquote>
               </div>
 
-              {/* Review Text */}
-              <blockquote className="font-sans-body text-sm sm:text-[15px] text-[#383838] leading-[26px]">
-                {current.content}
-              </blockquote>
-
               {/* Reviewer Details & Navigation */}
-              <div className="pt-4 border-t border-[#E8DCC9] flex items-center justify-between gap-4">
+              <div className="pt-4 border-t border-[#E8DCC9] flex items-center justify-between gap-4 mt-auto">
                 <div className="flex items-center gap-3.5">
                   {current.image && (
                     <Image
@@ -89,7 +98,7 @@ export const Testimonials: React.FC = () => {
                         {current.name}
                       </h4>
                       {current.isLocalGuide && (
-                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#E8F5E9] text-[#2E7D32] border border-[#A5D6A7]">
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#E8F5E9] text-[#2E7D32] border border-[#A5D6A7]">
                           <svg className="w-3.5 h-3.5 fill-[#F57C00] text-[#F57C00]" viewBox="0 0 24 24">
                             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                           </svg>
@@ -97,7 +106,7 @@ export const Testimonials: React.FC = () => {
                         </span>
                       )}
                     </div>
-                    {current.location && (
+                    {current.location && current.location.toLowerCase() !== "local guide" && (
                       <p className="font-sans-body text-xs text-[#5E695F]">
                         {current.location}
                       </p>
@@ -109,14 +118,14 @@ export const Testimonials: React.FC = () => {
                 <div className="flex items-center gap-2 shrink-0">
                   <button
                     onClick={prevReview}
-                    className="w-9 h-9 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors"
+                    className="w-9 h-9 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous patient story"
                   >
                     <ChevronLeft size={18} />
                   </button>
                   <button
                     onClick={nextReview}
-                    className="w-9 h-9 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors"
+                    className="w-9 h-9 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next patient story"
                   >
                     <ChevronRight size={18} />

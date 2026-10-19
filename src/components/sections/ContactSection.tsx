@@ -62,9 +62,6 @@ export const ContactSection: React.FC = () => {
               <h2 className="font-serif-heading text-2xl sm:text-4xl font-medium leading-tight text-white tracking-[0.5px]">
                 Got Questions? We Have Answers.
               </h2>
-              <p className="font-sans-body text-xs sm:text-sm text-white/80 max-w-xl">
-                Explore common questions about our classical Ayurvedic treatments, Panchakarma therapy, and clinic consultations in Kharadi, Pune.
-              </p>
             </div>
 
             {/* 5 FAQ Cards Accordion */}

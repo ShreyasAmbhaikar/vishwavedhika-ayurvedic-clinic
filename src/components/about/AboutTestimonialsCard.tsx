@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { patientTestimonials } from "@/data/siteData";
+import { GoogleGIcon } from "@/components/ui/GoogleGIcon";
 
 export const AboutTestimonialsCard: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,15 +25,21 @@ export const AboutTestimonialsCard: React.FC = () => {
 
   return (
     <div className="bg-white rounded-[24px] p-7 sm:p-9 shadow-lg border border-[#145E3F]/10 transition-all duration-300">
-      {/* 5 Golden Stars */}
-      <div className="flex items-center gap-1.5 mb-5" aria-label="5 star rating">
-        {[...Array(5)].map((_, i) => (
-          <Star
-            key={i}
-            size={18}
-            className="fill-[#FFA300] text-[#FFA300]"
-          />
-        ))}
+      {/* 5 Golden Stars & Google Rating Badge */}
+      <div className="flex items-center justify-between gap-3 mb-5 flex-wrap">
+        <div className="flex items-center gap-1.5" aria-label="5 star rating">
+          {[...Array(5)].map((_, i) => (
+            <Star
+              key={i}
+              size={18}
+              className="fill-[#FFA300] text-[#FFA300]"
+            />
+          ))}
+        </div>
+        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F4FAF6] border border-[#CDE9D4] text-xs font-bold text-[#145E3F] shadow-xs">
+          <GoogleGIcon className="w-3.5 h-3.5 shrink-0" />
+          <span>5.0 on Google</span>
+        </div>
       </div>
 
       {/* Review Text */}

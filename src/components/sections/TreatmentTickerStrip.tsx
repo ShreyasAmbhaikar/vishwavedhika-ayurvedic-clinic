@@ -4,25 +4,58 @@ import React from "react";
 import Link from "next/link";
 import { Heart } from "lucide-react";
 
-const treatmentsList = [
-  "Expert Ayurvedic Consultation",
-  "Traditional Panchakarma & Garbhasanskar Therapy",
-  "Stroke Rehabilitation",
-  "Spine & Disc Care",
-  "Physiotherapy Combined with Ayurveda",
-  "Cerebral Palsy Care",
-  "Back & Neck Pain Treatment",
-  "Joint & Arthritis Management",
-  "Ayurvedic Neurological Care",
-  "Authentic Classical Herbal Therapies",
-  "5000+ Happy Patients Treated",
-  "Complete Detox & Rejuvenation",
+interface PopularServiceTickerItem {
+  label: string;
+  href: string;
+}
+
+const popularServices: PopularServiceTickerItem[] = [
+  {
+    label: "Panchakarma Treatment",
+    href: "/services/panchakarma-treatment-in-kharadi",
+  },
+  {
+    label: "Garbha Sanskar Program",
+    href: "/services/garbha-sanskar-in-kharadi",
+  },
+  {
+    label: "Kati Basti (Spine & Sciatica)",
+    href: "/services/kati-basti-treatment-in-kharadi",
+  },
+  {
+    label: "Shirodhara Therapy (Stress & Sleep)",
+    href: "/services/shirodhara-treatment-in-kharadi",
+  },
+  {
+    label: "Janu Basti (Knee Arthritis)",
+    href: "/services/janu-basti-treatment-in-kharadi",
+  },
+  {
+    label: "Infertility & PCOD Care",
+    href: "/services/infertility-treatment-in-kharadi",
+  },
+  {
+    label: "Vamana & Virechana Detox",
+    href: "/services/virechana-therapy-in-kharadi",
+  },
+  {
+    label: "Agnikarma Pain Relief",
+    href: "/services/agnikarma-treatment-in-kharadi",
+  },
+  {
+    label: "Nasya Therapy (Migraine & ENT)",
+    href: "/services/nasya-therapy-in-kharadi",
+  },
+  {
+    label: "Stroke Rehabilitation",
+    href: "/services/stroke-rehabilitation-in-kharadi",
+  },
 ];
 
 export const TreatmentTickerStrip: React.FC = () => {
   return (
     <div
-      aria-label="List of Ayurvedic Treatments and Specializations"
+      aria-label="Popular Ayurvedic Treatments and Specializations"
       className="relative w-full bg-[#D4EE5C] text-[#145E3F] border-y border-[#BBDC36] py-3 sm:py-3.5 overflow-hidden shadow-sm z-20 select-none"
     >
       <style>{`
@@ -37,7 +70,7 @@ export const TreatmentTickerStrip: React.FC = () => {
         .animate-ticker-marquee {
           display: inline-flex !important;
           width: max-content !important;
-          animation: tickerMarquee 55s linear infinite !important;
+          animation: tickerMarquee 50s linear infinite !important;
           will-change: transform;
         }
         .animate-ticker-marquee:hover {
@@ -46,17 +79,17 @@ export const TreatmentTickerStrip: React.FC = () => {
       `}</style>
       <div className="animate-ticker-marquee flex items-center whitespace-nowrap">
         {/* Render 4 sets (2 identical halves) for seamless, non-stop loop across all screen sizes */}
-        {[...treatmentsList, ...treatmentsList, ...treatmentsList, ...treatmentsList].map(
-          (treatment, idx) => (
+        {[...popularServices, ...popularServices, ...popularServices, ...popularServices].map(
+          (service, idx) => (
             <div
               key={idx}
               className="flex items-center gap-5 sm:gap-6 px-4 shrink-0 font-sans-body text-xs sm:text-[13.5px] font-semibold tracking-wide"
             >
               <Link
-                href="/#contact"
+                href={service.href}
                 className="hover:underline transition-all hover:text-[#0A3D27] cursor-pointer"
               >
-                {treatment}
+                {service.label}
               </Link>
               <Heart
                 size={14}

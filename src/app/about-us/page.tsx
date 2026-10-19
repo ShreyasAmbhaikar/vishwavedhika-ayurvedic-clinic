@@ -7,19 +7,20 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/layout/FloatingActions";
 import { AboutTestimonialsCard } from "@/components/about/AboutTestimonialsCard";
+import { GoogleGIcon } from "@/components/ui/GoogleGIcon";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "About Us | Shree Vishwavedhika Ayurvedic Clinic | Kharadi Pune",
+  title: "About Us | Shri Vishwavedhika Ayurvedic Clinic | Kharadi Pune",
   description:
-    "Shree Vishwavedhika Ayurvedic Clinic & Panchakarma Garbhasanskar Center in Kharadi, Pune offers authentic Ayurvedic care, traditional Panchakarma therapies, and Garbhasanskar guidance.",
+    "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center in Kharadi, Pune offers authentic Ayurvedic care, traditional Panchakarma therapies, and Garbhasanskar guidance.",
   alternates: {
     canonical: "/about-us",
   },
   openGraph: {
-    title: "About Us | Shree Vishwavedhika Ayurvedic Clinic & Panchakarma Garbhasanskar Center",
+    title: "About Us | Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center",
     description:
-      "A clinic you can trust. Shree Vishwavedhika Ayurvedic Clinic in Kharadi, Pune offers authentic Ayurvedic treatments, experienced doctors, and personalized holistic care.",
+      "A clinic you can trust. Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune offers authentic Ayurvedic treatments, experienced doctors, and personalized holistic care.",
     url: "https://vishwavedhikaayurveda.com/about-us",
     siteName: siteConfig.name,
     images: [
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
         url: "/images/how.jpg",
         width: 1200,
         height: 800,
-        alt: "Shree Vishwavedhika Ayurvedic Clinic",
+        alt: "Shri Vishwavedhika Ayurvedic Clinic",
       },
     ],
   },
@@ -82,7 +83,7 @@ export default function AboutUsPage() {
                 <div className="relative w-full max-w-[480px] h-[460px] sm:h-[540px] rounded-tl-[20px] rounded-tr-[110px] rounded-br-[20px] rounded-bl-[20px] overflow-hidden shadow-lg border border-[#145E3F]/10">
                   <Image
                     src="/images/how.jpg"
-                    alt="Authentic Ayurvedic consultation and Panchakarma therapies at Shree Vishwavedhika Ayurvedic Clinic"
+                    alt="Authentic Ayurvedic consultation and Panchakarma therapies at Shri Vishwavedhika Ayurvedic Clinic"
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 480px"
@@ -103,7 +104,7 @@ export default function AboutUsPage() {
                 </div>
 
                 <p className="text-[#4A4A4A] text-sm sm:text-[15px] leading-relaxed">
-                  Shree Vishwavedhika Ayurvedic Clinic & Panchakarma Garbhasanskar Center in Kharadi,
+                  Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center in Kharadi,
                   Pune provides authentic, personalized Ayurvedic healthcare and traditional Panchakarma
                   therapies. We are dedicated to restoring health naturally through root-cause diagnosis,
                   pure herbal formulations, customized dietary guidance, and gentle holistic rejuvenation.
@@ -127,8 +128,8 @@ export default function AboutUsPage() {
                   </p>
                 </div>
 
-                {/* Book Appointment CTA Button */}
-                <div className="pt-2">
+                {/* Book Appointment CTA Button & Google Trust Badge */}
+                <div className="pt-2 flex flex-wrap items-center gap-4">
                   <Link
                     href="/#contact"
                     className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#145E3F] text-white text-sm font-semibold hover:bg-[#0E432D] shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
@@ -136,6 +137,11 @@ export default function AboutUsPage() {
                     <span>Book Appointment</span>
                     <ChevronRight size={16} />
                   </Link>
+
+                  <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#DFCBB5] shadow-xs text-xs font-semibold text-[#145E3F]">
+                    <GoogleGIcon className="w-4 h-4 shrink-0" />
+                    <span>5.0 ★ (20+ Google Reviews)</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -172,7 +178,7 @@ export default function AboutUsPage() {
                     We Offer Comprehensive Treatments
                   </h2>
                   <p className="text-[#555555] text-sm sm:text-[15px] leading-relaxed">
-                    At Shree Vishwavedhika Ayurvedic Clinic, experience complete relief for your health
+                    At Shri Vishwavedhika Ayurvedic Clinic, experience complete relief for your health
                     issues with customized treatments designed to rejuvenate your vitality.
                   </p>
                 </div>
@@ -225,7 +231,7 @@ export default function AboutUsPage() {
                 <div className="relative w-full max-w-[480px] h-[460px] sm:h-[520px] rounded-tl-[20px] rounded-tr-[110px] rounded-br-[20px] rounded-bl-[20px] overflow-hidden shadow-lg border border-[#145E3F]/10">
                   <Image
                     src="/images/thumb-testimonials.webp"
-                    alt="Authentic Ayurvedic Kizhi Poultice Massage and Panchakarma at Shree Vishwavedhika Ayurvedic Clinic"
+                    alt="Authentic Ayurvedic Kizhi Poultice Massage and Panchakarma at Shri Vishwavedhika Ayurvedic Clinic"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 480px"
                     className="object-cover object-center"

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Sparkles, Phone, MessageSquare } from "lucide-react";
-import { servicesData } from "@/data/servicesData";
+import { ArrowRight, Phone, MessageSquare } from "lucide-react";
+import { CANONICAL_SERVICES } from "@/data/servicesData";
 import { siteConfig } from "@/data/siteData";
 
 interface MoreServicesCardProps {
@@ -10,8 +10,13 @@ interface MoreServicesCardProps {
 
 export const MoreServicesCard: React.FC<MoreServicesCardProps> = ({ currentSlug }) => {
   // Filter out the current service to display the rest of the other services, limited to exactly 5 services
-  const otherServices = Object.values(servicesData)
-    .filter((service) => service.slug !== currentSlug)
+  const seen = new Set<string>();
+  const otherServices = CANONICAL_SERVICES
+    .filter((service) => {
+      if (service.slug === currentSlug || seen.has(service.slug)) return false;
+      seen.add(service.slug);
+      return true;
+    })
     .slice(0, 5);
 
   return (
@@ -21,15 +26,11 @@ export const MoreServicesCard: React.FC<MoreServicesCardProps> = ({ currentSlug 
     >
       {/* Card Header */}
       <div className="mb-4">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[#A4E88C] text-xs font-bold tracking-wider uppercase mb-2">
-          <Sparkles size={12} />
-          <span>Ayurvedic Treatments</span>
-        </div>
         <h3 className="font-serif-heading text-xl sm:text-2xl font-bold text-white tracking-[0.5px]">
           More Services
         </h3>
         <p className="font-sans-body text-xs text-[#FDF4E5]/80 mt-1 leading-relaxed">
-          Explore other specialized classical healing treatments at Shri Vishwawedhika Clinic.
+          Explore other specialized classical healing treatments at Shri Vishwavedhika Ayurvedic Clinic.
         </p>
       </div>
 
@@ -61,7 +62,7 @@ export const MoreServicesCard: React.FC<MoreServicesCardProps> = ({ currentSlug 
           Need Guidance?
         </p>
         <p className="text-xs text-[#FDF4E5]/80 mb-3 leading-snug">
-          Consult Dr. Manjiri to discuss your symptoms and customize a therapy plan.
+          Consult Dr. Majiri Musmade to discuss your symptoms and customize a therapy plan.
         </p>
         <div className="flex flex-col gap-2">
           <a

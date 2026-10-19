@@ -9,7 +9,7 @@ export const JsonLd: React.FC = () => {
     alternateName: siteConfig.shortName,
     url: "https://vishwavedhikaayurveda.com",
     logo: "https://vishwavedhikaayurveda.com/images/logo-emblem.png",
-    image: "https://vishwavedhikaayurveda.com/images/slider-01.webp",
+    image: "https://vishwavedhikaayurveda.com/images/medicines.webp",
     description: siteConfig.description,
     telephone: siteConfig.phone1,
     address: {

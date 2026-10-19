@@ -18,7 +18,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "How do I know if this treatment is suitable for my condition?",
     answer:
-      "Dr. Manjiri conducts a thorough initial examination, including traditional Ayurvedic pulse diagnosis (Nadi Pariksha) and Prakriti evaluation, to tailor the therapies specifically to your bodily constitution and health needs.",
+      "Dr. Majiri Musmade conducts a thorough initial examination, including traditional Ayurvedic pulse diagnosis (Nadi Pariksha) and Prakriti evaluation, to tailor the therapies specifically to your bodily constitution and health needs.",
   },
   {
     question: "How many sessions are typically required to see results?",
@@ -28,7 +28,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "Are the herbal medicines and therapies safe with no side effects?",
     answer:
-      "Yes. All therapies at Shri Vishwavedhika Ayurvedic Clinic utilize 100% authentic, classical herbal oils and plant-based formulations prepared without artificial chemicals or synthetic preservatives.",
+      "Yes. All therapies at Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center utilize 100% authentic, classical herbal oils and plant-based formulations prepared without artificial chemicals or synthetic preservatives.",
   },
   {
     question: "What are the clinic visiting hours in Kharadi, Pune?",
@@ -65,9 +65,6 @@ export const TreatmentFAQ: React.FC<TreatmentFAQProps> = ({ serviceTitle, faqs }
           >
             Got Questions About {serviceTitle}?
           </h2>
-          <p className="font-sans-body text-xs sm:text-sm text-[#FDF4E5]/80 mt-1.5 leading-relaxed">
-            Find clear answers about procedure steps, expected benefits, session duration, and consultations at our Kharadi, Pune clinic.
-          </p>
         </div>
 
         {/* Accordion List */}
