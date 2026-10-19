@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { servicesData } from "@/data/servicesData";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://vishwavedhikaayurveda.com";
   const lastModified = new Date();
