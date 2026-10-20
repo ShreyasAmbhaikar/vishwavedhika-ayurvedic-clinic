@@ -18,7 +18,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "How do I know if this treatment is suitable for my condition?",
     answer:
-      "Dr. Majiri Musmade conducts a thorough initial examination, including traditional Ayurvedic pulse diagnosis (Nadi Pariksha) and Prakriti evaluation, to tailor the therapies specifically to your bodily constitution and health needs.",
+      "Dr. Manjiri Musmade conducts a thorough initial examination, including traditional Ayurvedic pulse diagnosis (Nadi Pariksha) and Prakriti evaluation, to tailor the therapies specifically to your bodily constitution and health needs.",
   },
   {
     question: "How many sessions are typically required to see results?",

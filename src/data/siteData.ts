@@ -249,7 +249,7 @@ export const patientTestimonials: Testimonial[] = [
     isLocalGuide: false,
     image: "/images/testimonials/anagha-lanjankar.png",
     content:
-      "Excellent Ayurvedic clinic in Kharadi. Dr. Majiri Musmade provides effective and personalized treatment with great care. 👍",
+      "Excellent Ayurvedic clinic in Kharadi. Dr. Manjiri Musmade provides effective and personalized treatment with great care. 👍",
   },
   {
     id: "3",
