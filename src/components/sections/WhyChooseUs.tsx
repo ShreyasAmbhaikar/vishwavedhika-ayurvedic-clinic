@@ -34,11 +34,11 @@ export const WhyChooseUs: React.FC = () => {
           <div className="relative z-10 space-y-12">
             {/* Header */}
             <div className="text-center space-y-2 max-w-3xl mx-auto">
-              <p className="font-serif-heading text-sm sm:text-base font-bold uppercase tracking-[1px] text-[#E8DCC9]">
-                Why Choose Us
+              <p className="font-serif-heading text-sm sm:text-base font-bold uppercase tracking-[1px] text-[#A4E88C]">
+                Why Patients Trust Shri Vishwavedhika
               </p>
               <h2 className="font-serif-heading text-3xl sm:text-5xl font-medium text-white tracking-[0.5px]">
-                Experience True Wellness With Ayurveda
+                Authentic Ayurveda Rooted In Classical Principles
               </h2>
             </div>
 

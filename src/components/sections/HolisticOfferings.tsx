@@ -10,19 +10,23 @@ export const HolisticOfferings: React.FC = () => {
         {/* Section Header */}
         <div className="text-center space-y-2">
           <p className="font-serif-heading text-sm sm:text-base font-bold uppercase tracking-[1px] text-[#48A547]">
-            What We Offer
+            Core Ayurvedic Specialties
           </p>
           <h2 className="font-serif-heading text-3xl sm:text-5xl font-medium text-black tracking-[0.5px]">
-            Our Holistic Offerings
+            Our Signature Clinical Offerings
           </h2>
+          <p className="font-sans-body text-sm sm:text-[15px] text-[#555555] max-w-2xl mx-auto pt-1 leading-relaxed">
+            Time-tested classical therapies administered in strict accordance with Ayurvedic texts for long-term health, immunity, and vitality.
+          </p>
         </div>
 
         {/* 2x2 Grid of Distinctively Shaped Cards matching media_1792349803325_989f09ee.png */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 lg:gap-8">
           {holisticOfferings.map((offering) => (
-            <div
+            <Link
               key={offering.id}
-              className="group bg-white rounded-[24px] rounded-br-[64px] sm:rounded-br-[76px] border border-[#EAE1D2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row overflow-hidden"
+              href={offering.link}
+              className="group bg-white rounded-[24px] rounded-br-[64px] sm:rounded-br-[76px] border border-[#EAE1D2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row overflow-hidden cursor-pointer block"
             >
               {/* Left Column: Treatment Photo with Arched Top-Right Curve */}
               <div className="relative w-full sm:w-[42%] md:w-[40%] shrink-0 h-52 sm:h-auto sm:self-stretch overflow-hidden rounded-tl-[24px] rounded-bl-[24px] rounded-tr-[70px] sm:rounded-tr-[80px] rounded-br-[14px]">
@@ -59,17 +63,14 @@ export const HolisticOfferings: React.FC = () => {
                   </p>
                 </div>
 
-                {/* Discover More Link matching attachment 3 */}
+                {/* Discover More Link */}
                 <div className="pt-1">
-                  <Link
-                    href={offering.link}
-                    className="inline-block text-[13.5px] font-semibold text-[#145E3F] hover:text-[#48A547] hover:underline transition-colors"
-                  >
-                    Discover More
-                  </Link>
+                  <span className="inline-block text-[13.5px] font-semibold text-[#145E3F] group-hover:text-[#48A547] group-hover:underline transition-colors">
+                    Discover More &rarr;
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

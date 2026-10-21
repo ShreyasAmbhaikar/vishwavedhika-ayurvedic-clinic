@@ -8,23 +8,23 @@ import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Treatment Gallery | Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+  title: "Ayurvedic Treatment Gallery | Kharadi, Pune Clinic",
   description:
-    "Explore authentic Ayurvedic therapy facilities, Panchakarma suites, Kizhi treatments, Shirodhara setups, and healing care at Shri Vishwavedhika Ayurvedic Clinic, Kharadi, Pune.",
+    "View authentic Panchakarma, Shirodhara, and Basti therapy facilities at Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune. Clean, classical healing setup.",
   alternates: {
     canonical: "/treatment-gallery",
   },
   openGraph: {
-    title: "Treatment Gallery | Shri Vishwavedhika Ayurvedic Clinic",
+    title: "Ayurvedic Treatment Gallery | Kharadi, Pune Clinic",
     description:
       "Visual journey into authentic Ayurvedic treatments, herbal therapies, and patient care in Kharadi, Pune.",
     url: "https://vishwavedhikaayurveda.com/treatment-gallery",
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/gallery/gallery-01.webp",
-        width: 1200,
-        height: 800,
+        url: "/images/services/panchakarma-treatment-in-kharadi.webp",
+        width: 1024,
+        height: 682,
         alt: "Shri Vishwavedhika Ayurvedic Clinic Treatment Gallery",
       },
     ],
@@ -32,8 +32,32 @@ export const metadata: Metadata = {
 };
 
 export default function TreatmentGalleryPage() {
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vishwavedhikaayurveda.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Treatment Gallery",
+        item: "https://vishwavedhikaayurveda.com/treatment-gallery",
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FDF4E5]">
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Sticky Top Navigation */}
       <Navbar />
 
@@ -57,7 +81,7 @@ export default function TreatmentGalleryPage() {
           </div>
         </section>
 
-        {/* 21-Image Responsive Gallery Section */}
+        {/* 20-Image Authentic Clinical Gallery Section */}
         <section className="pb-16 sm:pb-20 lg:pb-24">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
             <GalleryGrid />

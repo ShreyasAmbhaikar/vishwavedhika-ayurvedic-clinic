@@ -21,25 +21,25 @@ export const MoreServicesCard: React.FC<MoreServicesCardProps> = ({ currentSlug 
 
   return (
     <aside
-      aria-label="More Ayurvedic Services"
+      aria-label="More Ayurvedic Treatments"
       className="bg-[#145E3F] rounded-[28px] p-6 sm:p-7 text-white shadow-xl border border-[#145E3F]/30 overflow-hidden"
     >
       {/* Card Header */}
       <div className="mb-4">
         <h3 className="font-serif-heading text-xl sm:text-2xl font-bold text-white tracking-[0.5px]">
-          More Services
+          More Treatments
         </h3>
         <p className="font-sans-body text-xs text-[#FDF4E5]/80 mt-1 leading-relaxed">
           Explore other specialized classical healing treatments at Shri Vishwavedhika Ayurvedic Clinic.
         </p>
       </div>
 
-      {/* List of 5 Other Services */}
+      {/* List of 5 Other Treatments */}
       <nav aria-label="Other treatments list" className="space-y-2 mb-6">
         {otherServices.map((service) => (
           <Link
             key={service.slug}
-            href={`/services/${service.slug}`}
+            href={`/treatments/${service.slug}`}
             className="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 text-white transition-all duration-200 group"
           >
             <div className="flex items-center gap-2.5 min-w-0 pr-2">

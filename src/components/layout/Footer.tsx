@@ -62,8 +62,8 @@ export const Footer: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="hover:text-[#A4E88C] transition-colors">
-                    Services
+                  <Link href="/treatments" className="hover:text-[#A4E88C] transition-colors">
+                    Treatments
                   </Link>
                 </li>
                 <li>
@@ -87,47 +87,47 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-sm text-[#FDF4E5]/80 font-sans-body">
               <li>
-                <Link href="/services/panchakarma-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                <Link href="/treatments/panchakarma-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Panchakarma (5-Fold Detox)
                 </Link>
               </li>
               <li>
-                <Link href="/services/garbha-sanskar-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                <Link href="/treatments/garbha-sanskar-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Garbha Sanskar Program
                 </Link>
               </li>
               <li>
-                <Link href="/services/kati-basti-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                <Link href="/treatments/kati-basti-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Kati Basti (Back &amp; Sciatica)
                 </Link>
               </li>
               <li>
-                <Link href="/services/janu-basti-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                <Link href="/treatments/janu-basti-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Janu Basti (Knee Joint Care)
                 </Link>
               </li>
               <li>
-                <Link href="/services/shirodhara-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                <Link href="/treatments/shirodhara-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Shirodhara (Stress &amp; Sleep)
                 </Link>
               </li>
               <li>
-                <Link href="/services/infertility-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                <Link href="/treatments/infertility-treatment-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Infertility &amp; PCOD Care
                 </Link>
               </li>
               <li>
-                <Link href="/services/stroke-rehabilitation-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
+                <Link href="/treatments/stroke-rehabilitation-in-kharadi" className="hover:text-[#A4E88C] transition-colors block">
                   Stroke Rehabilitation
                 </Link>
               </li>
             </ul>
             <div className="mt-3.5 pt-2.5 border-t border-white/10">
               <Link
-                href="/services"
+                href="/treatments"
                 className="text-xs font-semibold text-[#A4E88C] hover:underline inline-flex items-center gap-1"
               >
-                <span>View Full 20 Treatments Directory &rarr;</span>
+                <span>View All Treatments Directory &rarr;</span>
               </Link>
             </div>
           </div>

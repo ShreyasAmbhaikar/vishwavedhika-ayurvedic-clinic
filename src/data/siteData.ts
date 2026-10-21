@@ -42,7 +42,7 @@ export interface BlogPost {
 }
 
 export const siteConfig = {
-  name: "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center",
+  name: "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre",
   shortName: "Shri Vishwavedhika Ayurvedic Clinic",
   address:
     "Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014",
@@ -53,11 +53,15 @@ export const siteConfig = {
   state: "Maharashtra",
   postalCode: "411014",
   location: "Kharadi, Pune, Maharashtra 411014",
+  coordinates: {
+    latitude: 18.5503972,
+    longitude: 73.9390361,
+  },
   googleMapsUrl:
-    "https://www.google.com/maps/place/Vishwavedhika+Ayurvedic+Clinic+%26+Garbhsanskar,+Panchkarma+center/data=!4m2!3m1!1s0x0:0xe0ae9e237d066d5?sa=X&ved=1t:2428&hl=en&ictx=111",
+    "https://www.google.com/maps/place/Vishwavedhika+Ayurvedic+Clinic+%26+Garbhsanskar,+Panchkarma+centre/@18.5503972,73.9390361,826m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2c3d9b36eaaab:0xe0ae9e237d066d5!8m2!3d18.5503972!4d73.9390361!16s%2Fg%2F11f5dfz3_m?hl=en&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
   tagline: "Authentic Ayurveda, Panchakarma & Garbhsanskar in Kharadi, Pune",
   description:
-    "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center offers personalized, authentic Ayurvedic healing, traditional Panchakarma therapies, and Garbha Sanskar care in Kharadi, Pune under expert Ayurvedic guidance.",
+    "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre offers personalized, authentic Ayurvedic healing, classical Panchakarma therapies, Garbha Sanskar, and non-surgical pain relief in Kharadi, Pune under expert Ayurvedic physician Dr. Manjiri Musmade.",
   phone1: "096049 95998",
   phone2: "097302 93777",
   whatsapp: "+919604995998",
@@ -74,6 +78,31 @@ export const siteConfig = {
   },
   rating: 5.0,
   reviewsCount: "20 Google reviews",
+  nearbyLandmarks: [
+    "Parmar Square IT Park",
+    "Near Zensar Technologies",
+    "Above Red Chilli Hotel",
+    "Near EON IT Park & EON Free Zone",
+    "Near Gera Commerzone Kharadi",
+    "Near BNY Mellon Kharadi",
+    "Kharadi-Mundhwa Bridge",
+  ],
+  nearbyLocalities: [
+    "Kharadi",
+    "Chandan Nagar",
+    "Viman Nagar",
+    "Wadgaon Sheri",
+    "Keshav Nagar",
+    "Mundhwa",
+    "Pandhari Nagar",
+    "Rakshak Nagar",
+    "Patil Buwa Nagar",
+    "Thite Nagar",
+    "Yashwant Nagar",
+    "Kalyani Nagar",
+    "Hadapsar",
+    "Wagholi",
+  ],
   socials: {
     facebook: "https://www.facebook.com/",
     twitter: "https://x.com/",
@@ -108,20 +137,20 @@ export const navItems: NavItem[] = [
 
 export const heroSlides = [
   {
-    src: "/images/slider-02.webp",
-    alt: "Shri Vishwavedhika Ayurvedic Clinic Facility",
+    src: "/images/services/panchakarma-treatment-in-kharadi.webp",
+    alt: "Shri Vishwavedhika Ayurvedic Clinic Classical Panchakarma Facilities",
   },
   {
-    src: "/images/slider-03.webp",
-    alt: "Ayurvedic Treatment Room and Consultation",
+    src: "/images/services/shirodhara-treatment-in-kharadi.webp",
+    alt: "Authentic Shirodhara Treatment Room in Kharadi Pune",
   },
   {
-    src: "/images/slider-04.webp",
-    alt: "Inpatient Room and Care Facilities",
+    src: "/images/services/infertility-treatment-in-kharadi.webp",
+    alt: "Ayurvedic Doctor Consultation with Dr. Manjiri Musmade",
   },
   {
-    src: "/images/slider-05.webp",
-    alt: "Shri Vishwavedhika Ayurvedic Clinic Center",
+    src: "/images/services/abhyanga-and-swedana-in-kharadi.webp",
+    alt: "Traditional Teakwood Droni Table and Herbal Steam Facilities",
   },
 ];
 
@@ -130,103 +159,103 @@ export const holisticOfferings: HolisticOffering[] = [
     id: "panchakarma",
     title: "Panchakarma Detoxification",
     description:
-      "Complete 7, 14 & 21-day Panchakarma programs — Vamana, Virechana, Basti, Nasya — for deep cleansing and balance restoration.",
-    image: "/images/PANCH-AKARMA.webp",
+      "Authentic 5-fold detox therapies — Vamana, Virechana, Basti, Nasya & Raktamokshana — to eliminate deep cellular toxins (Ama) and restore metabolic dosha balance.",
+    image: "/images/services/panchakarma-treatment-in-kharadi.webp",
     icon: "/images/panchakarma.webp",
-    link: "#contact",
+    link: "/treatments/panchakarma-treatment-in-kharadi",
   },
   {
-    id: "physiotherapy",
-    title: "Physiotherapy",
+    id: "garbha-sanskar",
+    title: "Garbha Sanskar & Infertility Care",
     description:
-      "Daily physiotherapy combined with Ayurveda — 4 treatment sessions per day for faster recovery from injuries and neurological conditions.",
-    image: "/images/hh-thumb-physio.webp",
-    icon: "/images/icon-physiotherapy.webp",
-    link: "#contact",
-  },
-  {
-    id: "yoga",
-    title: "Yoga And Meditation",
-    description:
-      "Personalized daily yoga and pranayama sessions designed to complement your healing process and calm the mind.",
-    image: "/images/yoga-1.webp",
+      "Classical Ayurvedic prenatal planning, Beej Shuddhi, natural fertility enhancement, and trimester-wise Ayurvedic care for a healthy mother and baby.",
+    image: "/images/services/garbha-sanskar-in-kharadi.webp",
     icon: "/images/yoga.webp",
-    link: "#contact",
+    link: "/treatments/garbha-sanskar-in-kharadi",
   },
   {
-    id: "herbal-medicine",
-    title: "Herbal Medicine Consultations",
+    id: "spine-joint-care",
+    title: "Spine, Joint & Sciatica Relief",
     description:
-      "Custom herbal formulations prepared from classical Ayurvedic texts, tailored to your body type (Prakriti).",
-    image: "/images/med.webp",
+      "Specialized warm medicated oil therapies — Kati Basti, Janu Basti, and herbal potlis — for lasting non-surgical relief from slip disc, sciatica, and knee arthritis.",
+    image: "/images/services/kati-basti-treatment-in-kharadi.webp",
     icon: "/images/medicine.webp",
-    link: "#contact",
+    link: "/treatments/kati-basti-treatment-in-kharadi",
+  },
+  {
+    id: "stress-neuro-shirodhara",
+    title: "Stress, Neuro & Shirodhara Therapy",
+    description:
+      "Rhythmic herbal oil stream therapy on the third eye chakra to calm chronic anxiety, sleep disorders, migraines, and work-stress fatigue for IT professionals.",
+    image: "/images/services/shirodhara-treatment-in-kharadi.webp",
+    icon: "/images/icon-physiotherapy.webp",
+    link: "/treatments/shirodhara-treatment-in-kharadi",
   },
 ];
 
 export const comprehensiveTreatments: Treatment[] = [
   {
     id: "stroke",
-    title: "Stroke Treatment",
+    title: "Stroke Rehabilitation & Neuro Care",
     description:
-      "Ayurvedic neurological rehabilitation for stroke recovery, paralysis and mobility restoration using traditional therapies.",
-    image: "/images/stroke-patient.webp",
-    link: "#contact",
+      "Authentic Ayurvedic neuro-recovery for paralysis, hemiplegia, facial palsy, and motor neuron weakness using specialized Panchakarma and nerve-nourishing rasayanas.",
+    image: "/images/services/stroke-rehabilitation-in-kharadi.webp",
+    link: "/treatments/stroke-rehabilitation-in-kharadi",
   },
   {
     id: "back-pain",
-    title: "Back Pain Treatment",
+    title: "Non-Surgical Spine & Sciatica Relief",
     description:
-      "Natural relief for sciatica, disc herniation, cervical spondylosis and chronic spinal pain without surgery.",
-    image: "/images/thumb-backpain.webp",
-    link: "#contact",
+      "Natural alleviation for slip disc, sciatica nerve compression, cervical spondylosis, and postural stiffness without surgical risk or steroid injections.",
+    image: "/images/services/kati-basti-treatment-in-kharadi.webp",
+    link: "/treatments/kati-basti-treatment-in-kharadi",
   },
   {
-    id: "cerebral-palsy",
-    title: "Cerebral palsy",
+    id: "infertility",
+    title: "PCOD, Infertility & Women's Health",
     description:
-      "Holistic pediatric Ayurvedic care for children with cerebral palsy, developmental delays and muscular weakness.",
-    image: "/images/cerebralpalsy.webp",
-    link: "#contact",
+      "Classical hormonal balancing, Uttar Basti protocols, and Ayurvedic metabolic detox to promote natural ovulation, regulate cycles, and support conception.",
+    image: "/images/services/infertility-treatment-in-kharadi.webp",
+    link: "/treatments/infertility-treatment-in-kharadi",
   },
 ];
 
 export const healingSteps = [
   {
     number: "01",
-    title: "Consultation",
+    title: "In-Depth Nadi Pariksha & Consultation",
     description:
-      "Understand your body type (Dosha) and health condition through detailed pulse diagnosis and medical history.",
+      "Comprehensive pulse diagnosis (Nadi Pariksha) and Ashtavidha Pariksha by Dr. Manjiri Musmade to identify root dosha imbalances (Vata, Pitta, Kapha) and toxic buildup.",
   },
   {
     number: "02",
-    title: "Personalized Treatment Plan",
+    title: "Personalized Ayurvedic Treatment & Diet Plan",
     description:
-      "Customized therapies, herbal medicines, and personalized sattvic dietary recommendations.",
+      "Customized schedule of authentic Panchakarma procedures, pure classical herbal medicines, and tailored Pathya-Apathya (dietary and lifestyle guidance).",
   },
   {
     number: "03",
-    title: "Therapy & Recovery",
+    title: "Supervised Therapy & Sustainable Wellness",
     description:
-      "Regular daily sessions with expert doctors, dedicated therapists, and continuous post-recovery follow-up.",
+      "Dedicated clinical therapies performed by certified practitioners, followed by Rasayana (rejuvenative) care and regular follow-ups for permanent relief.",
   },
 ];
 
 export const whyChooseUsFeatures = [
   {
-    title: "Expertise in Traditional Ayurveda",
+    title: "Led by Dr. Manjiri Musmade",
     description:
-      "Benefit from authentic Ayurvedic knowledge and experienced practitioners using time-tested healing methods rooted in authentic classical Ayurveda.",
+      "Benefit from dedicated clinical consultations and treatments designed by Dr. Manjiri Musmade (BAMS, PGFC in Panchakarma) with 100% individual patient attention.",
   },
   {
-    title: "Personalized Holistic Care",
+    title: "100% Classical & Chemical-Free Ayurveda",
     description:
-      "Get treatments tailored to your unique body constitution (Prakriti), health conditions, and long-term wellness goals.",
+      "Pure herbal formulations, authentic medicated oils, and classical procedures strictly adhering to Charaka and Sushruta Samhita with zero artificial additives.",
   },
   {
-    title: "Natural & Safe Treatments",
+    title: "Trusted Clinic Near Zensar & EON IT Park",
     description:
-      "100% natural herbal formulations, pure medicinal oils, zero chemical additives, and safe healing with no side effects.",
+      "Prime Kharadi location at Parmar Square with modern hygienic therapy rooms, flexible timings for working professionals, and 5-star Google patient satisfaction.",
   },
 ];
 
@@ -263,48 +292,25 @@ export const patientTestimonials: Testimonial[] = [
   },
 ];
 
-export const blogPosts: BlogPost[] = [
-  {
-    id: "weight-loss",
-    title:
-      "Weight Loss Treatment in Ayurveda: How Holistic Healing Supports Healthy Weight Management",
-    image:
-      "/images/young-woman-measuring-her-thin-waist-with-tape-measure-3-1-768x513.jpg",
-    link: "#contact",
-  },
-  {
-    id: "chronic-back-pain",
-    title: "How Ayurveda Helps Relieve Chronic Back Pain Naturally",
-    image:
-      "/images/man-struggles-with-back-pain-kidney-stones-home-amidst-inflammation-disease-challenges-1-768x578.jpg",
-    link: "#contact",
-  },
-  {
-    id: "multiple-sclerosis",
-    title: "Best Ayurvedic Treatment for Multiple Sclerosis",
-    image:
-      "/images/senior-man-wheelchair-looking-through-window-covid19-lockdown-1-768x512.jpg",
-    link: "#contact",
-  },
-];
-
 export const servicesList = [
-  "Stroke Treatment",
-  "Back Pain Treatment",
-  "Physiotherapy",
-  "Panchakarma Treatment",
-  "Parkinson’s Disease",
-  "Weight Loss Treatment",
-  "Cerebral palsy",
-  "Cervical Spondylosis",
-  "Multiple Sclerosis",
-  "Muscular Dystrophy",
-  "Psoriasis Treatment",
-  "Motor Neuron Disease (MND)",
-  "Ayurvedic Neurological Disorder",
-  "Acupuncture",
-  "Hijama (Cupping Therapy)",
-  "Reflexology",
-  "Speech Therapy",
-  "Occupational Therapy",
+  "Panchakarma 5-Fold Detoxification",
+  "Garbha Sanskar & Antenatal Care",
+  "Kati Basti (Spine & Sciatica Relief)",
+  "Janu Basti (Knee Osteoarthritis Care)",
+  "Manya Basti (Cervical Spondylosis Care)",
+  "Shirodhara (Stress & Insomnia Therapy)",
+  "Vamana Therapy (Kapha & Respiratory Detox)",
+  "Virechana Therapy (Pitta & Liver Detox)",
+  "Basti Treatment (Medicated Enema Detox)",
+  "Nasya Therapy (Cranial & ENT Care)",
+  "Uttar Basti (Infertility & Tubal Blockage)",
+  "Ayurvedic Infertility & PCOD Management",
+  "Raktamokshana Blood Purification",
+  "Jalaukavacharana (Medical Leech Therapy)",
+  "Agnikarma (Thermal Pain Management)",
+  "Takradhara & Lepa (Dermatological Care)",
+  "Patra Pinda Sweda (Elakizhi Potli Therapy)",
+  "Abhyanga & Swedana (Herbal Massage & Steam)",
+  "Netra Tarpana (Ayurvedic Eye Care)",
+  "Stroke Rehabilitation & Neuro Care",
 ];

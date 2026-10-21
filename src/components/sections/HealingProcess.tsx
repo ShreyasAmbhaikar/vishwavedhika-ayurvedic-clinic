@@ -11,10 +11,10 @@ export const HealingProcess: React.FC = () => {
           <div className="lg:col-span-7 space-y-10">
             <div className="space-y-2">
               <p className="font-serif-heading text-sm sm:text-base font-bold uppercase tracking-[1px] text-[#48A547]">
-                How It Works
+                Our Clinical Methodology
               </p>
               <h2 className="font-serif-heading text-3xl sm:text-5xl font-medium text-black tracking-[0.5px]">
-                Simple And Effective Healing Process
+                Simple, Systematic &amp; Evidence-Based Healing
               </h2>
             </div>
 
@@ -48,7 +48,7 @@ export const HealingProcess: React.FC = () => {
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-[460px] h-[400px] sm:h-[480px] corner-curve-slider overflow-hidden shadow-2xl bg-white border-2 border-white/60">
               <Image
-                src="/images/howitworks.webp"
+                src="/images/services/shirodhara-treatment-in-kharadi.webp"
                 alt="Ayurvedic Shirodhara Therapy and Healing Process"
                 fill
                 className="object-cover corner-curve-slider hover:scale-105 transition-transform duration-700 ease-out"

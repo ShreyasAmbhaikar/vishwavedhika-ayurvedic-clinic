@@ -10,57 +10,6 @@ interface ServicesDirectoryProps {
   services: ServiceDetail[];
 }
 
-const ALIAS_SLUGS = new Set([
-  "panchakarma-treatment",
-  "garbha-sanskar-pune",
-  "vamana-therapy",
-  "virechana-therapy",
-  "basti-treatment-pune",
-  "basti-treatment",
-  "uttar-basti-treatment",
-  "uttar-basti",
-  "nasya-therapy-pune",
-  "nasya-therapy",
-  "raktamokshana-treatment",
-  "raktamokshana",
-  "janu-basti-treatment",
-  "janu-basti",
-  "manya-basti-treatment",
-  "manya-basti",
-  "patra-pinda-sweda",
-  "elakizhi-treatment",
-  "patra-potli-massage",
-  "back-pain-treatment",
-  "kati-basti-treatment",
-  "agnikarma-treatment",
-  "agnikarma-therapy",
-  "agnikarma",
-  "jalaukavacharana-leech-therapy",
-  "jalaukavacharana",
-  "leech-therapy",
-  "takradhara-treatment",
-  "lepa-and-takradhara",
-  "takradhara",
-  "netra-tarpana-treatment",
-  "netra-tarpana",
-  "eye-care-treatments",
-  "abhyanga-and-swedana",
-  "abhyanga-swedana",
-  "ayurvedic-massage-pune",
-  "stroke-treatment",
-  "stroke-rehabilitation-pune",
-  "pakshaghata-treatment",
-  "sciatica-treatment-pune",
-  "spine-and-joint-care",
-  "spine-care-kharadi",
-  "physiotherapy",
-  "cerebral-palsy",
-  "skin-and-hair-treatments",
-  "stress-and-rejuvenation",
-  "infertility-treatment",
-  "shirodhara-treatment",
-]);
-
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   "Spine & Joint Orthopedic Care":
     "Non-surgical, classical Ayurvedic treatments for lower back pain, sciatica, knee osteoarthritis, cervical spondylosis, and joint stiffness.",
@@ -77,19 +26,11 @@ const CATEGORY_DESCRIPTIONS: Record<string, string> = {
 };
 
 export const ServicesDirectory: React.FC<ServicesDirectoryProps> = ({ services }) => {
-  // Filter out duplicate aliases and non-canonical items to ensure exactly 20 canonical services
+  // Use services directly (guaranteed to be the 20 canonical services)
   const canonicalServices = useMemo(() => {
     const seen = new Set<string>();
     return services.filter((s) => {
-      if (!s || !s.slug) return false;
-      // If s.slug ends with -in-kharadi, prioritize it
-      if (s.slug.endsWith("-in-kharadi")) {
-        if (seen.has(s.slug)) return false;
-        seen.add(s.slug);
-        return true;
-      }
-      // If no -in-kharadi version, check ALIAS_SLUGS
-      if (ALIAS_SLUGS.has(s.slug) || seen.has(s.slug)) return false;
+      if (!s || !s.slug || seen.has(s.slug)) return false;
       seen.add(s.slug);
       return true;
     });
@@ -139,7 +80,7 @@ export const ServicesDirectory: React.FC<ServicesDirectoryProps> = ({ services }
             {group.items.map((service) => (
               <Link
                 key={service.slug}
-                href={`/services/${service.slug}`}
+                href={`/treatments/${service.slug}`}
                 className="group block focus:outline-none h-full"
               >
                 <article className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-[#145E3F]/12 group-hover:border-[#145E3F]/35 transition-all duration-300 flex flex-col h-full">

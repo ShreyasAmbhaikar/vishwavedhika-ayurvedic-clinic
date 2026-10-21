@@ -47,8 +47,7 @@ export const Testimonials: React.FC = () => {
                 Healing Stories From Our Patients
               </h2>
               <p className="font-sans-body text-sm sm:text-[15px] text-[#383838] leading-relaxed max-w-xl">
-                A smooth and results-driven healing journey that feels natural,
-                comfortable, and truly transformative.
+                Verified recovery experiences from patients treated at our Kharadi clinic for chronic back pain, Panchakarma detox, and Garbha Sanskar.
               </p>
             </div>
 

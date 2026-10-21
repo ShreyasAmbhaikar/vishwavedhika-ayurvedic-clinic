@@ -12,43 +12,43 @@ interface PopularServiceTickerItem {
 const popularServices: PopularServiceTickerItem[] = [
   {
     label: "Panchakarma Treatment",
-    href: "/services/panchakarma-treatment-in-kharadi",
+    href: "/treatments/panchakarma-treatment-in-kharadi",
   },
   {
     label: "Garbha Sanskar Program",
-    href: "/services/garbha-sanskar-in-kharadi",
+    href: "/treatments/garbha-sanskar-in-kharadi",
   },
   {
     label: "Kati Basti (Spine & Sciatica)",
-    href: "/services/kati-basti-treatment-in-kharadi",
+    href: "/treatments/kati-basti-treatment-in-kharadi",
   },
   {
     label: "Shirodhara Therapy (Stress & Sleep)",
-    href: "/services/shirodhara-treatment-in-kharadi",
+    href: "/treatments/shirodhara-treatment-in-kharadi",
   },
   {
     label: "Janu Basti (Knee Arthritis)",
-    href: "/services/janu-basti-treatment-in-kharadi",
+    href: "/treatments/janu-basti-treatment-in-kharadi",
   },
   {
     label: "Infertility & PCOD Care",
-    href: "/services/infertility-treatment-in-kharadi",
+    href: "/treatments/infertility-treatment-in-kharadi",
   },
   {
     label: "Vamana & Virechana Detox",
-    href: "/services/virechana-therapy-in-kharadi",
+    href: "/treatments/virechana-therapy-in-kharadi",
   },
   {
     label: "Agnikarma Pain Relief",
-    href: "/services/agnikarma-treatment-in-kharadi",
+    href: "/treatments/agnikarma-treatment-in-kharadi",
   },
   {
     label: "Nasya Therapy (Migraine & ENT)",
-    href: "/services/nasya-therapy-in-kharadi",
+    href: "/treatments/nasya-therapy-in-kharadi",
   },
   {
     label: "Stroke Rehabilitation",
-    href: "/services/stroke-rehabilitation-in-kharadi",
+    href: "/treatments/stroke-rehabilitation-in-kharadi",
   },
 ];
 

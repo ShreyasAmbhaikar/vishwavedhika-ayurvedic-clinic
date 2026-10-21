@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services`,
+      url: `${baseUrl}/treatments`,
       lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
@@ -41,10 +41,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Dynamic Service Pages
+  // Dynamic Treatment Pages
   const serviceRoutes: MetadataRoute.Sitemap = Object.keys(servicesData).map(
     (slug) => ({
-      url: `${baseUrl}/services/${slug}`,
+      url: `${baseUrl}/treatments/${slug}`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.85,

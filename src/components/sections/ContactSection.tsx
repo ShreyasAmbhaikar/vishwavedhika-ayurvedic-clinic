@@ -12,29 +12,34 @@ interface FaqItem {
 
 const faqData: FaqItem[] = [
   {
-    question: "What health conditions are treated at Shri Vishwawedhika Ayurvedic Center?",
+    question: "Which health conditions are treated at Shri Vishwavedhika Ayurvedic Clinic in Kharadi?",
     answer:
-      "We provide specialized treatments for chronic spine & back pain, sciatica, slip disc, joint arthritis, stroke & neurological rehabilitation, migraine, digestive issues, and personalized Garbha Sanskar care for expecting mothers.",
+      "Under Dr. Manjiri Musmade's clinical guidance, we specialize in chronic spine & back pain (sciatica, lumbar slip disc, cervical spondylosis), joint arthritis, Panchakarma detoxification, Garbha Sanskar & infertility management (PCOD/PCOS), stroke & neurological rehabilitation, chronic migraines, digestive disorders, and skin ailments.",
   },
   {
-    question: "How does Panchakarma detoxification work and how many days are required?",
+    question: "What is Panchakarma detoxification and how many days does it take?",
     answer:
-      "Panchakarma is an authentic five-fold cleansing therapy that eliminates accumulated deep-tissue toxins (Ama). Based on your pulse diagnosis (Nadi Pariksha) and Prakriti, treatment packages generally range from 7, 14, to 21 days.",
+      "Panchakarma is an authentic five-fold purification therapy (Vamana, Virechana, Basti, Nasya, and Raktamokshana) designed to remove accumulated deep-tissue toxins (Ama) and rebalance the doshas. Depending on your Nadi Pariksha assessment and health goals, programs range from 7, 14, to 21 days with convenient outpatient scheduling for IT professionals in Kharadi.",
   },
   {
-    question: "Are Ayurvedic medicines natural and safe with no side effects?",
+    question: "Do you provide Garbhsanskar and Infertility treatments in Kharadi, Pune?",
     answer:
-      "Yes. All our herbal remedies and medicated oils are 100% natural, prepared strictly following classical Ayurvedic texts without chemical adulterants or harmful synthetic additives, ensuring safe, long-term healing.",
+      "Yes. Dr. Manjiri Musmade is a certified specialist in Garbha Sanskar and Ayurvedic infertility care. We provide classical Beej Shuddhi (pre-conception detox), natural ovulation and hormonal balancing (Uttar Basti), and trimester-wise antenatal care, mantra meditation, and sattvic nutritional guidance for expectant parents.",
   },
   {
-    question: "What are the clinic visiting hours in Kharadi, Pune?",
+    question: "Where is the clinic located in Kharadi and what are the consultation hours?",
     answer:
-      "Our clinic is open Monday to Saturday from 11:30 AM to 5:30 PM, and on Sundays from 11:30 AM to 2:00 PM. We are located at Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune.",
+      "We are conveniently located at Flat no.104, IT Park, Parmar Square, near Zensar, above Red Chilli Hotel, Kharadi, Pune 411014 — easily accessible from EON IT Park, Chandan Nagar, Viman Nagar, and Wadgaon Sheri. Visiting hours are Monday to Saturday from 11:30 AM to 5:30 PM, and Sundays from 11:30 AM to 2:00 PM.",
   },
   {
-    question: "What is Garbha Sanskar and who can benefit from it?",
+    question: "How can I book an appointment with Dr. Manjiri Musmade?",
     answer:
-      "Garbha Sanskar is traditional Ayurvedic prenatal and postnatal care designed for couples planning for pregnancy and expectant mothers. It fosters the child's physical and mental development through sattvic nutrition, mantra meditation, and herbal wellness.",
+      "You can book directly by calling 096049 95998 or 097302 93777, via WhatsApp (+91 96049 95998), or by clicking the 'Book Consultation' button on this website. Prior appointments ensure dedicated, unhurried consultation time with zero waiting.",
+  },
+  {
+    question: "Are Ayurvedic medicines and therapies safe without side effects?",
+    answer:
+      "Absolutely. All formulations prescribed at our clinic are 100% natural, prepared strictly from authentic classical texts without synthetic steroids, chemical additives, or adulterants. Treatments are personalized to your unique Prakriti (body constitution) for safe, lasting healing.",
   },
 ];
 
@@ -105,7 +110,7 @@ export const ContactSection: React.FC = () => {
           <div className="lg:col-span-5 relative min-h-[380px] lg:min-h-full">
             <Image
               src="/images/cta.webp"
-              alt="Ayurvedic Mind & Body Wellness at Shri Vishwawedhika"
+              alt="Ayurvedic Mind & Body Wellness at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune"
               fill
               className="object-cover object-center"
             />

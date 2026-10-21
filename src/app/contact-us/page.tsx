@@ -1,24 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { MapPin, Clock, Phone, ExternalLink, Navigation } from "lucide-react";
+import { MapPin, Clock, Phone } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/layout/FloatingActions";
-import { GoogleGIcon } from "@/components/ui/GoogleGIcon";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Shri Vishwawedhika Ayurvedic Center & Panchakarma Garbha Sanskar Center",
+  title: "Contact Vishwavedhika Ayurvedic Clinic | Kharadi, Pune",
   description:
-    "Get in touch with Shri Vishwawedhika Ayurvedic Center in Kharadi, Pune. Contact our expert Ayurvedic doctors for authentic treatments, Panchakarma therapies, and Garbha Sanskar consultations.",
+    "Visit Shri Vishwavedhika Ayurvedic Clinic at Parmar Square, near Zensar, Kharadi, Pune. Call 096049 95998 or book your doctor consultation online today.",
   alternates: {
     canonical: "/contact-us",
   },
   openGraph: {
-    title: "Contact Us | Shri Vishwawedhika Ayurvedic Center & Panchakarma Garbha Sanskar Center",
+    title: "Contact Vishwavedhika Ayurvedic Clinic | Kharadi, Pune",
     description:
-      "Feel free to drop us a message. Reach Shri Vishwawedhika Ayurvedic Center in Kharadi, Pune via phone, WhatsApp, or visit our center at Parmar Square.",
+      "Visit Shri Vishwavedhika Ayurvedic Clinic at Parmar Square, near Zensar, Kharadi, Pune. Call 096049 95998 or book your doctor consultation online today.",
     url: "https://vishwavedhikaayurveda.com/contact-us",
     siteName: siteConfig.name,
     images: [
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
         url: "/images/ogimage-1.jpg",
         width: 1200,
         height: 630,
-        alt: "Shri Vishwawedhika Ayurvedic Center Location and Contact",
+        alt: "Shri Vishwavedhika Ayurvedic Clinic Location and Contact",
       },
     ],
   },
@@ -38,8 +37,32 @@ export default function ContactUsPage() {
     "Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center Kharadi Pune"
   );
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vishwavedhikaayurveda.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Contact Us",
+        item: "https://vishwavedhikaayurveda.com/contact-us",
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FDF4E5]">
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Top Sticky Navigation */}
       <Navbar />
 
@@ -47,9 +70,9 @@ export default function ContactUsPage() {
         {/* TOP HEADER SECTION */}
         <section className="pt-8 sm:pt-10 pb-6 sm:pb-8">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-10 max-w-5xl">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 lg:gap-16 xl:gap-20">
               {/* Left Side: Heading & Breadcrumb */}
-              <div className="max-w-md space-y-2.5">
+              <div className="w-full lg:max-w-[480px] space-y-2.5">
                 <span className="text-xs font-bold tracking-[0.2em] text-[#145E3F] uppercase block">
                   GET IN TOUCH
                 </span>
@@ -72,7 +95,7 @@ export default function ContactUsPage() {
               </div>
 
               {/* Right Side: Narrative Description */}
-              <div className="max-w-xl">
+              <div className="w-full lg:max-w-[540px]">
                 <p className="text-[#555555] text-sm sm:text-[15px] leading-relaxed">
                   Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center is committed to delivering authentic,
                   results-driven Ayurvedic treatment in Kharadi, Pune. We provide
@@ -190,49 +213,6 @@ export default function ContactUsPage() {
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                     />
-
-                    {/* Google Maps Floating Info Badge Matching Screenshot */}
-                    <div className="absolute top-3 left-3 z-10 max-w-[290px] sm:max-w-[320px] bg-white rounded-xl shadow-lg border border-gray-200 p-3.5 text-xs text-gray-700 pointer-events-auto">
-                      <div className="font-bold text-gray-900 text-sm leading-tight mb-1">
-                        Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center
-                      </div>
-                      <p className="text-[11px] text-gray-500 leading-snug mb-1.5">
-                        Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014
-                      </p>
-                      <div className="flex items-center gap-1.5 text-[11px] mb-2.5">
-                        <GoogleGIcon className="w-3.5 h-3.5 shrink-0" />
-                        <span className="font-bold text-gray-800">5.0</span>
-                        <span className="text-[#FFA300]">★</span>
-                        <a
-                          href={googleMapsUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#1a73e8] hover:underline font-semibold"
-                        >
-                          (20 Google reviews)
-                        </a>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <a
-                          href={googleMapsUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-[#1a73e8] text-white font-medium hover:bg-[#1558b0] transition-colors text-[11px]"
-                        >
-                          <ExternalLink size={11} />
-                          <span>Open in Maps</span>
-                        </a>
-                        <a
-                          href={`https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-50 text-[#1a73e8] hover:bg-blue-100 transition-colors"
-                          title="Get Directions"
-                        >
-                          <Navigation size={12} />
-                        </a>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

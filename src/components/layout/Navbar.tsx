@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
   const isHome = pathname === "/";
   const isContact = pathname === "/contact-us" || pathname === "/contact";
   const isGallery = pathname.includes("gallery");
-  const isServices = pathname.startsWith("/services");
+  const isServices = pathname.startsWith("/treatments");
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -31,85 +31,87 @@ export const Navbar: React.FC = () => {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#FDF4E5]/95 backdrop-blur-md shadow-sm py-2.5"
-          : "bg-[#FDF4E5] py-4"
+          ? "bg-[#FDF4E5]/95 backdrop-blur-md shadow-sm py-2.5 sm:py-3"
+          : "bg-[#FDF4E5] py-[18px] sm:py-5"
       }`}
     >
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between">
           {/* 1. Left Brand Logo */}
-          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 shrink-0 group">
-            <div className="relative w-12 h-12 sm:w-13 sm:h-13 shrink-0 rounded-full overflow-hidden shadow-sm border-2 border-[#145E3F]/25 bg-white">
+          <Link href="/" className="flex items-center gap-3 sm:gap-3.5 shrink-0 group">
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-[66px] lg:h-[66px] shrink-0 rounded-full overflow-hidden shadow-sm border-2 border-[#145E3F]/25 bg-white">
               <Image
                 src="/images/logo-emblem.png"
                 alt="Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center Logo"
                 fill
                 priority
-                sizes="(max-width: 640px) 48px, 52px"
+                sizes="(max-width: 640px) 56px, 66px"
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-serif-heading text-[15px] sm:text-base lg:text-[17px] font-bold text-[#145E3F] leading-tight tracking-tight">
+              <span className="font-serif-heading text-base sm:text-lg lg:text-[20px] font-bold text-[#145E3F] leading-tight tracking-tight">
                 Shri Vishwavedhika
               </span>
-              <span className="font-serif-heading text-xs sm:text-[13px] font-semibold text-[#16231B] leading-tight">
+              <span className="font-serif-heading text-[12.5px] sm:text-[13.5px] lg:text-[14.5px] font-semibold text-[#16231B] leading-tight">
                 Ayurvedic Clinic
               </span>
-              <span className="text-[9.5px] sm:text-[10px] font-medium text-[#48A547] leading-tight tracking-wide">
+              <span className="text-[10px] sm:text-[11px] lg:text-[11.5px] font-medium text-[#48A547] leading-tight tracking-wide">
                 &amp; Garbhsanskar, Panchakarma Center
               </span>
             </div>
           </Link>
 
-          {/* 2. Center Pill Navigation Container (Centered with absolute positioning & balanced vertical padding) */}
-          <nav className="hidden xl:flex items-center absolute left-1/2 -translate-x-1/2 bg-[#145E3F]/18 rounded-full px-5 py-2 shadow-sm border border-[#145E3F]/10">
+          {/* 2. Center Pill Navigation Container (Centered with absolute positioning) */}
+          <nav className="hidden xl:flex items-center absolute left-1/2 -translate-x-1/2 bg-[#145E3F]/18 rounded-full px-5 py-1.5 shadow-sm border border-[#145E3F]/10">
             <ul className="flex items-center text-[13px] font-semibold uppercase tracking-wider text-[#145E3F]">
               <li>
                 <Link
                   href="/"
                   className={`px-3.5 py-1 transition-colors ${
-                    isHome ? "text-[#145E3F] font-bold" : "hover:text-[#48A547]"
+                    isHome
+                      ? "text-[#145E3F] font-extrabold underline underline-offset-4 decoration-2 decoration-[#48A547]"
+                      : "hover:text-[#48A547]"
                   }`}
                 >
                   Home
                 </Link>
               </li>
 
-              <li className="text-[#145E3F]/30 select-none">|</li>
+                <li className="text-[#145E3F]/30 select-none">|</li>
 
-              <li>
-                <Link
-                  href="/about-us"
-                  className={`px-3.5 py-1 transition-colors ${
-                    isAbout
-                      ? "text-[#145E3F] font-extrabold underline underline-offset-4 decoration-2 decoration-[#48A547]"
-                      : "hover:text-[#48A547]"
-                  }`}
+                <li>
+                  <Link
+                    href="/about-us"
+                    className={`px-3.5 py-1 transition-colors ${
+                      isAbout
+                        ? "text-[#145E3F] font-extrabold underline underline-offset-4 decoration-2 decoration-[#48A547]"
+                        : "hover:text-[#48A547]"
+                    }`}
+                  >
+                    About Us
+                  </Link>
+                </li>
+
+                <li className="text-[#145E3F]/30 select-none">|</li>
+
+                {/* Services Dropdown */}
+                <li
+                  className="relative py-1 group"
+                  onMouseEnter={() => setServicesDropdown(true)}
+                  onMouseLeave={() => setServicesDropdown(false)}
                 >
-                  About Us
-                </Link>
-              </li>
-
-              <li className="text-[#145E3F]/30 select-none">|</li>
-
-              {/* Services Dropdown */}
-              <li
-                className="relative py-1 group"
-                onMouseEnter={() => setServicesDropdown(true)}
-                onMouseLeave={() => setServicesDropdown(false)}
-              >
-                <Link
-                  href="/services"
-                  className={`px-3.5 py-1 transition-colors inline-flex items-center gap-1 ${
-                    isServices
-                      ? "text-[#48A547] font-bold underline underline-offset-4 decoration-2 decoration-[#48A547]"
-                      : "hover:text-[#48A547]"
-                  }`}
-                >
-                  <span>Services</span>
-                  <ChevronDown size={13} className="text-[#145E3F]/70" />
-                </Link>
+                  <Link
+                    href="/treatments"
+                    className={`px-3.5 py-1 transition-colors inline-flex items-center gap-1 ${
+                      isServices
+                        ? "text-[#145E3F] font-extrabold underline underline-offset-4 decoration-2 decoration-[#48A547]"
+                        : "hover:text-[#48A547]"
+                    }`}
+                  >
+                    <span>Treatments</span>
+                    <ChevronDown size={13} className="text-[#145E3F]/70" />
+                  </Link>
 
                 {servicesDropdown && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[880px] max-w-[94vw] z-50">
@@ -134,7 +136,7 @@ export const Navbar: React.FC = () => {
                           </span>
                         </div>
                         <Link
-                          href="/services"
+                          href="/treatments"
                           onClick={() => setServicesDropdown(false)}
                           className="text-xs font-semibold text-[#145E3F] hover:text-[#48A547] transition-colors flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#145E3F]/8 hover:bg-[#145E3F]/15"
                         >
@@ -155,7 +157,7 @@ export const Navbar: React.FC = () => {
                             </div>
                             <div className="space-y-0.5">
                               <Link
-                                href="/services/kati-basti-treatment-in-kharadi"
+                                href="/treatments/kati-basti-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -163,7 +165,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Lower back pain &amp; sciatica</span>
                               </Link>
                               <Link
-                                href="/services/janu-basti-treatment-in-kharadi"
+                                href="/treatments/janu-basti-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -171,7 +173,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Knee arthritis &amp; joint care</span>
                               </Link>
                               <Link
-                                href="/services/manya-basti-treatment-in-kharadi"
+                                href="/treatments/manya-basti-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -179,7 +181,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Cervical &amp; tech neck relief</span>
                               </Link>
                               <Link
-                                href="/services/patra-pinda-sweda-in-kharadi"
+                                href="/treatments/patra-pinda-sweda-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -197,7 +199,7 @@ export const Navbar: React.FC = () => {
                             </div>
                             <div className="space-y-0.5">
                               <Link
-                                href="/services/agnikarma-treatment-in-kharadi"
+                                href="/treatments/agnikarma-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -205,7 +207,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Heel spur &amp; tendon pain</span>
                               </Link>
                               <Link
-                                href="/services/jalaukavacharana-leech-therapy-in-kharadi"
+                                href="/treatments/jalaukavacharana-leech-therapy-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -213,7 +215,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Varicose veins &amp; blood detox</span>
                               </Link>
                               <Link
-                                href="/services/takradhara-treatment-in-kharadi"
+                                href="/treatments/takradhara-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -233,7 +235,7 @@ export const Navbar: React.FC = () => {
                             </div>
                             <div className="space-y-0.5">
                               <Link
-                                href="/services/panchakarma-treatment-in-kharadi"
+                                href="/treatments/panchakarma-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -241,7 +243,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Cellular metabolic cleansing</span>
                               </Link>
                               <Link
-                                href="/services/vamana-therapy-in-kharadi"
+                                href="/treatments/vamana-therapy-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -249,7 +251,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Kapha &amp; respiratory detox</span>
                               </Link>
                               <Link
-                                href="/services/virechana-therapy-in-kharadi"
+                                href="/treatments/virechana-therapy-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -257,7 +259,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Pitta &amp; liver purification</span>
                               </Link>
                               <Link
-                                href="/services/basti-treatment-in-kharadi"
+                                href="/treatments/basti-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -265,7 +267,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Medicated colon &amp; spine care</span>
                               </Link>
                               <Link
-                                href="/services/abhyanga-and-swedana-in-kharadi"
+                                href="/treatments/abhyanga-and-swedana-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -283,7 +285,7 @@ export const Navbar: React.FC = () => {
                             </div>
                             <div className="space-y-0.5">
                               <Link
-                                href="/services/raktamokshana-treatment-in-kharadi"
+                                href="/treatments/raktamokshana-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -291,7 +293,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Bloodletting &amp; skin cleansing</span>
                               </Link>
                               <Link
-                                href="/services/netra-tarpana-treatment-in-kharadi"
+                                href="/treatments/netra-tarpana-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -311,7 +313,7 @@ export const Navbar: React.FC = () => {
                             </div>
                             <div className="space-y-0.5">
                               <Link
-                                href="/services/garbha-sanskar-in-kharadi"
+                                href="/treatments/garbha-sanskar-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -319,7 +321,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Vedic antenatal classes</span>
                               </Link>
                               <Link
-                                href="/services/infertility-treatment-in-kharadi"
+                                href="/treatments/infertility-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -327,7 +329,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Hormone balance &amp; conception</span>
                               </Link>
                               <Link
-                                href="/services/uttar-basti-treatment-in-kharadi"
+                                href="/treatments/uttar-basti-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -345,7 +347,7 @@ export const Navbar: React.FC = () => {
                             </div>
                             <div className="space-y-0.5">
                               <Link
-                                href="/services/shirodhara-treatment-in-kharadi"
+                                href="/treatments/shirodhara-treatment-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -353,7 +355,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Stress, anxiety &amp; sleep care</span>
                               </Link>
                               <Link
-                                href="/services/nasya-therapy-in-kharadi"
+                                href="/treatments/nasya-therapy-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -361,7 +363,7 @@ export const Navbar: React.FC = () => {
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Migraine, sinus &amp; cervical</span>
                               </Link>
                               <Link
-                                href="/services/stroke-rehabilitation-in-kharadi"
+                                href="/treatments/stroke-rehabilitation-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
@@ -402,7 +404,7 @@ export const Navbar: React.FC = () => {
                   href="/treatment-gallery"
                   className={`px-3.5 py-1 transition-colors ${
                     isGallery
-                      ? "text-[#48A547] font-bold underline underline-offset-4 decoration-2 decoration-[#48A547]"
+                      ? "text-[#145E3F] font-extrabold underline underline-offset-4 decoration-2 decoration-[#48A547]"
                       : "hover:text-[#48A547]"
                   }`}
                 >
@@ -417,7 +419,7 @@ export const Navbar: React.FC = () => {
                   href="/contact-us"
                   className={`px-3.5 py-1 transition-colors ${
                     isContact
-                      ? "text-[#48A547] font-bold underline underline-offset-4 decoration-2 decoration-[#48A547]"
+                      ? "text-[#145E3F] font-extrabold underline underline-offset-4 decoration-2 decoration-[#48A547]"
                       : "hover:text-[#48A547]"
                   }`}
                 >
@@ -480,14 +482,12 @@ export const Navbar: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-[#145E3F]/10">
                   <Link
-                    href="/services"
+                    href="/treatments"
                     onClick={() => setMobileMenuOpen(false)}
                     className={`${
                       isServices ? "text-[#48A547] font-bold" : ""
                     }`}
-                  >
-                    Services
-                  </Link>
+                  >Treatments</Link>
                   <button
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                     className="p-1 text-[#145E3F]"
@@ -513,28 +513,28 @@ export const Navbar: React.FC = () => {
                       </div>
                       <div className="space-y-1 pl-2">
                         <Link
-                          href="/services/kati-basti-treatment-in-kharadi"
+                          href="/treatments/kati-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Kati Basti (Back Pain &amp; Sciatica)
                         </Link>
                         <Link
-                          href="/services/janu-basti-treatment-in-kharadi"
+                          href="/treatments/janu-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Janu Basti (Knee Joint Arthritis)
                         </Link>
                         <Link
-                          href="/services/manya-basti-treatment-in-kharadi"
+                          href="/treatments/manya-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Manya Basti (Cervical &amp; Tech Neck)
                         </Link>
                         <Link
-                          href="/services/patra-pinda-sweda-in-kharadi"
+                          href="/treatments/patra-pinda-sweda-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
@@ -552,35 +552,35 @@ export const Navbar: React.FC = () => {
                       </div>
                       <div className="space-y-1 pl-2">
                         <Link
-                          href="/services/panchakarma-treatment-in-kharadi"
+                          href="/treatments/panchakarma-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Panchakarma (5-Fold Detox)
                         </Link>
                         <Link
-                          href="/services/vamana-therapy-in-kharadi"
+                          href="/treatments/vamana-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Vamana Therapy (Kapha Detox)
                         </Link>
                         <Link
-                          href="/services/virechana-therapy-in-kharadi"
+                          href="/treatments/virechana-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Virechana (Pitta &amp; Liver Detox)
                         </Link>
                         <Link
-                          href="/services/basti-treatment-in-kharadi"
+                          href="/treatments/basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Basti Karma (Medicated Enema)
                         </Link>
                         <Link
-                          href="/services/abhyanga-and-swedana-in-kharadi"
+                          href="/treatments/abhyanga-and-swedana-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
@@ -598,21 +598,21 @@ export const Navbar: React.FC = () => {
                       </div>
                       <div className="space-y-1 pl-2">
                         <Link
-                          href="/services/garbha-sanskar-in-kharadi"
+                          href="/treatments/garbha-sanskar-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Garbha Sanskar Program
                         </Link>
                         <Link
-                          href="/services/infertility-treatment-in-kharadi"
+                          href="/treatments/infertility-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Infertility &amp; PCOD Care
                         </Link>
                         <Link
-                          href="/services/uttar-basti-treatment-in-kharadi"
+                          href="/treatments/uttar-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
@@ -630,21 +630,21 @@ export const Navbar: React.FC = () => {
                       </div>
                       <div className="space-y-1 pl-2">
                         <Link
-                          href="/services/shirodhara-treatment-in-kharadi"
+                          href="/treatments/shirodhara-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Shirodhara (Stress &amp; Sleep)
                         </Link>
                         <Link
-                          href="/services/nasya-therapy-in-kharadi"
+                          href="/treatments/nasya-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Nasya Therapy (Migraine &amp; Sinus)
                         </Link>
                         <Link
-                          href="/services/stroke-rehabilitation-in-kharadi"
+                          href="/treatments/stroke-rehabilitation-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
@@ -662,14 +662,14 @@ export const Navbar: React.FC = () => {
                       </div>
                       <div className="space-y-1 pl-2">
                         <Link
-                          href="/services/raktamokshana-treatment-in-kharadi"
+                          href="/treatments/raktamokshana-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Raktamokshana (Blood Cleansing)
                         </Link>
                         <Link
-                          href="/services/netra-tarpana-treatment-in-kharadi"
+                          href="/treatments/netra-tarpana-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
@@ -687,21 +687,21 @@ export const Navbar: React.FC = () => {
                       </div>
                       <div className="space-y-1 pl-2">
                         <Link
-                          href="/services/agnikarma-treatment-in-kharadi"
+                          href="/treatments/agnikarma-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Agnikarma (Instant Pain Relief)
                         </Link>
                         <Link
-                          href="/services/jalaukavacharana-leech-therapy-in-kharadi"
+                          href="/treatments/jalaukavacharana-leech-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
                           Jalaukavacharana (Leech Therapy)
                         </Link>
                         <Link
-                          href="/services/takradhara-treatment-in-kharadi"
+                          href="/treatments/takradhara-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
                         >
@@ -712,7 +712,7 @@ export const Navbar: React.FC = () => {
 
                     <div className="pt-2 border-t border-[#145E3F]/10">
                       <Link
-                        href="/services"
+                        href="/treatments"
                         onClick={() => setMobileMenuOpen(false)}
                         className="block font-bold text-[#145E3F] text-center hover:text-[#48A547]"
                       >

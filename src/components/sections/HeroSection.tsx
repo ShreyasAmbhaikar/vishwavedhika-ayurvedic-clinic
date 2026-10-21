@@ -21,10 +21,10 @@ export const HeroSection: React.FC = () => {
     <section id="hero" className="pt-2 sm:pt-4 pb-12 sm:pb-16 lg:pb-20">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Hero Container with signature curved top-right corner.
-            Extended min-height ensures on the initial viewport (first screen),
-            the card extends beyond the bottom fold so the background below is not seen until scrolling. */}
+            Extended min-height ensures the hero section seamlessly fills the initial viewport,
+            matching Image Attachment 1 without revealing lower sections until scrolling. */}
         <div
-          className="relative overflow-hidden corner-curve-hero shadow-2xl p-6 sm:p-10 lg:p-14 xl:p-16 py-10 sm:py-14 lg:py-16 xl:py-20 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center"
+          className="relative overflow-hidden corner-curve-hero shadow-2xl p-6 sm:p-10 lg:p-14 xl:p-16 py-10 sm:py-12 lg:py-14 xl:py-16 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center"
           style={{
             backgroundImage: "url('/images/bg.webp')",
             backgroundPosition: "center center",
@@ -36,9 +36,9 @@ export const HeroSection: React.FC = () => {
           <div className="absolute inset-0 bg-[#145E3F]/92 pointer-events-none" />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-            {/* Left Column: Clinic Image Carousel (5 cols) - kept intact without the building photo */}
+            {/* Left Column: Clinic Image Carousel (5 cols) */}
             <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center">
-              <div className="relative w-full max-w-[480px] h-[400px] sm:h-[480px] lg:h-[520px] xl:h-[560px] corner-curve-slider overflow-hidden shadow-2xl bg-black/20">
+              <div className="relative w-full max-w-[480px] h-[380px] sm:h-[450px] lg:h-[490px] xl:h-[530px] corner-curve-slider overflow-hidden shadow-2xl bg-black/20">
                 {heroSlides.map((slide, index) => (
                   <div
                     key={slide.src}
@@ -77,25 +77,30 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Right Column: Hero Content & Expanded Typography (7 cols) */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6 lg:space-y-7">
+            <div className="lg:col-span-7 order-1 lg:order-2 space-y-5 lg:space-y-6">
               {/* Eyebrow */}
-              <p className="font-serif-heading text-xs sm:text-sm lg:text-base font-bold uppercase tracking-[1.5px] text-white/95">
-                Welcome to Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center
+              <p className="font-serif-heading text-xs sm:text-sm lg:text-base font-bold uppercase tracking-[1.5px] text-[#A4E88C]">
+                Authentic Ayurveda, Panchakarma &amp; Garbhsanskar In Kharadi, Pune
               </p>
 
-              {/* Main Heading H1 in El Messiri - Increased font size per user request */}
-              <h1 className="font-serif-heading text-3xl sm:text-5xl lg:text-[50px] xl:text-[56px] leading-[1.12] font-medium text-white capitalize tracking-[0.5px]">
-                Discover The Healing Power Of Ayurveda In Kharadi, Pune
+              {/* Main Heading H1 in El Messiri */}
+              <h1 className="font-serif-heading text-3xl sm:text-4xl lg:text-[42px] xl:text-[46px] leading-[1.16] font-medium text-white capitalize tracking-[0.5px]">
+                Best Ayurvedic Clinic In Kharadi Pune For Panchakarma &amp; Garbhsanskar
               </h1>
 
-              {/* Layout Below Heading matching Image Attachment 2: Side-by-Side Content & Medicines Photo */}
+              {/* Layout Below Heading: Side-by-Side Content & Medicines Photo matching Image 1 */}
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-5 lg:gap-6 items-end pt-2 sm:pt-3">
                 {/* Left Sub-column: Description, Button & Google Reviews */}
-                <div className="sm:col-span-7 space-y-4 sm:space-y-5">
-                  <p className="font-sans-body text-xs sm:text-[14px] lg:text-[15px] font-light text-white/90 leading-[23px]">
-                    Authentic Ayurvedic therapies guided by experienced
-                    practitioners for holistic wellness, root-cause diagnosis,
-                    and natural healing.
+                <div className="sm:col-span-7 space-y-4 sm:space-y-4.5">
+                  <p className="font-sans-body text-xs sm:text-[13.5px] lg:text-[14px] font-light text-white/95 leading-[22px]">
+                    Led by experienced Ayurvedic physician{" "}
+                    <strong className="font-semibold text-white">Dr. Manjiri Musmade</strong>, we provide
+                    root-cause healing through authentic{" "}
+                    <strong className="font-semibold text-white">Nadi Pariksha</strong> (pulse diagnosis),
+                    customized{" "}
+                    <strong className="font-semibold text-white">Panchakarma detox</strong>, and classical{" "}
+                    <strong className="font-semibold text-white">Garbh Sanskar</strong>. Located at{" "}
+                    <strong className="font-semibold text-white">Parmar Square near Zensar &amp; EON IT Park</strong>, Kharadi.
                   </p>
 
                   {/* Make Appointment Pill Button */}
@@ -104,12 +109,12 @@ export const HeroSection: React.FC = () => {
                       href="/contact-us"
                       className="inline-block px-7 sm:px-8 py-3.5 rounded-full bg-white text-[#145E3F] hover:bg-[#000000] hover:text-white text-sm sm:text-base font-semibold shadow-lg transition-all duration-200 capitalize transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
                     >
-                      Make Appointment
+                      Book Consultation
                     </Link>
                   </div>
 
                   {/* Google Reviews Badge with Google 'G' logo & Review Count */}
-                  <div className="pt-2 sm:pt-3 space-y-1">
+                  <div className="pt-2 space-y-1">
                     <div className="flex items-center gap-2 flex-wrap">
                       <div
                         className="flex items-center gap-0.5"
@@ -129,14 +134,14 @@ export const HeroSection: React.FC = () => {
                       </div>
                     </div>
                     <p className="text-xs sm:text-[13px] text-white/90 font-medium tracking-wide">
-                      20+ Google Reviews
+                      20+ Verified Patient Reviews on Google
                     </p>
                   </div>
                 </div>
 
                 {/* Right Sub-column: Prominent Medicines Photo with corner-curve-medicine */}
                 <div className="sm:col-span-5 flex justify-center sm:justify-end">
-                  <div className="relative w-full max-w-[280px] sm:max-w-none h-[170px] sm:h-[195px] lg:h-[215px] xl:h-[230px] corner-curve-medicine overflow-hidden shadow-2xl border-2 border-white/25 bg-[#0E422C]/40">
+                  <div className="relative w-full max-w-[280px] sm:max-w-none h-[165px] sm:h-[190px] lg:h-[210px] xl:h-[225px] corner-curve-medicine overflow-hidden shadow-2xl border-2 border-white/25 bg-[#0E422C]/40">
                     <Image
                       src="/images/medicines.webp"
                       alt="Authentic Ayurvedic Medicines & Therapies"
