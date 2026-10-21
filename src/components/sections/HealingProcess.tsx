@@ -51,6 +51,8 @@ export const HealingProcess: React.FC = () => {
                 src="/images/services/shirodhara-treatment-in-kharadi.webp"
                 alt="Ayurvedic Shirodhara Therapy and Healing Process"
                 fill
+                loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 460px"
                 className="object-cover corner-curve-slider hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>

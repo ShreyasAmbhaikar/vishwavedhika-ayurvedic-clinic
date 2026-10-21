@@ -112,6 +112,8 @@ export const ContactSection: React.FC = () => {
               src="/images/cta.webp"
               alt="Ayurvedic Mind & Body Wellness at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune"
               fill
+              loading="lazy"
+              sizes="(max-width: 1024px) 100vw, 500px"
               className="object-cover object-center"
             />
           </div>

@@ -54,7 +54,7 @@ const popularServices: PopularServiceTickerItem[] = [
 
 export const TreatmentTickerStrip: React.FC = () => {
   return (
-    <div
+    <section
       aria-label="Popular Ayurvedic Treatments and Specializations"
       className="relative w-full bg-[#D4EE5C] text-[#145E3F] border-y border-[#BBDC36] py-3 sm:py-3.5 overflow-hidden shadow-sm z-20 select-none"
     >
@@ -101,6 +101,6 @@ export const TreatmentTickerStrip: React.FC = () => {
           )
         )}
       </div>
-    </div>
+    </section>
   );
 };

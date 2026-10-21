@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-13 h-13 sm:w-16 sm:h-16 shrink-0 rounded-full overflow-hidden shadow-sm border-2 border-[#A4E88C]/35 bg-white">
                 <Image
-                  src="/images/logo-emblem.png"
+                  src="/images/logo-emblem.webp"
                   alt="Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center Logo"
                   fill
                   sizes="64px"

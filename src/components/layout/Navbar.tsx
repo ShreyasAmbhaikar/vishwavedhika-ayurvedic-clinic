@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
           <Link href="/" className="flex items-center gap-3 sm:gap-3.5 shrink-0 group">
             <div className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-[66px] lg:h-[66px] shrink-0 rounded-full overflow-hidden shadow-sm border-2 border-[#145E3F]/25 bg-white">
               <Image
-                src="/images/logo-emblem.png"
+                src="/images/logo-emblem.webp"
                 alt="Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center Logo"
                 fill
                 priority
@@ -449,7 +449,7 @@ export const Navbar: React.FC = () => {
             </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-[#145E3F] hover:bg-[#145E3F]/10 transition-colors"
+              className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-[#145E3F] hover:bg-[#145E3F]/10 transition-colors"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -490,7 +490,7 @@ export const Navbar: React.FC = () => {
                   >Treatments</Link>
                   <button
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                    className="p-1 text-[#145E3F]"
+                    className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-[#145E3F]"
                     aria-label="Toggle services categories"
                   >
                     <ChevronDown

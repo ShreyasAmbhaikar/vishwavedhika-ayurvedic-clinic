@@ -50,6 +50,8 @@ export const ComprehensiveTreatments: React.FC = () => {
                     src={treatment.image}
                     alt={treatment.title}
                     fill
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
                     className="object-cover corner-curve-image-tr group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
                 </div>

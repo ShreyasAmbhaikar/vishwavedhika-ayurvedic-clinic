@@ -1,7 +1,32 @@
 import type { Metadata, Viewport } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/data/siteData";
+
+const elMessiri = localFont({
+  src: [
+    {
+      path: "../../public/fonts/elmessiri.woff2",
+      weight: "400 700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-el-messiri",
+  display: "swap",
+});
+
+const plusJakartaSans = localFont({
+  src: [
+    {
+      path: "../../public/fonts/plusjakartasans.woff2",
+      weight: "200 800",
+      style: "normal",
+    },
+  ],
+  variable: "--font-plus-jakarta-sans",
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   themeColor: "#145E3F",
@@ -68,7 +93,7 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico" },
       { url: "/icon.png", type: "image/png" },
-      { url: "/images/logo-emblem.png", type: "image/png" },
+      { url: "/images/logo-emblem.webp", type: "image/webp" },
     ],
     shortcut: "/favicon.ico",
     apple: "/apple-icon.png",
@@ -81,14 +106,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${elMessiri.variable} ${plusJakartaSans.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-          rel="stylesheet"
-        />
         <JsonLd />
       </head>
       <body className="bg-[#FDF4E5] text-[#383838] min-h-screen antialiased selection:bg-[#145E3F] selection:text-white">

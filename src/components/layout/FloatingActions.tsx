@@ -73,7 +73,7 @@ export const FloatingActions: React.FC = () => {
         {showBackToTop && (
           <button
             onClick={scrollToTop}
-            className="flex items-center justify-center w-10 h-10 bg-white text-[#145E3F] rounded-full shadow-md hover:bg-[#FDF4E5] hover:scale-105 active:scale-95 transition-all duration-200 border border-[#E8DCC9]"
+            className="flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 bg-white text-[#145E3F] rounded-full shadow-md hover:bg-[#FDF4E5] hover:scale-105 active:scale-95 transition-all duration-200 border border-[#E8DCC9] cursor-pointer"
             aria-label="Back to top of page"
           >
             <ArrowUp size={18} />

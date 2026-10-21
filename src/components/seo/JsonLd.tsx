@@ -13,7 +13,7 @@ export const JsonLd: React.FC = () => {
       "Dr Manjiri Musmade Ayurvedic Clinic",
     ],
     url: "https://vishwavedhikaayurveda.com",
-    logo: "https://vishwavedhikaayurveda.com/images/logo-emblem.png",
+    logo: "https://vishwavedhikaayurveda.com/images/logo-emblem.webp",
     image: "https://vishwavedhikaayurveda.com/images/medicines.webp",
     description: siteConfig.description,
     telephone: siteConfig.phone1,

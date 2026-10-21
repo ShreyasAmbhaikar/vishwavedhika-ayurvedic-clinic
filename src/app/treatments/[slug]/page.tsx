@@ -13,11 +13,11 @@ import { servicesData } from "@/data/servicesData";
 import { siteConfig } from "@/data/siteData";
 
 const TIMELINE_STAGE_IMAGES = [
-  "/images/timeline/stage-1.jpg",
-  "/images/timeline/stage-2.jpg",
-  "/images/timeline/stage-3.jpg",
-  "/images/timeline/stage-4.jpg",
-  "/images/timeline/stage-5.jpg",
+  "/images/timeline/stage-1.webp",
+  "/images/timeline/stage-2.webp",
+  "/images/timeline/stage-3.webp",
+  "/images/timeline/stage-4.webp",
+  "/images/timeline/stage-5.webp",
 ];
 
 const BENEFIT_THEMES = [
@@ -28,7 +28,7 @@ const BENEFIT_THEMES = [
     badgeBg: "bg-[#E5F0E6] text-[#145E3F] border-[#145E3F]/15",
     numColor: "text-[#145E3F]",
     watermarkColor: "text-[#B6D6BA]/35 group-hover:text-[#145E3F]/20",
-    graphic: "/images/benefits/benefit-detox.png",
+    graphic: "/images/benefits/benefit-detox.webp",
     alt: "Complete Cellular Detoxification - Ayurvedic Mortar & Pestle",
   },
   {
@@ -38,7 +38,7 @@ const BENEFIT_THEMES = [
     badgeBg: "bg-[#FCECD8] text-[#B86B35] border-[#B86B35]/20",
     numColor: "text-[#B86B35]",
     watermarkColor: "text-[#E8CA9D]/35 group-hover:text-[#B86B35]/20",
-    graphic: "/images/benefits/benefit-digestive.png",
+    graphic: "/images/benefits/benefit-digestive.webp",
     alt: "Digestive Fire Re-ignition - Ayurvedic Gut Health",
   },
   {
@@ -48,7 +48,7 @@ const BENEFIT_THEMES = [
     badgeBg: "bg-[#E5F0E6] text-[#145E3F] border-[#145E3F]/15",
     numColor: "text-[#145E3F]",
     watermarkColor: "text-[#B6D6BA]/35 group-hover:text-[#145E3F]/20",
-    graphic: "/images/benefits/benefit-shield.png",
+    graphic: "/images/benefits/benefit-shield.webp",
     alt: "Chronic Ailment Reversal - Natural Immunity Shield",
   },
   {
@@ -58,7 +58,7 @@ const BENEFIT_THEMES = [
     badgeBg: "bg-[#E5F0E6] text-[#145E3F] border-[#145E3F]/15",
     numColor: "text-[#145E3F]",
     watermarkColor: "text-[#B6D6BA]/35 group-hover:text-[#145E3F]/20",
-    graphic: "/images/benefits/benefit-neuro.png",
+    graphic: "/images/benefits/benefit-neuro.webp",
     alt: "Mental Calm & Neuro Rejuvenation - Brain Wellness",
   },
 ];
@@ -317,9 +317,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                               {/* Botanical Leaf Watermark Graphic in Bottom Right */}
                               <div className="absolute -bottom-4 -right-4 w-32 sm:w-40 h-32 sm:h-40 pointer-events-none opacity-20 group-hover:opacity-35 transition-opacity select-none z-0">
                                 <Image
-                                  src="/images/botanical-branch-watermark.png"
+                                  src="/images/botanical-branch-watermark.webp"
                                   alt=""
                                   fill
+                                  loading="lazy"
+                                  sizes="160px"
                                   className="object-contain object-bottom-right"
                                 />
                               </div>

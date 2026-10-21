@@ -1,22 +1,5 @@
 @import "tailwindcss";
 
-/* 1. LOCAL FONT DECLARATIONS FOR 100% RELIABILITY & EXACT RENDERING */
-@font-face {
-  font-family: 'El Messiri';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/elmessiri.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('/fonts/plusjakartasans.woff2') format('woff2');
-}
-
 :root {
   --primary: #145E3F;
   --secondary: #FDF4E5;
@@ -35,7 +18,7 @@ html {
 body {
   background-color: #FDF4E5;
   color: #383838;
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  font-family: var(--font-plus-jakarta-sans), 'Plus Jakarta Sans', system-ui, sans-serif !important;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -45,12 +28,12 @@ body {
 h1, h2, h3, h4, h5, h6, 
 .font-serif-heading, 
 .elementor-heading-title {
-  font-family: 'El Messiri', Georgia, serif !important;
+  font-family: var(--font-el-messiri), 'El Messiri', Georgia, serif !important;
 }
 
 p, span, a, button, input, select, textarea, div, li, 
 .font-sans-body {
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-family: var(--font-plus-jakarta-sans), 'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 /* The Signature Ayurvedic Asymmetric Corner Radii */

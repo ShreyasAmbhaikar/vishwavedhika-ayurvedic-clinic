@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Sparkles, HeartHandshake, ShieldCheck } from "lucide-react";
 import { whyChooseUsFeatures } from "@/data/siteData";
 
@@ -19,17 +20,17 @@ export const WhyChooseUs: React.FC = () => {
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mahogany Dark Container with corner-curve-hero */}
-        <div
-          className="relative overflow-hidden corner-curve-hero shadow-2xl p-8 sm:p-12 lg:p-16 text-white"
-          style={{
-            backgroundImage: "url('/images/bg.webp')",
-            backgroundPosition: "center center",
-            backgroundSize: "cover",
-            backgroundColor: "#20100B",
-          }}
-        >
+        <div className="relative overflow-hidden corner-curve-hero shadow-2xl p-8 sm:p-12 lg:p-16 text-white bg-[#20100B]">
+          <Image
+            src="/images/bg.webp"
+            alt=""
+            fill
+            loading="lazy"
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            className="object-cover object-center pointer-events-none -z-0"
+          />
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[#20100B]/92 pointer-events-none" />
+          <div className="absolute inset-0 bg-[#20100B]/92 pointer-events-none z-[1]" />
 
           <div className="relative z-10 space-y-12">
             {/* Header */}

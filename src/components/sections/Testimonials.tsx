@@ -117,17 +117,17 @@ export const Testimonials: React.FC = () => {
                 <div className="flex items-center gap-2 shrink-0">
                   <button
                     onClick={prevReview}
-                    className="w-9 h-9 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
+                    className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous patient story"
                   >
-                    <ChevronLeft size={18} />
+                    <ChevronLeft size={20} />
                   </button>
                   <button
                     onClick={nextReview}
-                    className="w-9 h-9 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
+                    className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next patient story"
                   >
-                    <ChevronRight size={18} />
+                    <ChevronRight size={20} />
                   </button>
                 </div>
               </div>

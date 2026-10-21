@@ -23,17 +23,19 @@ export const HeroSection: React.FC = () => {
         {/* Main Hero Container with signature curved top-right corner.
             Extended min-height ensures the hero section seamlessly fills the initial viewport,
             matching Image Attachment 1 without revealing lower sections until scrolling. */}
-        <div
-          className="relative overflow-hidden corner-curve-hero shadow-2xl p-6 sm:p-10 lg:p-14 xl:p-16 py-10 sm:py-12 lg:py-14 xl:py-16 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center"
-          style={{
-            backgroundImage: "url('/images/bg.webp')",
-            backgroundPosition: "center center",
-            backgroundSize: "cover",
-            backgroundColor: "#145E3F",
-          }}
-        >
+        <div className="relative overflow-hidden corner-curve-hero shadow-2xl p-6 sm:p-10 lg:p-14 xl:p-16 py-10 sm:py-12 lg:py-14 xl:py-16 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center bg-[#145E3F]">
+          {/* LCP Discoverable High-Priority Background Image */}
+          <Image
+            src="/images/bg.webp"
+            alt=""
+            fill
+            priority
+            fetchPriority="high"
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="object-cover object-center pointer-events-none -z-0"
+          />
           {/* 92% Forest Green Overlay */}
-          <div className="absolute inset-0 bg-[#145E3F]/92 pointer-events-none" />
+          <div className="absolute inset-0 bg-[#145E3F]/92 pointer-events-none z-[1]" />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             {/* Left Column: Clinic Image Carousel (5 cols) */}
@@ -53,24 +55,30 @@ export const HeroSection: React.FC = () => {
                       alt={slide.alt}
                       fill
                       priority={index === 0}
+                      fetchPriority={index === 0 ? "high" : "auto"}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 480px, 480px"
                       className="object-cover corner-curve-slider"
                     />
                   </div>
                 ))}
 
-                {/* Subtle Slide Indicators */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center space-x-1.5">
+                {/* Subtle Accessible Slide Indicators */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center space-x-1">
                   {heroSlides.map((_, idx) => (
                     <button
                       key={idx}
                       onClick={() => setCurrentSlide(idx)}
-                      className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
-                        idx === currentSlide
-                          ? "w-6 bg-[#48A547]"
-                          : "w-2 bg-white/50"
-                      }`}
+                      className="p-2.5 cursor-pointer flex items-center justify-center min-w-[44px] min-h-[44px] touch-manipulation"
                       aria-label={`Go to slide ${idx + 1}`}
-                    />
+                    >
+                      <span
+                        className={`h-1.5 rounded-full transition-all duration-300 ${
+                          idx === currentSlide
+                            ? "w-6 bg-[#48A547]"
+                            : "w-2 bg-white/60 hover:bg-white"
+                        }`}
+                      />
+                    </button>
                   ))}
                 </div>
               </div>
@@ -117,8 +125,9 @@ export const HeroSection: React.FC = () => {
                   <div className="pt-2 space-y-1">
                     <div className="flex items-center gap-2 flex-wrap">
                       <div
-                        className="flex items-center gap-0.5"
+                        role="img"
                         aria-label="5 out of 5 stars"
+                        className="flex items-center gap-0.5"
                       >
                         {Array.from({ length: 5 }).map((_, i) => (
                           <Star
@@ -147,7 +156,8 @@ export const HeroSection: React.FC = () => {
                       alt="Authentic Ayurvedic Medicines & Therapies"
                       fill
                       priority
-                      sizes="(max-width: 640px) 100vw, 300px"
+                      fetchPriority="high"
+                      sizes="(max-width: 640px) 280px, 300px"
                       className="object-cover corner-curve-medicine hover:scale-105 transition-transform duration-700 ease-out"
                     />
                   </div>

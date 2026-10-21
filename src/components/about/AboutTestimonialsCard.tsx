@@ -27,7 +27,7 @@ export const AboutTestimonialsCard: React.FC = () => {
     <div className="bg-white rounded-[24px] p-7 sm:p-9 shadow-lg border border-[#145E3F]/10 transition-all duration-300">
       {/* 5 Golden Stars & Google Rating Badge */}
       <div className="flex items-center justify-between gap-3 mb-5 flex-wrap">
-        <div className="flex items-center gap-1.5" aria-label="5 star rating">
+        <div role="img" aria-label="5 star rating" className="flex items-center gap-1.5">
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
@@ -52,9 +52,9 @@ export const AboutTestimonialsCard: React.FC = () => {
         <button
           onClick={handlePrev}
           aria-label="Previous testimonial"
-          className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-[#145E3F] hover:bg-[#145E3F] hover:text-white transition-colors"
+          className="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-[#145E3F] hover:bg-[#145E3F] hover:text-white transition-colors cursor-pointer"
         >
-          <ChevronLeft size={16} />
+          <ChevronLeft size={18} />
         </button>
 
         <div className="flex items-center gap-3.5">
@@ -90,9 +90,9 @@ export const AboutTestimonialsCard: React.FC = () => {
         <button
           onClick={handleNext}
           aria-label="Next testimonial"
-          className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-[#145E3F] hover:bg-[#145E3F] hover:text-white transition-colors"
+          className="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-[#145E3F] hover:bg-[#145E3F] hover:text-white transition-colors cursor-pointer"
         >
-          <ChevronRight size={16} />
+          <ChevronRight size={18} />
         </button>
       </div>
     </div>
