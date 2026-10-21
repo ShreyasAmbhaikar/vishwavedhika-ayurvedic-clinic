@@ -173,9 +173,11 @@ export default function AboutUsPage() {
           {/* Botanical Leaf Watermark: Top-Right Corner */}
           <div className="absolute -top-12 -right-8 w-48 sm:w-56 h-48 sm:h-56 pointer-events-none select-none opacity-30 rotate-180 z-0">
             <Image
-              src="/images/botanical-branch-watermark.png"
+              src="/images/botanical-branch-watermark.webp"
               alt=""
               fill
+              loading="lazy"
+              sizes="224px"
               className="object-contain"
             />
           </div>
@@ -183,9 +185,11 @@ export default function AboutUsPage() {
           {/* Botanical Leaf Watermark: Middle-Left Margin */}
           <div className="absolute -bottom-16 -left-12 w-48 sm:w-56 h-48 sm:h-56 pointer-events-none select-none opacity-25 -rotate-45 z-0">
             <Image
-              src="/images/botanical-branch-watermark.png"
+              src="/images/botanical-branch-watermark.webp"
               alt=""
               fill
+              loading="lazy"
+              sizes="224px"
               className="object-contain"
             />
           </div>
@@ -305,9 +309,11 @@ export default function AboutUsPage() {
           {/* Botanical Leaf Watermark: Bottom-Left Corner */}
           <div className="absolute -bottom-10 -left-10 w-52 sm:w-64 h-52 sm:h-64 pointer-events-none select-none opacity-30 z-0">
             <Image
-              src="/images/botanical-branch-watermark.png"
+              src="/images/botanical-branch-watermark.webp"
               alt=""
               fill
+              loading="lazy"
+              sizes="256px"
               className="object-contain"
             />
           </div>

@@ -440,13 +440,7 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="flex items-center gap-2 xl:hidden">
-            <Link
-              href="/contact-us"
-              className="px-3.5 py-2.5 min-h-[42px] flex items-center justify-center rounded-full bg-[#145E3F] text-white text-xs font-semibold sm:hidden"
-            >
-              Book
-            </Link>
+          <div className="flex items-center xl:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-[#145E3F] hover:bg-[#145E3F]/10 transition-colors"

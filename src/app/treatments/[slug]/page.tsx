@@ -192,6 +192,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {/* Explicit LCP Image Preload Hint for Browsers */}
+      <link rel="preload" as="image" href={service.image} fetchPriority="high" />
 
       {/* Sticky Navigation */}
       <Navbar />
@@ -207,7 +209,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </span>
               </div>
             )}
-            <h1 className="font-serif-heading text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#16231B] tracking-tight mb-1.5">
+            <h1 className="font-serif-heading text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#16231B] tracking-tight mb-1.5 leading-[1.2]">
               {mainHeading}
             </h1>
             {subHeadingTitle && (
@@ -258,13 +260,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 {/* SECTION 1: Featured Image & What is [Service Name]? */}
                 <section aria-labelledby="section-intro-heading" className="mb-10">
                   {/* Featured Service Image with Signature Arched Top-Right Corner */}
-                  <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[460px] rounded-tl-[20px] rounded-tr-[80px] sm:rounded-tr-[110px] rounded-br-[20px] rounded-bl-[20px] overflow-hidden shadow-lg border border-[#145E3F]/10 mb-6">
+                  <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[460px] rounded-tl-[20px] rounded-tr-[80px] sm:rounded-tr-[110px] rounded-br-[20px] rounded-bl-[20px] overflow-hidden shadow-lg border border-[#145E3F]/10 mb-6 bg-[#145E3F]/5">
                     <Image
                       src={service.image}
                       alt={service.imageAlt}
                       fill
                       priority
-                      sizes="(max-width: 1024px) 100vw, 66vw"
+                      fetchPriority="high"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 760px"
                       className="object-cover object-center"
                     />
                   </div>
