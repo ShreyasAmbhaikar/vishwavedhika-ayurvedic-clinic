@@ -79,9 +79,9 @@ export const ServiceSidebarForm: React.FC<ServiceSidebarFormProps> = ({
           <div className="w-12 h-12 rounded-full bg-[#E2EDE5] text-[#145E3F] flex items-center justify-center mx-auto">
             <CheckCircle2 size={28} />
           </div>
-          <h4 className="font-serif-heading text-lg font-bold text-[#145E3F]">
+          <p className="font-serif-heading text-lg font-bold text-[#145E3F]">
             Consultation Requested!
-          </h4>
+          </p>
           <p className="text-xs text-gray-600">
             Thank you, {fullName}. Our medical team will contact you shortly regarding{" "}
             <strong>{serviceName}</strong>.

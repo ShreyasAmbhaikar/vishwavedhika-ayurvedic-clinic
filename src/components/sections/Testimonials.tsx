@@ -56,7 +56,7 @@ export const Testimonials: React.FC = () => {
               <div className="space-y-4 overflow-hidden">
                 {/* 5-Star Rating & Google Verified Badge */}
                 <div className="flex items-center justify-between gap-3 flex-wrap">
-                  <div className="flex items-center gap-1.5">
+                  <div className="flex items-center gap-1.5" aria-hidden="true">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star
                         key={i}
@@ -65,6 +65,7 @@ export const Testimonials: React.FC = () => {
                       />
                     ))}
                   </div>
+                  <span className="sr-only">5 star rating</span>
                   <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-[#E0D5C1] text-xs font-bold text-[#145E3F] shadow-xs">
                     <GoogleGIcon className="w-3.5 h-3.5 shrink-0" />
                     <span>Google Review</span>
@@ -93,9 +94,9 @@ export const Testimonials: React.FC = () => {
                   )}
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <h4 className="font-serif-heading text-lg sm:text-xl font-bold text-[#145E3F]">
+                      <h3 className="font-serif-heading text-lg sm:text-xl font-bold text-[#145E3F]">
                         {current.name}
-                      </h4>
+                      </h3>
                       {current.isLocalGuide && (
                         <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#E8F5E9] text-[#2E7D32] border border-[#A5D6A7]">
                           <svg className="w-3.5 h-3.5 fill-[#F57C00] text-[#F57C00]" viewBox="0 0 24 24">

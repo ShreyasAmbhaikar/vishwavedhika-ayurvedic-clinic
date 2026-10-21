@@ -62,13 +62,13 @@ export const HeroSection: React.FC = () => {
                   </div>
                 ))}
 
-                {/* Subtle Accessible Slide Indicators */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center space-x-1">
+                {/* Subtle Accessible Slide Indicators (40x40 touch target with 8px gap) */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
                   {heroSlides.map((_, idx) => (
                     <button
                       key={idx}
                       onClick={() => setCurrentSlide(idx)}
-                      className="p-2.5 cursor-pointer flex items-center justify-center min-w-[44px] min-h-[44px] touch-manipulation"
+                      className="w-10 h-10 p-2 cursor-pointer flex items-center justify-center rounded-full touch-manipulation focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
                       aria-label={`Go to slide ${idx + 1}`}
                     >
                       <span
@@ -124,11 +124,7 @@ export const HeroSection: React.FC = () => {
                   {/* Google Reviews Badge with Google 'G' logo & Review Count */}
                   <div className="pt-2 space-y-1">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <div
-                        role="img"
-                        aria-label="5 out of 5 stars"
-                        className="flex items-center gap-0.5"
-                      >
+                      <div className="flex items-center gap-0.5" aria-hidden="true">
                         {Array.from({ length: 5 }).map((_, i) => (
                           <Star
                             key={i}
@@ -137,6 +133,7 @@ export const HeroSection: React.FC = () => {
                           />
                         ))}
                       </div>
+                      <span className="sr-only">5 out of 5 stars</span>
                       <div className="flex items-center gap-1.5 font-bold text-white text-sm sm:text-base">
                         <GoogleGIcon className="w-4 h-4 shrink-0 drop-shadow-sm" />
                         <span>5.0</span>
@@ -149,8 +146,8 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* Right Sub-column: Prominent Medicines Photo with corner-curve-medicine */}
-                <div className="sm:col-span-5 flex justify-center sm:justify-end">
-                  <div className="relative w-full max-w-[280px] sm:max-w-none h-[165px] sm:h-[190px] lg:h-[210px] xl:h-[225px] corner-curve-medicine overflow-hidden shadow-2xl border-2 border-white/25 bg-[#0E422C]/40">
+                <div className="sm:col-span-5 flex justify-center sm:justify-end min-h-[165px] sm:min-h-0">
+                  <div className="relative w-[280px] sm:w-full max-w-[280px] sm:max-w-none h-[165px] sm:h-[190px] lg:h-[210px] xl:h-[225px] shrink-0 corner-curve-medicine overflow-hidden shadow-2xl border-2 border-white/25 bg-[#0E422C]/40">
                     <Image
                       src="/images/medicines.webp"
                       alt="Authentic Ayurvedic Medicines & Therapies"

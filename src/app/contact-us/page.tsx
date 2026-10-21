@@ -123,9 +123,9 @@ export default function ContactUsPage() {
                   <MapPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-1.5">
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-1.5">
                     Locate Us
-                  </h3>
+                  </h2>
                   <p className="text-xs sm:text-[13px] text-[#555555] font-normal leading-relaxed group-hover:text-[#16231B] transition-colors">
                     Flat no.104, IT Park, Parmar Square, near Zensar, above
                     redchilli hotel, Kharadi, Pune, Maharashtra 411014
@@ -139,9 +139,9 @@ export default function ContactUsPage() {
                   <Clock size={20} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
                     Opening Hours
-                  </h3>
+                  </h2>
                   <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 text-xs sm:text-[13px] leading-relaxed">
                     <span className="text-[#666666] font-medium whitespace-nowrap">
                       Mon – Sat:
@@ -165,9 +165,9 @@ export default function ContactUsPage() {
                   <Phone size={20} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
                     Call Us
-                  </h3>
+                  </h2>
                   <div className="space-y-1">
                     <a
                       href={`tel:${siteConfig.phone1}`}

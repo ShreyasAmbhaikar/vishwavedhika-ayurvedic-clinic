@@ -27,7 +27,7 @@ export const AboutTestimonialsCard: React.FC = () => {
     <div className="bg-white rounded-[24px] p-7 sm:p-9 shadow-lg border border-[#145E3F]/10 transition-all duration-300">
       {/* 5 Golden Stars & Google Rating Badge */}
       <div className="flex items-center justify-between gap-3 mb-5 flex-wrap">
-        <div role="img" aria-label="5 star rating" className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1.5" aria-hidden="true">
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
@@ -36,6 +36,7 @@ export const AboutTestimonialsCard: React.FC = () => {
             />
           ))}
         </div>
+        <span className="sr-only">5 star rating</span>
         <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F4FAF6] border border-[#CDE9D4] text-xs font-bold text-[#145E3F] shadow-xs">
           <GoogleGIcon className="w-3.5 h-3.5 shrink-0" />
           <span>5.0 on Google</span>
@@ -70,9 +71,9 @@ export const AboutTestimonialsCard: React.FC = () => {
             />
           )}
           <div className="text-left">
-            <h4 className="font-serif-heading text-base sm:text-lg font-bold text-[#145E3F] leading-tight">
+            <h3 className="font-serif-heading text-base sm:text-lg font-bold text-[#145E3F] leading-tight">
               {current.name}
-            </h4>
+            </h3>
             <div className="flex items-center gap-2 mt-1 flex-wrap">
               {current.isLocalGuide && (
                 <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#D97706] bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">

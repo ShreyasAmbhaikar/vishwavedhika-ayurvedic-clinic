@@ -443,7 +443,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-2 xl:hidden">
             <Link
               href="/contact-us"
-              className="px-3.5 py-1.5 rounded-full bg-[#145E3F] text-white text-xs font-semibold sm:hidden"
+              className="px-3.5 py-2.5 min-h-[42px] flex items-center justify-center rounded-full bg-[#145E3F] text-white text-xs font-semibold sm:hidden"
             >
               Book
             </Link>
