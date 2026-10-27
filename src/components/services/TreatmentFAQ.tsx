@@ -18,7 +18,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "How do I know if this treatment is suitable for my condition?",
     answer:
-      "Dr. Manjiri Musmade conducts a thorough initial examination, including traditional Ayurvedic pulse diagnosis (Nadi Pariksha) and Prakriti evaluation, to tailor the therapies specifically to your bodily constitution and health needs.",
+      "Dr. Manjiri Musmade / Lawande conducts a thorough initial examination, including traditional Ayurvedic pulse diagnosis (Nadi Pariksha) and Prakriti evaluation, to tailor the therapies specifically to your bodily constitution and health needs.",
   },
   {
     question: "How many sessions are typically required to see results?",
@@ -33,12 +33,12 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "What are the clinic visiting hours in Kharadi, Pune?",
     answer:
-      "Our clinic is open Monday to Saturday from 11:30 AM to 5:30 PM, and on Sundays from 11:30 AM to 2:00 PM. We are conveniently located at Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune.",
+      "Our clinic is open Monday to Saturday from 11:30 AM to 5:30 PM (Sundays closed). We are conveniently located at Flat no.104, IT Park, Parmar Square, near Zensar, above Hotel Kwality, Kharadi, Pune.",
   },
   {
     question: "How can I book an appointment or consult with the doctor?",
     answer:
-      "You can call us directly at 096049 95998 or 097302 93777, message us on WhatsApp, or visit the clinic during operational hours. Prior appointment booking ensures minimal waiting time.",
+      "You can call us directly at 076203 41397, 096049 95998, or 097302 93777, message us on WhatsApp (+91 97302 93777), or visit the clinic during operational hours. Prior appointment booking ensures minimal waiting time.",
   },
 ];
 

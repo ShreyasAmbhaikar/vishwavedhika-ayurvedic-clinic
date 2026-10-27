@@ -19,6 +19,10 @@ const popularServices: PopularServiceTickerItem[] = [
     href: "/treatments/garbha-sanskar-in-kharadi",
   },
   {
+    label: "Suvarna Prashan (Child Immunity)",
+    href: "/treatments/suvarna-prashan-in-kharadi",
+  },
+  {
     label: "Kati Basti (Spine & Sciatica)",
     href: "/treatments/kati-basti-treatment-in-kharadi",
   },

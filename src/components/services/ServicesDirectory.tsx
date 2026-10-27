@@ -16,7 +16,7 @@ const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   "Panchakarma & Detoxification":
     "Root-cause 5-fold classical cellular bio-cleansing therapies designed to eradicate deep-seated Ama toxins and restore metabolic equilibrium.",
   "Fertility & Women's Health":
-    "Sacred Vedic antenatal Garbha Sanskar, specialized Uttar Basti, and holistic Ayurvedic care for PCOD/PCOS and natural conception.",
+    "Sacred Vedic antenatal Garbha Sanskar, Suvarna Prashan pediatric immunity drops, specialized Uttar Basti, and holistic Ayurvedic care for PCOD/PCOS and natural conception.",
   "Stress, Neuro & Head Care":
     "Targeted Ayurvedic neurological rehabilitation, mind-calming Shirodhara, ENT Nasya therapy, and neuro-motor restoration.",
   "Skin, Hair & Blood Purification":

@@ -15,14 +15,14 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export const metadata: Metadata = {
   title: "Best Ayurvedic Clinic in Kharadi, Pune | Shri Vishwavedhika",
   description:
-    "Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune offers authentic Panchakarma, Garbha Sanskar & spine joint pain care by Dr. Manjiri Musmade (BAMS).",
+    "Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune offers authentic Panchakarma, Garbha Sanskar & spine joint pain care by Dr. Manjiri Musmade / Lawande (BAMS).",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Best Ayurvedic Clinic in Kharadi, Pune | Shri Vishwavedhika",
     description:
-      "Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune offers authentic Panchakarma, Garbha Sanskar & spine joint pain care by Dr. Manjiri Musmade (BAMS).",
+      "Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune offers authentic Panchakarma, Garbha Sanskar & spine joint pain care by Dr. Manjiri Musmade / Lawande (BAMS).",
     url: "https://vishwavedhikaayurveda.com",
     siteName: "Shri Vishwavedhika Ayurvedic Clinic",
   },

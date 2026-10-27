@@ -11,14 +11,14 @@ import { siteConfig } from "@/data/siteData";
 export const metadata: Metadata = {
   title: "Ayurvedic Treatments in Kharadi Pune | Shri Vishwavedhika",
   description:
-    "Explore 20 authentic Ayurvedic & Panchakarma treatments in Kharadi, Pune: Kati Basti, Shirodhara, Garbha Sanskar & detox care at Shri Vishwavedhika Clinic.",
+    "Explore 21 authentic Ayurvedic & Panchakarma treatments in Kharadi, Pune: Kati Basti, Shirodhara, Garbha Sanskar, Suvarna Prashan & detox care at Shri Vishwavedhika Clinic.",
   alternates: {
     canonical: "/treatments",
   },
   openGraph: {
     title: "Ayurvedic Treatments in Kharadi Pune | Shri Vishwavedhika",
     description:
-      "Explore 20 authentic Ayurvedic & Panchakarma treatments in Kharadi, Pune: Kati Basti, Shirodhara, Garbha Sanskar & detox care at Shri Vishwavedhika Clinic.",
+      "Explore 21 authentic Ayurvedic & Panchakarma treatments in Kharadi, Pune: Kati Basti, Shirodhara, Garbha Sanskar, Suvarna Prashan & detox care at Shri Vishwavedhika Clinic.",
     url: "https://vishwavedhikaayurveda.com/treatments",
     siteName: siteConfig.name,
   },

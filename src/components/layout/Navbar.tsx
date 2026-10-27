@@ -132,7 +132,7 @@ export const Navbar: React.FC = () => {
                             Ayurvedic Treatments by Category
                           </span>
                           <span className="hidden sm:inline-block text-[11px] text-gray-500 font-normal ml-0.5">
-                            (20 Specialized Therapies)
+                            (21 Specialized Therapies)
                           </span>
                         </div>
                         <Link
@@ -319,6 +319,14 @@ export const Navbar: React.FC = () => {
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Garbha Sanskar</div>
                                 <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Vedic antenatal classes</span>
+                              </Link>
+                              <Link
+                                href="/treatments/suvarna-prashan-in-kharadi"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Suvarna Prashan</div>
+                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Child immunity &amp; memory drops</span>
                               </Link>
                               <Link
                                 href="/treatments/infertility-treatment-in-kharadi"
@@ -599,6 +607,13 @@ export const Navbar: React.FC = () => {
                           Garbha Sanskar Program
                         </Link>
                         <Link
+                          href="/treatments/suvarna-prashan-in-kharadi"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                        >
+                          Suvarna Prashan (Child Immunity)
+                        </Link>
+                        <Link
                           href="/treatments/infertility-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
                           className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
@@ -710,7 +725,7 @@ export const Navbar: React.FC = () => {
                         onClick={() => setMobileMenuOpen(false)}
                         className="block font-bold text-[#145E3F] text-center hover:text-[#48A547]"
                       >
-                        View All 20 Treatments &rarr;
+                        View All 21 Treatments &rarr;
                       </Link>
                     </div>
                   </div>

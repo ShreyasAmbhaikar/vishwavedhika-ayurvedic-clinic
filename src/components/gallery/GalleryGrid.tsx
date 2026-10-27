@@ -16,13 +16,13 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "g1",
     src: "/images/services/panchakarma-treatment-in-kharadi.webp",
-    alt: "Authentic Panchakarma five-fold detoxification therapies administered by Dr. Manjiri Musmade at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    alt: "Authentic five-fold Panchakarma therapies (Vamana, Virechana, Basti, Nasya, Raktamokshan) administered at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
     title: "Panchakarma Five-Fold Detoxification",
   },
   {
     id: "g2",
     src: "/images/services/shirodhara-treatment-in-kharadi.webp",
-    alt: "Authentic classical Shirodhara medicated oil flow therapy for stress insomnia and migraine by Dr. Manjiri Musmade at Shri Vishwavedhika Kharadi Pune",
+    alt: "Authentic classical Shirodhara medicated oil flow therapy for stress insomnia and migraine by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Kharadi Pune",
     title: "Shirodhara Stress & Sleep Care",
   },
   {
@@ -34,7 +34,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "g4",
     src: "/images/services/infertility-treatment-in-kharadi.webp",
-    alt: "Ayurvedic fertility and PCOD clinical consultation with Dr. Manjiri Musmade at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    alt: "Ayurvedic fertility and PCOD clinical consultation with Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
     title: "Fertility & PCOD Consultation",
   },
 
@@ -54,13 +54,13 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "g7",
     src: "/images/services/agnikarma-treatment-in-kharadi.webp",
-    alt: "Sterile Agnikarma thermal micro-cautery therapy for instant musculoskeletal pain relief under Dr. Manjiri Musmade at Shri Vishwavedhika Clinic Kharadi Pune",
+    alt: "Sterile Agnikarma thermal micro-cautery therapy for instant musculoskeletal pain relief under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
     title: "Agnikarma Thermal Pain Management",
   },
   {
     id: "g8",
     src: "/images/services/stroke-rehabilitation-in-kharadi.webp",
-    alt: "Ayurvedic stroke rehabilitation and neuro motor recovery under Dr. Manjiri Musmade at Shri Vishwavedhika Clinic Kharadi Pune",
+    alt: "Ayurvedic stroke rehabilitation and neuro motor recovery under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
     title: "Stroke Neurological Recovery",
   },
 
@@ -74,7 +74,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "g10",
     src: "/images/services/garbha-sanskar-in-kharadi.webp",
-    alt: "Garbha Sanskar prenatal herbal therapy and Ayurvedic pregnancy care under Dr. Manjiri Musmade at Shri Vishwavedhika Clinic Kharadi Pune",
+    alt: "Garbha Sanskar prenatal herbal therapy and Ayurvedic pregnancy care under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
     title: "Garbha Sanskar Prenatal Care",
   },
   {
@@ -86,7 +86,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "g12",
     src: "/images/services/nasya-therapy-in-kharadi.webp",
-    alt: "Classical Ayurvedic Nasya nasal therapy for migraine sinusitis and cervical care by Dr. Manjiri Musmade at Shri Vishwavedhika Kharadi Pune",
+    alt: "Classical Ayurvedic Nasya nasal therapy for migraine sinusitis and cervical care by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Kharadi Pune",
     title: "Nasya Cranial & ENT Care",
   },
 
@@ -112,7 +112,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "g16",
     src: "/images/services/virechana-therapy-in-kharadi.webp",
-    alt: "Virechana herbal purgation therapy for Pitta detox and liver cleanse under Dr. Manjiri Musmade at Kharadi Ayurvedic Clinic",
+    alt: "Virechana herbal purgation therapy for Pitta detox and liver cleanse under Dr. Manjiri Musmade / Lawande at Kharadi Ayurvedic Clinic",
     title: "Virechana Herbal Purgation Therapy",
   },
 
@@ -120,7 +120,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "g17",
     src: "/images/services/uttar-basti-treatment-in-kharadi.webp",
-    alt: "Authentic Uttar Basti therapy administered by Dr. Manjiri Musmade for tubal blockage and natural fertility at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    alt: "Authentic Uttar Basti therapy administered by Dr. Manjiri Musmade / Lawande for tubal blockage and natural fertility at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
     title: "Uttar Basti Uterine & Tubal Care",
   },
   {

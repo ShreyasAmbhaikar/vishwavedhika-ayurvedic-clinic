@@ -14,7 +14,7 @@ const faqData: FaqItem[] = [
   {
     question: "Which health conditions are treated at Shri Vishwavedhika Ayurvedic Clinic in Kharadi?",
     answer:
-      "Under Dr. Manjiri Musmade's clinical guidance, we specialize in chronic spine & back pain (sciatica, lumbar slip disc, cervical spondylosis), joint arthritis, Panchakarma detoxification, Garbha Sanskar & infertility management (PCOD/PCOS), stroke & neurological rehabilitation, chronic migraines, digestive disorders, and skin ailments.",
+      "Under Dr. Manjiri Musmade / Lawande's clinical guidance, we specialize in chronic spine & back pain (sciatica, lumbar slip disc, cervical spondylosis), joint arthritis, Panchakarma detoxification, Garbha Sanskar & infertility management (PCOD/PCOS), stroke & neurological rehabilitation, chronic migraines, digestive disorders, and skin ailments.",
   },
   {
     question: "What is Panchakarma detoxification and how many days does it take?",
@@ -24,17 +24,17 @@ const faqData: FaqItem[] = [
   {
     question: "Do you provide Garbhsanskar and Infertility treatments in Kharadi, Pune?",
     answer:
-      "Yes. Dr. Manjiri Musmade is a certified specialist in Garbha Sanskar and Ayurvedic infertility care. We provide classical Beej Shuddhi (pre-conception detox), natural ovulation and hormonal balancing (Uttar Basti), and trimester-wise antenatal care, mantra meditation, and sattvic nutritional guidance for expectant parents.",
+      "Yes. Dr. Manjiri Musmade / Lawande is a certified specialist in Garbha Sanskar and Ayurvedic infertility care. We provide classical Beej Shuddhi (pre-conception detox), natural ovulation and hormonal balancing (Uttar Basti), and trimester-wise antenatal care, mantra meditation, and sattvic nutritional guidance for expectant parents.",
   },
   {
     question: "Where is the clinic located in Kharadi and what are the consultation hours?",
     answer:
-      "We are conveniently located at Flat no.104, IT Park, Parmar Square, near Zensar, above Red Chilli Hotel, Kharadi, Pune 411014 — easily accessible from EON IT Park, Chandan Nagar, Viman Nagar, and Wadgaon Sheri. Visiting hours are Monday to Saturday from 11:30 AM to 5:30 PM, and Sundays from 11:30 AM to 2:00 PM.",
+      "We are conveniently located at Flat no.104, IT Park, Parmar Square, near Zensar, above Hotel Kwality, Kharadi, Pune 411014 — easily accessible from EON IT Park, Chandan Nagar, Viman Nagar, and Wadgaon Sheri. Visiting hours are Monday to Saturday from 11:30 AM to 5:30 PM (Sundays closed).",
   },
   {
-    question: "How can I book an appointment with Dr. Manjiri Musmade?",
+    question: "How can I book an appointment with Dr. Manjiri Musmade / Lawande?",
     answer:
-      "You can book directly by calling 096049 95998 or 097302 93777, via WhatsApp (+91 96049 95998), or by clicking the 'Book Consultation' button on this website. Prior appointments ensure dedicated, unhurried consultation time with zero waiting.",
+      "You can book directly by calling 076203 41397, 096049 95998, or 097302 93777, via WhatsApp (+91 97302 93777), or by clicking the 'Book Consultation' button on this website. Prior appointments ensure dedicated, unhurried consultation time with zero waiting.",
   },
   {
     question: "Are Ayurvedic medicines and therapies safe without side effects?",

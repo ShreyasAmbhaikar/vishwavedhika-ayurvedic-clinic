@@ -102,7 +102,7 @@ export const HeroSection: React.FC = () => {
                 <div className="sm:col-span-7 space-y-4 sm:space-y-4.5">
                   <p className="font-sans-body text-xs sm:text-[13.5px] lg:text-[14px] font-light text-white/95 leading-[22px]">
                     Led by experienced Ayurvedic physician{" "}
-                    <strong className="font-semibold text-white">Dr. Manjiri Musmade</strong>, we provide
+                    <strong className="font-semibold text-white">Dr. Manjiri Musmade / Lawande</strong>, we provide
                     root-cause healing through authentic{" "}
                     <strong className="font-semibold text-white">Nadi Pariksha</strong> (pulse diagnosis),
                     customized{" "}

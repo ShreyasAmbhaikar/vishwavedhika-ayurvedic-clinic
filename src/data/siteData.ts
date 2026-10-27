@@ -45,9 +45,9 @@ export const siteConfig = {
   name: "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre",
   shortName: "Shri Vishwavedhika Ayurvedic Clinic",
   address:
-    "Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014",
+    "Flat no.104, IT Park, Parmar Square, near Zensar, above Hotel Kwality, Kharadi, Pune, Maharashtra 411014",
   streetAddress:
-    "Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel",
+    "Flat no.104, IT Park, Parmar Square, near Zensar, above Hotel Kwality",
   area: "Kharadi",
   city: "Pune",
   state: "Maharashtra",
@@ -61,12 +61,13 @@ export const siteConfig = {
     "https://www.google.com/maps/place/Vishwavedhika+Ayurvedic+Clinic+%26+Garbhsanskar,+Panchkarma+centre/@18.5503972,73.9390361,826m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2c3d9b36eaaab:0xe0ae9e237d066d5!8m2!3d18.5503972!4d73.9390361!16s%2Fg%2F11f5dfz3_m?hl=en&entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
   tagline: "Authentic Ayurveda, Panchakarma & Garbhsanskar in Kharadi, Pune",
   description:
-    "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre offers personalized, authentic Ayurvedic healing, classical Panchakarma therapies, Garbha Sanskar, and non-surgical pain relief in Kharadi, Pune under expert Ayurvedic physician Dr. Manjiri Musmade.",
-  phone1: "096049 95998",
-  phone2: "097302 93777",
-  whatsapp: "+919604995998",
+    "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre offers personalized, authentic Ayurvedic healing, classical Panchakarma therapies, Garbha Sanskar, and non-surgical pain relief in Kharadi, Pune under expert Ayurvedic physician Dr. Manjiri Musmade / Lawande.",
+  phone1: "076203 41397",
+  phone2: "096049 95998",
+  phone3: "097302 93777",
+  whatsapp: "+919730293777",
   email: "care@vishwavedhika.com",
-  workingHours: "Mon - Sat: 11:30 AM - 5:30 PM | Sun: 11:30 AM - 2:00 PM",
+  workingHours: "Mon - Sat: 11:30 AM - 5:30 PM | Sun: Closed",
   hoursDetail: {
     monday: "11:30–17:30",
     tuesday: "11:30–17:30",
@@ -74,14 +75,14 @@ export const siteConfig = {
     thursday: "11:30–17:30",
     friday: "11:30–17:30",
     saturday: "11:30–17:30",
-    sunday: "11:30–14:00",
+    sunday: "Closed",
   },
   rating: 5.0,
   reviewsCount: "20 Google reviews",
   nearbyLandmarks: [
     "Parmar Square IT Park",
     "Near Zensar Technologies",
-    "Above Red Chilli Hotel",
+    "Above Hotel Kwality",
     "Near EON IT Park & EON Free Zone",
     "Near Gera Commerzone Kharadi",
     "Near BNY Mellon Kharadi",
@@ -138,7 +139,7 @@ export const navItems: NavItem[] = [
 export const heroSlides = [
   {
     src: "/images/services/panchakarma-treatment-in-kharadi.webp",
-    alt: "Shri Vishwavedhika Ayurvedic Clinic Classical Panchakarma Facilities",
+    alt: "Authentic Five-Fold Panchakarma Therapies at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
   },
   {
     src: "/images/services/shirodhara-treatment-in-kharadi.webp",
@@ -146,7 +147,7 @@ export const heroSlides = [
   },
   {
     src: "/images/services/infertility-treatment-in-kharadi.webp",
-    alt: "Ayurvedic Doctor Consultation with Dr. Manjiri Musmade",
+    alt: "Ayurvedic Doctor Consultation with Dr. Manjiri Musmade / Lawande",
   },
   {
     src: "/images/services/abhyanga-and-swedana-in-kharadi.webp",
@@ -225,7 +226,7 @@ export const healingSteps = [
     number: "01",
     title: "In-Depth Nadi Pariksha & Consultation",
     description:
-      "Comprehensive pulse diagnosis (Nadi Pariksha) and Ashtavidha Pariksha by Dr. Manjiri Musmade to identify root dosha imbalances (Vata, Pitta, Kapha) and toxic buildup.",
+      "Comprehensive pulse diagnosis (Nadi Pariksha) and Ashtavidha Pariksha by Dr. Manjiri Musmade / Lawande to identify root dosha imbalances (Vata, Pitta, Kapha) and toxic buildup.",
   },
   {
     number: "02",
@@ -243,9 +244,9 @@ export const healingSteps = [
 
 export const whyChooseUsFeatures = [
   {
-    title: "Led by Dr. Manjiri Musmade",
+    title: "Led by Dr. Manjiri Musmade / Lawande",
     description:
-      "Benefit from dedicated clinical consultations and treatments designed by Dr. Manjiri Musmade (BAMS, PGFC in Panchakarma) with 100% individual patient attention.",
+      "Benefit from dedicated clinical consultations and treatments designed by Dr. Manjiri Musmade / Lawande (BAMS, PGFC in Panchakarma) with 100% individual patient attention.",
   },
   {
     title: "100% Classical & Chemical-Free Ayurveda",
@@ -278,7 +279,7 @@ export const patientTestimonials: Testimonial[] = [
     isLocalGuide: false,
     image: "/images/testimonials/anagha-lanjankar.png",
     content:
-      "Excellent Ayurvedic clinic in Kharadi. Dr. Manjiri Musmade provides effective and personalized treatment with great care. 👍",
+      "Excellent Ayurvedic clinic in Kharadi. Dr. Manjiri Musmade / Lawande provides effective and personalized treatment with great care. 👍",
   },
   {
     id: "3",
@@ -295,6 +296,7 @@ export const patientTestimonials: Testimonial[] = [
 export const servicesList = [
   "Panchakarma 5-Fold Detoxification",
   "Garbha Sanskar & Antenatal Care",
+  "Suvarna Prashan (Child Immunity & Memory Drops)",
   "Kati Basti (Spine & Sciatica Relief)",
   "Janu Basti (Knee Osteoarthritis Care)",
   "Manya Basti (Cervical Spondylosis Care)",

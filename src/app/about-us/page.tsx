@@ -20,16 +20,16 @@ import { GoogleGIcon } from "@/components/ui/GoogleGIcon";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "About Dr. Manjiri Musmade | Ayurvedic Doctor Kharadi Pune",
+  title: "About Dr. Manjiri Musmade / Lawande / Lawande | Ayurvedic Doctor Kharadi Pune",
   description:
-    "Meet Dr. Manjiri Musmade (BAMS, PGFC Panchakarma, MUHS Nashik) at Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune. Classical healing rooted in Samhitas.",
+    "Meet Dr. Manjiri Musmade / Lawande (BAMS, PGFC Panchakarma, MUHS Nashik) at Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune. Classical healing rooted in Samhitas.",
   alternates: {
     canonical: "/about-us",
   },
   openGraph: {
-    title: "About Dr. Manjiri Musmade | Ayurvedic Doctor Kharadi Pune",
+    title: "About Dr. Manjiri Musmade / Lawande / Lawande | Ayurvedic Doctor Kharadi Pune",
     description:
-      "A clinic you can trust in Kharadi, Pune. Led by Dr. Manjiri Musmade with specialized PGFC in Panchakarma and authentic classical Ayurvedic care.",
+      "A clinic you can trust in Kharadi, Pune. Led by Dr. Manjiri Musmade / Lawande with specialized PGFC in Panchakarma and authentic classical Ayurvedic care.",
     url: "https://vishwavedhikaayurveda.com/about-us",
     siteName: siteConfig.name,
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "/images/dr-manjiri-musmade.webp",
         width: 768,
         height: 1024,
-        alt: "Dr. Manjiri Musmade - Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+        alt: "Dr. Manjiri Musmade / Lawande - Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
       },
     ],
   },
@@ -102,7 +102,7 @@ export default function AboutUsPage() {
                 <div className="relative w-full max-w-[420px] aspect-[3/4] rounded-tl-[24px] rounded-tr-[110px] rounded-br-[24px] rounded-bl-[24px] overflow-hidden shadow-2xl border-2 border-[#145E3F]/15 bg-white">
                   <Image
                     src="/images/dr-manjiri-musmade.webp"
-                    alt="Dr. Manjiri Musmade - Chief Ayurvedic Consultant & Panchakarma Specialist at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune"
+                    alt="Dr. Manjiri Musmade / Lawande - Chief Ayurvedic Consultant & Panchakarma Specialist at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune"
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 420px"
@@ -123,7 +123,7 @@ export default function AboutUsPage() {
                 </div>
 
                 <p className="text-[#4A4A4A] text-sm sm:text-[15px] leading-relaxed">
-                  Founded and led by <strong>Dr. Manjiri Musmade</strong> (B.A.M.S., PGFC in Panchakarma),{" "}
+                  Founded and led by <strong>Dr. Manjiri Musmade / Lawande</strong> (B.A.M.S., PGFC in Panchakarma),{" "}
                   <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in Kharadi,
                   Pune provides authentic, personalized Ayurvedic healthcare and traditional Panchakarma
                   therapies. We are dedicated to restoring health naturally through root-cause diagnosis,
@@ -208,7 +208,7 @@ export default function AboutUsPage() {
                 </div>
 
                 <p className="text-[#555555] text-sm sm:text-[15px] leading-relaxed">
-                  Under the clinical stewardship of <strong className="text-[#16231B]">Dr. Manjiri Musmade</strong>, our practice is grounded in formal university medical degree education and specialized post-graduate fellowship training from premier institutions under the Maharashtra University of Health Sciences (MUHS), Nashik.
+                  Under the clinical stewardship of <strong className="text-[#16231B]">Dr. Manjiri Musmade / Lawande</strong>, our practice is grounded in formal university medical degree education and specialized post-graduate fellowship training from premier institutions under the Maharashtra University of Health Sciences (MUHS), Nashik.
                 </p>
 
                 {/* Highlight Card with Circular Cap Icon */}
@@ -332,7 +332,7 @@ export default function AboutUsPage() {
                 </div>
 
                 <p className="text-[#555555] text-sm sm:text-[15px] leading-relaxed">
-                  Led by <strong className="text-[#16231B]">Dr. Manjiri Musmade</strong>, our clinic achieves remarkable results in managing chronic spinal issues, joint disorders, Panchakarma detox, digestive ailments, and holistic Garbhasanskar guidance. Our clinical experience, personalized therapies, and compassionate care ensure long-lasting wellness for every individual.
+                  Led by <strong className="text-[#16231B]">Dr. Manjiri Musmade / Lawande</strong>, our clinic achieves remarkable results in managing chronic spinal issues, joint disorders, Panchakarma detox, digestive ailments, and holistic Garbhasanskar guidance. Our clinical experience, personalized therapies, and compassionate care ensure long-lasting wellness for every individual.
                 </p>
               </div>
 

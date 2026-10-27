@@ -149,8 +149,8 @@ export const Footer: React.FC = () => {
                   <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-xs sm:text-[13px] leading-snug pt-0.5">
                     <span className="text-[#FDF4E5]/80 whitespace-nowrap">Mon – Sat:</span>
                     <span className="text-white font-medium whitespace-nowrap">11:30 AM – 5:30 PM</span>
-                    <span className="text-[#FDF4E5]/80 whitespace-nowrap">SUN:</span>
-                    <span className="text-white font-medium whitespace-nowrap">11:30 AM – 2:00 PM</span>
+                    <span className="text-[#FDF4E5]/80 whitespace-nowrap">Sun:</span>
+                    <span className="text-amber-300 font-semibold uppercase tracking-wider text-[11px] px-2 py-0.5 rounded bg-amber-950/40 border border-amber-500/30 inline-block w-fit">Closed</span>
                   </div>
                 </div>
               </div>
@@ -158,19 +158,26 @@ export const Footer: React.FC = () => {
               {/* Phone / WhatsApp - Green font color matching content */}
               <div className="flex items-start gap-3">
                 <Phone size={18} className="text-[#A4E88C] shrink-0 mt-0.5" />
-                <div className="space-x-2 text-[#FDF4E5]/90">
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[#FDF4E5]/90">
                   <a
                     href={`tel:${siteConfig.phone1}`}
-                    className="hover:text-[#A4E88C] transition-colors text-[#FDF4E5]/90"
+                    className="hover:text-[#A4E88C] transition-colors"
                   >
                     {siteConfig.phone1}
                   </a>
                   <span className="text-[#A4E88C]/60">/</span>
                   <a
                     href={`tel:${siteConfig.phone2}`}
-                    className="hover:text-[#A4E88C] transition-colors text-[#FDF4E5]/90"
+                    className="hover:text-[#A4E88C] transition-colors"
                   >
                     {siteConfig.phone2}
+                  </a>
+                  <span className="text-[#A4E88C]/60">/</span>
+                  <a
+                    href={`tel:${siteConfig.phone3}`}
+                    className="hover:text-[#A4E88C] transition-colors"
+                  >
+                    {siteConfig.phone3}
                   </a>
                 </div>
               </div>
@@ -185,7 +192,7 @@ export const Footer: React.FC = () => {
                   className="leading-relaxed text-[#FDF4E5]/90 hover:text-[#A4E88C] transition-colors underline-offset-2 hover:underline"
                   title="View on Google Maps"
                 >
-                  Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014
+                  Flat no.104, IT Park, Parmar Square, near Zensar, above Hotel Kwality, Kharadi, Pune, Maharashtra 411014
                 </a>
               </div>
             </div>

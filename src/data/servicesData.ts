@@ -53,8 +53,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Panchakarma & Detoxification",
     "introHeading": "What is Classical Panchakarma Treatment?",
     "image": "/images/services/panchakarma-treatment-in-kharadi.webp",
-    "imageAlt": "Comprehensive five-fold classical Panchakarma detoxification treatments at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Panchakarma, translating from Sanskrit as \"five sacred purification actions\", is the crown jewel of classical Ayurvedic medicine. Unlike superficial detox regimes, authentic Panchakarma operates at the cellular level to dislodge, liquefy, and systematically evacuate deep-seated metabolic waste (<strong>Ama</strong>) and aggravated <strong>Vata, Pitta, and Kapha doshas</strong> that cause chronic illnesses. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, our classical Panchakarma therapies are tailored to residents of <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong> under the meticulous clinical guidance of <strong>Dr. Manjiri Musmade</strong>. Every program begins with traditional pulse evaluation (Nadi Pariksha) to map your unique Prakriti, ensuring a safe, therapeutic bio-cleansing journey that halts disease progression, re-ignites digestive vitality (Agni), and restores holistic physical and mental longevity.",
+    "imageAlt": "Authentic five-fold classical Panchakarma therapies (Vamana, Virechana, Basti, Nasya, Raktamokshan) at Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune",
+    "description": "Panchakarma, translating from Sanskrit as \"five sacred purification actions\", is the crown jewel of classical Ayurvedic medicine. Unlike superficial detox regimes, authentic Panchakarma operates at the cellular level to dislodge, liquefy, and systematically evacuate deep-seated metabolic waste (<strong>Ama</strong>) and aggravated <strong>Vata, Pitta, and Kapha doshas</strong> that cause chronic illnesses. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, our classical Panchakarma therapies are tailored to residents of <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong> under the meticulous clinical guidance of <strong>Dr. Manjiri Musmade / Lawande</strong>. Every program begins with traditional pulse evaluation (Nadi Pariksha) to map your unique Prakriti, ensuring a safe, therapeutic bio-cleansing journey that halts disease progression, re-ignites digestive vitality (Agni), and restores holistic physical and mental longevity.",
     "subheading": "Comprehensive 5-Fold Shodhana Protocol in Kharadi",
     "subcontent": "Our Panchakarma protocol adheres strictly to the authentic tripartite stages established in the classical Charaka Samhita—ensuring toxins are mobilized safely before gentle expulsion:",
     "checklist": [
@@ -83,7 +83,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       {
         "title": "Nadi Pariksha & Daily Clinical Monitoring",
-        "description": "Continuous pulse diagnosis and vital monitoring by Dr. Manjiri Musmade throughout the treatment course to fine-tune therapeutic oils, herbs, and recovery speed."
+        "description": "Continuous pulse diagnosis and vital monitoring by Dr. Manjiri Musmade / Lawande throughout the treatment course to fine-tune therapeutic oils, herbs, and recovery speed."
       }
     ],
     "benefitsHeading": "Key Clinical Benefits of Panchakarma",
@@ -109,7 +109,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "faqs": [
       {
         "question": "What is the approximate cost of Panchakarma treatment in Kharadi, Pune?",
-        "answer": "At Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune, the cost of an authentic Panchakarma program typically ranges from ₹10,000 to ₹16,000 for a 7-day cleansing course, ₹18,000 to ₹28,000 for a 14-day therapeutic protocol, and ₹28,000 to ₹42,000 for a complete 21-day chronic ailment reversal package. The exact cost depends on pulse diagnosis (Nadi Pariksha), choice of medicated herbal oils/ghritas, customized therapies required, and daily physician monitoring by Dr. Manjiri Musmade."
+        "answer": "At Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune, the cost of an authentic Panchakarma program typically ranges from ₹10,000 to ₹16,000 for a 7-day cleansing course, ₹18,000 to ₹28,000 for a 14-day therapeutic protocol, and ₹28,000 to ₹42,000 for a complete 21-day chronic ailment reversal package. The exact cost depends on pulse diagnosis (Nadi Pariksha), choice of medicated herbal oils/ghritas, customized therapies required, and daily physician monitoring by Dr. Manjiri Musmade / Lawande."
       },
       {
         "question": "How many days does an authentic Panchakarma detox program take in Kharadi, Pune?",
@@ -129,7 +129,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Panchakarma Treatment in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Authentic 5-fold Panchakarma detox in Kharadi, Pune by Dr. Manjiri Musmade. Eliminate toxins & restore dosha balance. Starting from ₹10,000. Book consultation."
+    "metaDescription": "Authentic 5-fold Panchakarma detox in Kharadi, Pune by Dr. Manjiri Musmade / Lawande. Eliminate toxins & restore dosha balance. Starting from ₹10,000. Book consultation."
   },
   "garbha-sanskar-in-kharadi": {
     "slug": "garbha-sanskar-in-kharadi",
@@ -138,7 +138,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Fertility & Women's Health",
     "introHeading": "What is the Garbha Sanskar Program?",
     "image": "/images/services/garbha-sanskar-in-kharadi.webp",
-    "imageAlt": "Garbha Sanskar prenatal herbal therapy and Ayurvedic pregnancy care under Dr. Manjiri Musmade at Shri Vishwavedhika Clinic Kharadi Pune",
+    "imageAlt": "Garbha Sanskar prenatal herbal therapy and Ayurvedic pregnancy care under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
     "description": "Garbha Sanskar is the revered classical Ayurvedic science of prenatal care, fetal development, and maternal well-being practiced for thousands of years. Grounded in the ancient Charaka Samhita and Sushruta Samhita, Garbha Sanskar recognizes that a child's mental, intellectual, emotional, and physical constitution begins right from the moment of conception. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, our specialized program provides holistic guidance for expecting mothers across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>. Supervised by experienced Ayurvedic practitioners, our sessions encompass trimester-wise nutrition (Masanumasik Ahara), gentle prenatal yoga, soothing Vedic sound meditation (Garbha Samvad), and natural delivery preparation (Sukhaprasava) to nurture a healthy, calm, and intellectually vibrant baby.",
     "subheading": "Comprehensive Antenatal & Preconception Care in Kharadi",
     "subcontent": "Our structured Garbha Sanskar program bridges timeless Ayurvedic principles with modern antenatal wellness, guiding parents step-by-step through every phase of conception, pregnancy, and postpartum recovery:",
@@ -214,7 +214,92 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Garbha Sanskar in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Comprehensive Ayurvedic Garbha Sanskar & antenatal care in Kharadi, Pune with Dr. Manjiri Musmade. Trimester diet & mantra therapy. Book your consultation."
+    "metaDescription": "Comprehensive Ayurvedic Garbha Sanskar & antenatal care in Kharadi, Pune with Dr. Manjiri Musmade / Lawande. Trimester diet & mantra therapy. Book your consultation."
+  },
+    "suvarna-prashan-in-kharadi": {
+    "slug": "suvarna-prashan-in-kharadi",
+    "title": "Suvarna Prashan in Kharadi, Pune | Ayurvedic Child Immunity & Memory Drops",
+    "breadcrumbLabel": "Suvarna Prashan (Child Immunity)",
+    "category": "Fertility & Women's Health",
+    "introHeading": "What is Classical Suvarna Prashan (Swarna Prashana)?",
+    "image": "/images/services/suvarna-prashan-in-kharadi.webp",
+    "imageAlt": "Dr. Manjiri Musmade / Lawande administering authentic Suvarna Prashan gold bhasma child immunity drops at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    "description": "<p>Suvarna Prashan (also revered as Swarna Prashana or Suvarnaprashana) is one of the 16 sacred Vedic samskaras (Shodasha Samskaras) documented in the ancient Ayurvedic pediatric compendium, the <em>Kashyapa Samhita</em> (Lehana Adhyaya). It is a classical, time-tested natural pediatric immunization formulation crafted from nano-purified 24-carat gold ash (<strong>Suvarna Bhasma</strong>), memory-enhancing botanical ghee (<strong>Medhya Ghrita</strong> prepared with Brahmi, Shankhapushpi, Vacha, and Yashtimadhu), and raw, unprocessed organic honey (<strong>Madhu</strong>).</p><p>Administered to children from birth up to 16 years of age—especially on the auspicious cosmic alignment of <strong>Pushya Nakshatra and Guru Pushya Nakshatra</strong> every month—Suvarna Prashan acts at the cellular level to dramatically enhance non-specific innate immunity (<strong>Vyadhikshamatva</strong>), accelerate neuro-cognitive development (<strong>Medha Vardhana</strong>: grasping power, memory recall, and focus), and foster robust physical growth and radiant vitality (<strong>Bala and Varna Vardhana</strong>). At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, above Hotel Kwality, Kharadi, Pune</strong>, our classical Suvarna Prashan drops are prepared in strict accordance with Samhita standards under the experienced clinical supervision of <strong>Dr. Manjiri Musmade / Lawande</strong>, safeguarding young children across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong> against recurrent seasonal infections, coughs, allergies, and pediatric developmental delays.</p>",
+    "subheading": "Classical Ayurvedic Pediatric Immunization Protocol in Kharadi",
+    "subcontent": "Administered during Pushya Nakshatra when bio-absorption and cellular assimilation are cosmic-aligned and biologically heightened, our classical protocol offers comprehensive physiological and neurological support:",
+    "checklist": [
+      "Pure 24K Pharmaceutical-Grade Suvarna Bhasma (Gold Ash)",
+      "Medhya Ghrita Infused with Brahmi, Vacha & Shankhapushpi",
+      "Unprocessed Organic Honey (Madhu) for Bio-Availability",
+      "Pushya Nakshatra & Guru Pushya Monthly Drop Administration",
+      "Age-Calibrated Dosing from Newborn to 16 Years"
+    ],
+    "modalities": [
+      {
+        "title": "Suvarna Bhasma Bio-Immunization",
+        "description": "Micro-fine, authentic calcined gold ash acts as an adaptogenic immune stimulant, activating pediatric macrophages and antibodies against recurrent respiratory illnesses."
+      },
+      {
+        "title": "Medhya Rasayana Neuro-Cognitive Enhancement",
+        "description": "Therapeutic cow's ghee infused with Brahmi, Vacha, and Shankhapushpi crosses the blood-brain barrier to nourish neuronal synapses, sharpening intellect (Dhee), retention (Dhriti), and memory (Smriti)."
+      },
+      {
+        "title": "Deepana-Pachana Digestive Agni Activation",
+        "description": "Strengthens immature pediatric digestive fire (Jatharagni), optimizing nutrient absorption, alleviating colicky discomfort, and fostering healthy weight gain."
+      },
+      {
+        "title": "Dhatu Poshan & Physical Stamina (Bala Vardhana)",
+        "description": "Nourishes all seven biological tissue layers (Sapta Dhatus), accelerating milestones, bone mineral density, and physical vigor in growing children."
+      },
+      {
+        "title": "Pushya Nakshatra Auspicious Administration",
+        "description": "Calibrated monthly dosage administered during Pushya Nakshatra lunar phases when the body's pineal receptivity, immune cellular uptake, and therapeutic potency peak."
+      }
+    ],
+    "benefitsHeading": "Key Clinical Benefits of Suvarna Prashan for Children",
+    "benefitsSubcontent": "Rooted in ancient pediatric treatises and substantiated by modern research on nano-gold immunomodulation, Suvarna Prashan delivers multifaceted lifelong advantages:",
+    "benefits": [
+      {
+        "title": "Exceptional Disease Resistance & Immunity",
+        "description": "Drastically minimizes frequency and severity of recurrent colds, viral fevers, tonsillitis, wheezing, and seasonal allergies without synthetic antibiotics."
+      },
+      {
+        "title": "Memory, Focus & Grasping Power",
+        "description": "Acts as a potent Medhya Rasayana, enhancing academic attention span, speech clarity, sensory motor coordination, and mental retention."
+      },
+      {
+        "title": "Accelerated Physical & Milestone Growth",
+        "description": "Promotes healthy skeletal development, optimal appetite, robust digestion, and timely achievement of motor and language developmental milestones."
+      },
+      {
+        "title": "Sattvic Temperament & Emotional Stability",
+        "description": "Calms pediatric hyperactivity and irritability while promoting deep, restful sleep and balanced emotional resilience."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the charges for Suvarna Prashan drops at your Kharadi clinic?",
+        "answer": "At Shri Vishwavedhika Ayurvedic Clinic, monthly Pushya Nakshatra Suvarna Prashan drops are offered at a nominal fee of ₹200 to ₹350 per dose. Annual immunization packages (covering 12 consecutive Pushya Nakshatra doses with developmental tracking and doctor consultation) range from ₹2,000 to ₹3,500."
+      },
+      {
+        "question": "At what age should children start Suvarna Prashan, and up to what age can it be given?",
+        "answer": "According to the Kashyapa Samhita, Suvarna Prashan can be started right from birth (day 1) and safely continued until 16 years of age (especially effective for children from newborn to 14 years). Initiating the drops during early infancy (0 to 5 years) yields the highest neuro-plastic and immune-modulating benefits, as 90% of brain development occurs during this formative window."
+      },
+      {
+        "question": "Why is Suvarna Prashan specifically administered on Pushya Nakshatra?",
+        "answer": "Pushya Nakshatra is considered the most auspicious celestial constellation in Vedic astrology and Ayurveda—symbolized by the nourishing udder of a cow (Poshana). On this day, cosmic lunar energy amplifies the therapeutic bio-potency of gold and Medhya herbs, maximizing absorption across mucous membranes and into pediatric cellular tissues."
+      },
+      {
+        "question": "Is Suvarna Bhasma safe for infants and toddlers? Does it have any heavy metal toxicity?",
+        "answer": "Yes, 100% safe. Authentic Ayurvedic Suvarna Bhasma undergoes extensive classical incinerations (Puta) with herbal juices until it transforms into non-toxic, bio-compatible, sub-micron colloidal gold nanoparticles. At Shri Vishwavedhika, Dr. Manjiri Musmade / Lawande uses only standardized, government-certified, tested Suvarna Bhasma free from free elemental heavy metals."
+      },
+      {
+        "question": "Can Suvarna Prashan be given alongside modern pediatric vaccines and daily school routines?",
+        "answer": "Yes, absolutely. Suvarna Prashan does not conflict with mandatory pediatric immunization schedules (like BCG, Polio, MMR, or DPT). Instead, it synergistically strengthens baseline cellular immunity, reduces post-vaccine fever sensitivity, and can be administered with empty stomach in the morning before regular breakfast."
+      }
+    ],
+    "metaTitle": "Suvarna Prashan in Kharadi, Pune | Shri Vishwavedhika",
+    "metaDescription": "Authentic Suvarna Prashan child immunity & memory drops on Pushya Nakshatra in Kharadi, Pune by Dr. Manjiri Musmade / Lawande. Boost kid's immunity & intellect."
   },
   "vamana-therapy-in-kharadi": {
     "slug": "vamana-therapy-in-kharadi",
@@ -224,7 +309,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Vamana Therapy (Therapeutic Emesis)?",
     "image": "/images/services/vamana-therapy-in-kharadi.webp",
     "imageAlt": "Classical Vamana therapy therapeutic emesis for Kapha detoxification and respiratory relief at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Vamana is the foremost classical Ayurvedic purification procedure specifically engineered to eradicate morbid <strong>Kapha dosha</strong> and associated toxins (<strong>Ama</strong>) from their primary seat in the stomach, lungs, and thoracic cavity. When Kapha becomes aggravated by heavy diet, sedentary desk work, or seasonal changes (particularly during Vasant / Spring), it congests the respiratory channels and lymphatic system, causing bronchial asthma, recurring bronchitis, chronic sinusitis, psoriasis, eczema, and metabolic lethargy. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, Vamana therapy is executed under rigorous medical supervision by <strong>Dr. Manjiri Musmade</strong>. Far from uncomfortable nausea, classical Vamana is an orderly, medically induced and effortless expulsive cleansing that decongests the upper body, restores clean respiratory pathways, and resets sluggish metabolism for patients across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>.",
+    "description": "Vamana is the foremost classical Ayurvedic purification procedure specifically engineered to eradicate morbid <strong>Kapha dosha</strong> and associated toxins (<strong>Ama</strong>) from their primary seat in the stomach, lungs, and thoracic cavity. When Kapha becomes aggravated by heavy diet, sedentary desk work, or seasonal changes (particularly during Vasant / Spring), it congests the respiratory channels and lymphatic system, causing bronchial asthma, recurring bronchitis, chronic sinusitis, psoriasis, eczema, and metabolic lethargy. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, Vamana therapy is executed under rigorous medical supervision by <strong>Dr. Manjiri Musmade / Lawande</strong>. Far from uncomfortable nausea, classical Vamana is an orderly, medically induced and effortless expulsive cleansing that decongests the upper body, restores clean respiratory pathways, and resets sluggish metabolism for patients across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>.",
     "subheading": "Controlled Clinical Vamana Protocol in Kharadi",
     "subcontent": "Our clinical Vamana therapy follows a precise, gentle multi-day protocol designed to loosen sticky mucus toxins before effortless expulsive evacuation:",
     "checklist": [
@@ -299,7 +384,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Vamana Therapy in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Classical Vamana therapy in Kharadi, Pune for chronic asthma, allergies & Kapha detox by Dr. Manjiri Musmade at Shri Vishwavedhika. Consult our expert doctor."
+    "metaDescription": "Classical Vamana therapy in Kharadi, Pune for chronic asthma, allergies & Kapha detox by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika. Consult our expert doctor."
   },
   "virechana-therapy-in-kharadi": {
     "slug": "virechana-therapy-in-kharadi",
@@ -309,7 +394,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Virechana Therapy (Medicated Purgation)?",
     "image": "/images/services/virechana-therapy-in-kharadi.webp",
     "imageAlt": "Classical Virechana therapy herbal purgation for liver detox and Pitta balance at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Virechana is the prime classical Ayurvedic purification therapy aimed at completely expelling vitiated <strong>Pitta dosha</strong>, toxic bile, and inflammatory metabolic acids from the liver, gallbladder, and small intestine (the primary anatomical seat of Pitta). Chronic lifestyle stress, spicy and fried foods, irregular work hours, and high caffeine intake common among professionals in <strong>Kharadi, Wagholi, and Viman Nagar</strong> trigger severe Pitta aggravation. This manifests as chronic hyperacidity, GERD, liver sluggishness, burning sensations, migraine headaches, dark pigmentation, and inflammatory skin conditions like dermatitis and urticaria. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> conducts controlled Virechana therapy using potent classical purgatives (Virechana Dravyas) that safely flush out stagnant bile and cool inflammatory heat from your bloodstream without causing weakness or dehydration.",
+    "description": "Virechana is the prime classical Ayurvedic purification therapy aimed at completely expelling vitiated <strong>Pitta dosha</strong>, toxic bile, and inflammatory metabolic acids from the liver, gallbladder, and small intestine (the primary anatomical seat of Pitta). Chronic lifestyle stress, spicy and fried foods, irregular work hours, and high caffeine intake common among professionals in <strong>Kharadi, Wagholi, and Viman Nagar</strong> trigger severe Pitta aggravation. This manifests as chronic hyperacidity, GERD, liver sluggishness, burning sensations, migraine headaches, dark pigmentation, and inflammatory skin conditions like dermatitis and urticaria. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> conducts controlled Virechana therapy using potent classical purgatives (Virechana Dravyas) that safely flush out stagnant bile and cool inflammatory heat from your bloodstream without causing weakness or dehydration.",
     "subheading": "Systematic Liver & Pitta Elimination Protocol in Kharadi",
     "subcontent": "Our clinical Virechana procedure follows strict classical standards to ensure deep internal cooling, liver rejuvenation, and safe bowel detoxification:",
     "checklist": [
@@ -364,7 +449,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "faqs": [
       {
         "question": "How much does Virechana therapy for liver and Pitta detox cost in Kharadi, Pune?",
-        "answer": "A complete classical Virechana therapy program in Kharadi, Pune typically costs between ₹8,000 to ₹14,000. This includes preparatory medicated ghee intake (Snehapana), localized therapies, therapeutic purgation supervision by Dr. Manjiri Musmade, and post-cleansing Samsarjana diet guidance."
+        "answer": "A complete classical Virechana therapy program in Kharadi, Pune typically costs between ₹8,000 to ₹14,000. This includes preparatory medicated ghee intake (Snehapana), localized therapies, therapeutic purgation supervision by Dr. Manjiri Musmade / Lawande, and post-cleansing Samsarjana diet guidance."
       },
       {
         "question": "How is Virechana therapy different from commercial laxatives?",
@@ -384,7 +469,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Virechana Therapy in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Authentic Virechana therapy in Kharadi, Pune for liver detox, acidity & skin disorders by Dr. Manjiri Musmade. Safe clinical protocol. Book an appointment."
+    "metaDescription": "Authentic Virechana therapy in Kharadi, Pune for liver detox, acidity & skin disorders by Dr. Manjiri Musmade / Lawande. Safe clinical protocol. Book an appointment."
   },
   "basti-treatment-in-kharadi": {
     "slug": "basti-treatment-in-kharadi",
@@ -394,7 +479,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Basti Treatment (Medicated Enema Therapy)?",
     "image": "/images/services/basti-treatment-in-kharadi.webp",
     "imageAlt": "Classical Basti karma medicated herbal oil enema therapy using traditional brass vessel apparatus at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Basti Karma is universally celebrated in classical Ayurvedic texts as <strong>Ardha Chikitsa</strong>—constituting half of all therapeutic treatments in Ayurveda due to its unparalleled ability to subdue vitiated <strong>Vata dosha</strong>. In Ayurveda, Vata governs all bodily movements, nerve impulses, and degenerative processes, with its principal anatomical seat in the colon (Pakwashaya). Long desk hours, mental stress, lack of sleep, and dry foods severely aggravate Vata, causing lumbar spondylosis, sciatica, herniated slip discs, chronic constipation, osteoarthritis, and neurological degeneration. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> administers classical Basti therapy using warm medicated herbal oils and decoctions introduced via the rectal route. Basti bypasses digestive breakdown, allowing micro-nutrients to absorb directly into the bloodstream and pelvo-lumbar nervous plexus, offering rapid joint lubrication, disc rehydration, and nerve healing for residents across <strong>Kharadi, Wagholi, Hadapsar, Magarpatta, and Viman Nagar</strong>.",
+    "description": "Basti Karma is universally celebrated in classical Ayurvedic texts as <strong>Ardha Chikitsa</strong>—constituting half of all therapeutic treatments in Ayurveda due to its unparalleled ability to subdue vitiated <strong>Vata dosha</strong>. In Ayurveda, Vata governs all bodily movements, nerve impulses, and degenerative processes, with its principal anatomical seat in the colon (Pakwashaya). Long desk hours, mental stress, lack of sleep, and dry foods severely aggravate Vata, causing lumbar spondylosis, sciatica, herniated slip discs, chronic constipation, osteoarthritis, and neurological degeneration. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> administers classical Basti therapy using warm medicated herbal oils and decoctions introduced via the rectal route. Basti bypasses digestive breakdown, allowing micro-nutrients to absorb directly into the bloodstream and pelvo-lumbar nervous plexus, offering rapid joint lubrication, disc rehydration, and nerve healing for residents across <strong>Kharadi, Wagholi, Hadapsar, Magarpatta, and Viman Nagar</strong>.",
     "subheading": "Comprehensive Classical Basti Regimens in Kharadi",
     "subcontent": "Our clinical Basti treatments feature time-tested classical courses customized according to your specific spinal, neurological, or gastrointestinal condition:",
     "checklist": [
@@ -457,7 +542,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       {
         "question": "Does Basti treatment hurt or cause painful abdominal cramping?",
-        "answer": "Not at all. Basti is administered using gentle, specialized soft rubber catheters with warm, soothing medicated oils. The procedure is virtually painless and causes no discomfort when administered by trained clinical therapists under Dr. Manjiri Musmade guidance."
+        "answer": "Not at all. Basti is administered using gentle, specialized soft rubber catheters with warm, soothing medicated oils. The procedure is virtually painless and causes no discomfort when administered by trained clinical therapists under Dr. Manjiri Musmade / Lawande guidance."
       },
       {
         "question": "How long am I expected to hold the Basti oil or decoction?",
@@ -469,7 +554,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Basti Treatment in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Classical Basti treatment in Kharadi, Pune for chronic back pain, constipation & Vata disorders. Medicated herbal enemas by Dr. Manjiri Musmade. Book today."
+    "metaDescription": "Classical Basti treatment in Kharadi, Pune for chronic back pain, constipation & Vata disorders. Medicated herbal enemas by Dr. Manjiri Musmade / Lawande. Book today."
   },
   "nasya-therapy-in-kharadi": {
     "slug": "nasya-therapy-in-kharadi",
@@ -478,8 +563,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Stress, Neuro & Head Care",
     "introHeading": "What is Nasya Therapy (Nasal Drug Administration)?",
     "image": "/images/services/nasya-therapy-in-kharadi.webp",
-    "imageAlt": "Classical Ayurvedic Nasya nasal therapy for migraine sinusitis and cervical care by Dr. Manjiri Musmade at Shri Vishwavedhika Kharadi Pune",
-    "description": "In classical Ayurvedic pharmacology, it is declared: <em>\"Nasa Hi Shirso Dvaram\"</em>—the nose is the direct gateway to the brain and the entire supra-clavicular region. <strong>Nasya Therapy</strong> is the specialized branch of Panchakarma where medicated herbal oils, herbal juices, or medicinal decoctions are administered through the nostrils to cleanse and nourish cranial nerves, cerebral channels, sinuses, and cervical tissues. Sedentary computer screen time, air-conditioned corporate offices, and atmospheric pollution in <strong>Kharadi, Wagholi, and Viman Nagar</strong> trigger severe chronic sinusitis, allergic rhinitis, tension headaches, migraines (Suryavarta / Ardhavabhedaka), cervical spondylosis, and premature hair thinning. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> administers classical Nasya therapies tailored to eradicate entrenched Kapha and Vata stagnation, boosting sensory acuity, oxygenation, and neurological equilibrium.",
+    "imageAlt": "Classical Ayurvedic Nasya nasal therapy for migraine sinusitis and cervical care by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Kharadi Pune",
+    "description": "In classical Ayurvedic pharmacology, it is declared: <em>\"Nasa Hi Shirso Dvaram\"</em>—the nose is the direct gateway to the brain and the entire supra-clavicular region. <strong>Nasya Therapy</strong> is the specialized branch of Panchakarma where medicated herbal oils, herbal juices, or medicinal decoctions are administered through the nostrils to cleanse and nourish cranial nerves, cerebral channels, sinuses, and cervical tissues. Sedentary computer screen time, air-conditioned corporate offices, and atmospheric pollution in <strong>Kharadi, Wagholi, and Viman Nagar</strong> trigger severe chronic sinusitis, allergic rhinitis, tension headaches, migraines (Suryavarta / Ardhavabhedaka), cervical spondylosis, and premature hair thinning. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> administers classical Nasya therapies tailored to eradicate entrenched Kapha and Vata stagnation, boosting sensory acuity, oxygenation, and neurological equilibrium.",
     "subheading": "Targeted Cranial Decongestion & Cervical Nourishment Protocol",
     "subcontent": "Our clinical Nasya procedure adheres to authentic Charaka Samhita stages—opening facial channels with warm herbal oils and steam before delicate drop administration:",
     "checklist": [
@@ -554,7 +639,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Nasya Therapy in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Ayurvedic Nasya therapy in Kharadi, Pune for migraines, sinusitis, cervical stiffness & hair fall. Administered by Dr. Manjiri Musmade. Schedule your visit."
+    "metaDescription": "Ayurvedic Nasya therapy in Kharadi, Pune for migraines, sinusitis, cervical stiffness & hair fall. Administered by Dr. Manjiri Musmade / Lawande. Schedule your visit."
   },
   "raktamokshana-treatment-in-kharadi": {
     "slug": "raktamokshana-treatment-in-kharadi",
@@ -564,7 +649,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Raktamokshana Treatment (Ayurvedic Bloodletting)?",
     "image": "/images/services/raktamokshana-treatment-in-kharadi.webp",
     "imageAlt": "Classical Raktamokshana bloodletting therapy for chronic skin conditions, eczema, and psoriasis at Shri Vishwavedhika Clinic Kharadi Pune",
-    "description": "Raktamokshana is the revered fifth classical purification procedure of Panchakarma, hailed by Acharya Sushruta as the ultimate emergency therapy for severe blood (<strong>Rakta Dhatu</strong>) and <strong>Pitta dosha</strong> disorders. When cellular toxins (<strong>Ama</strong>) and metabolic impurities overheat the bloodstream, they manifest as stubborn, non-healing skin diseases, severe eczema, psoriasis, chronic cystic acne, varicose veins, gouty arthritis (Vatarakta), alopecia areata, and localized inflammatory pain. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> conducts safe, sterile <strong>Raktamokshana</strong> using classical methods including <strong>Jalaukavacharana (Leech Therapy)</strong>, <strong>Siravyadha (Venepuncture)</strong>, and <strong>Alabu / Pracchana (Wet Cupping / Hijama)</strong>. By extracting only impure, stagnant venous blood loaded with inflammatory cytokines, Raktamokshana provides rapid pain relief, halts skin degeneration, and stimulates fresh, oxygenated micro-circulation for residents across <strong>Kharadi, Wagholi, Viman Nagar, Magarpatta, and Hadapsar</strong>.",
+    "description": "Raktamokshana is the revered fifth classical purification procedure of Panchakarma, hailed by Acharya Sushruta as the ultimate emergency therapy for severe blood (<strong>Rakta Dhatu</strong>) and <strong>Pitta dosha</strong> disorders. When cellular toxins (<strong>Ama</strong>) and metabolic impurities overheat the bloodstream, they manifest as stubborn, non-healing skin diseases, severe eczema, psoriasis, chronic cystic acne, varicose veins, gouty arthritis (Vatarakta), alopecia areata, and localized inflammatory pain. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> conducts safe, sterile <strong>Raktamokshana</strong> using classical methods including <strong>Jalaukavacharana (Leech Therapy)</strong>, <strong>Siravyadha (Venepuncture)</strong>, and <strong>Alabu / Pracchana (Wet Cupping / Hijama)</strong>. By extracting only impure, stagnant venous blood loaded with inflammatory cytokines, Raktamokshana provides rapid pain relief, halts skin degeneration, and stimulates fresh, oxygenated micro-circulation for residents across <strong>Kharadi, Wagholi, Viman Nagar, Magarpatta, and Hadapsar</strong>.",
     "subheading": "Sterile, Controlled Blood Detoxification Protocols in Kharadi",
     "subcontent": "Carried out under hospital-grade aseptic standards, our clinical blood purification protocols are customized according to the exact depth and location of toxic blood stagnation:",
     "checklist": [
@@ -639,7 +724,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Raktamokshana in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Classical Raktamokshana bloodletting & leech therapy in Kharadi, Pune for eczema, psoriasis & varicose veins by Dr. Manjiri Musmade. Safe sterile care."
+    "metaDescription": "Classical Raktamokshana bloodletting & leech therapy in Kharadi, Pune for eczema, psoriasis & varicose veins by Dr. Manjiri Musmade / Lawande. Safe sterile care."
   },
   "uttar-basti-treatment-in-kharadi": {
     "slug": "uttar-basti-treatment-in-kharadi",
@@ -648,8 +733,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Fertility & Women's Health",
     "introHeading": "What is Uttar Basti Treatment?",
     "image": "/images/services/uttar-basti-treatment-in-kharadi.webp",
-    "imageAlt": "Authentic Uttar Basti therapy administered by Dr. Manjiri Musmade for tubal blockage and natural fertility at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Uttar Basti is the most revered, non-surgical classical Ayurvedic therapy for female and male reproductive tract disorders, acclaimed in the ancient Charaka and Sushruta Samhitas. In female infertility, fallopian tube blockage (cornual, mid-segment, or fimbrial), thin endometrial lining, recurrent IVF implantation failure, and chronic pelvic inflammatory disease (PID) present severe emotional and physical challenges. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> specializes in sterile, painless <strong>Uttar Basti</strong> administration. By instilling microscopic doses of sterile, medicated herbal ghee or oil (such as Phala Ghrita, Kshara Taila, or Apamarga Kshara Taila) directly into the uterine cavity via the cervix under strict aseptic precautions, Uttar Basti directly clears tubal mucus adhesions, restores healthy endometrial vascularity, and re-establishes natural conception capability for couples across <strong>Kharadi, Wagholi, Viman Nagar, Magarpatta, and Hadapsar</strong>.",
+    "imageAlt": "Authentic Uttar Basti therapy administered by Dr. Manjiri Musmade / Lawande for tubal blockage and natural fertility at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    "description": "Uttar Basti is the most revered, non-surgical classical Ayurvedic therapy for female and male reproductive tract disorders, acclaimed in the ancient Charaka and Sushruta Samhitas. In female infertility, fallopian tube blockage (cornual, mid-segment, or fimbrial), thin endometrial lining, recurrent IVF implantation failure, and chronic pelvic inflammatory disease (PID) present severe emotional and physical challenges. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> specializes in sterile, painless <strong>Uttar Basti</strong> administration. By instilling microscopic doses of sterile, medicated herbal ghee or oil (such as Phala Ghrita, Kshara Taila, or Apamarga Kshara Taila) directly into the uterine cavity via the cervix under strict aseptic precautions, Uttar Basti directly clears tubal mucus adhesions, restores healthy endometrial vascularity, and re-establishes natural conception capability for couples across <strong>Kharadi, Wagholi, Viman Nagar, Magarpatta, and Hadapsar</strong>.",
     "subheading": "Painless, Non-Surgical Uterine & Tubal Recanalization Protocol",
     "subcontent": "Administered during the post-menstrual Ritukala window (days 6 to 10 of the menstrual cycle), our Uttar Basti protocol is carried out under strict aseptic clinical conditions without surgical anesthesia:",
     "checklist": [
@@ -724,7 +809,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Uttar Basti in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Painless Uttar Basti in Kharadi, Pune for blocked fallopian tubes, PCOD & natural conception by Dr. Manjiri Musmade (BAMS, PGFC). Book your evaluation."
+    "metaDescription": "Painless Uttar Basti in Kharadi, Pune for blocked fallopian tubes, PCOD & natural conception by Dr. Manjiri Musmade / Lawande (BAMS, PGFC). Book your evaluation."
   },
   "infertility-treatment-in-kharadi": {
     "slug": "infertility-treatment-in-kharadi",
@@ -733,7 +818,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Fertility & Women's Health",
     "introHeading": "What is Ayurvedic Infertility & PCOD Treatment?",
     "image": "/images/services/infertility-treatment-in-kharadi.webp",
-    "imageAlt": "Ayurvedic fertility and PCOD clinical consultation with Dr. Manjiri Musmade at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    "imageAlt": "Ayurvedic fertility and PCOD clinical consultation with Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
     "description": "Infertility, irregular ovulation, PCOD/PCOS, uterine fibroids, and low ovarian reserve (AMH) affect thousands of women and couples due to modern chronic stress, endocrine disruptors, and metabolic toxin (Ama) accumulation. In classical Ayurveda, successful conception requires the harmonious balance of four fundamental factors: Ritu (fertile ovulation window), Kshetra (a healthy, well-nourished uterine bed), Ambu (optimal hormonal nutrition and circulation), and Beeja (healthy ovum and vital sperm). At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, our dedicated fertility wing provides authentic, non-invasive protocols designed to detoxify reproductive channels (Artava Vaha Srotas), correct hormonal imbalances, and promote natural conception without artificial hormone dependency or side effects across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>.",
     "subheading": "Root-Cause Fertility Enhancement & Hormonal Balance Protocol",
     "subcontent": "By combining classical Panchakarma detoxification with specialized uterine therapies, our doctor-supervised treatments address both female and male factors to support natural conception:",
@@ -809,7 +894,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Infertility Treatment in Kharadi | Shri Vishwavedhika",
-    "metaDescription": "Root-cause Ayurvedic infertility & PCOD treatment in Kharadi, Pune. Uttar Basti & hormonal balance protocols by Dr. Manjiri Musmade. Book consultation."
+    "metaDescription": "Root-cause Ayurvedic infertility & PCOD treatment in Kharadi, Pune. Uttar Basti & hormonal balance protocols by Dr. Manjiri Musmade / Lawande. Book consultation."
   },
   "shirodhara-treatment-in-kharadi": {
     "slug": "shirodhara-treatment-in-kharadi",
@@ -818,7 +903,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Stress, Neuro & Head Care",
     "introHeading": "What is Shirodhara Treatment?",
     "image": "/images/services/shirodhara-treatment-in-kharadi.webp",
-    "imageAlt": "Authentic classical Shirodhara medicated oil flow therapy for stress insomnia and migraine by Dr. Manjiri Musmade at Shri Vishwavedhika Kharadi Pune",
+    "imageAlt": "Authentic classical Shirodhara medicated oil flow therapy for stress insomnia and migraine by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Kharadi Pune",
     "description": "Constant screen fatigue, high-stress IT deadlines, cognitive overload, and urban lifestyle pressures frequently trigger chronic mental exhaustion, anxiety, tension headaches, and severe sleep disorders (insomnia). Classical Ayurveda attributes these nervous afflictions to vitiation of Prana Vata and Sadhaka Pitta within the central nervous system (Majja Dhatu). <strong>Shirodhara</strong>—derived from the Sanskrit words 'Shira' (head) and 'Dhara' (continuous rhythmic stream)—is Ayurveda's master neuro-sensory therapy. At <strong>Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchakarma Center</strong> in <strong>Kharadi, Pune</strong>, warm, medicated herbal oils, medicated milk (Ksheeradhara), or herbal decoctions are poured in a gentle, oscillating stream across the forehead (Ajna Chakra). This continuous stream stimulates vital Marma points, synchronizes brainwave frequencies, and induces profound mental serenity.",
     "subheading": "Deep Mental Tranquility, Neuro-Relaxation & Restorative Sleep",
     "subcontent": "Supervised by experienced Ayurvedic practitioners at our Kharadi clinic, Shirodhara naturally regulates the autonomic nervous system and melts away chronic mental fatigue:",
@@ -894,7 +979,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Shirodhara Treatment in Kharadi | Shri Vishwavedhika",
-    "metaDescription": "Relaxing Shirodhara therapy in Kharadi, Pune for stress, anxiety, insomnia & migraine relief by Dr. Manjiri Musmade. Authentic warm herbal oil stream."
+    "metaDescription": "Relaxing Shirodhara therapy in Kharadi, Pune for stress, anxiety, insomnia & migraine relief by Dr. Manjiri Musmade / Lawande. Authentic warm herbal oil stream."
   },
   "kati-basti-treatment-in-kharadi": {
     "slug": "kati-basti-treatment-in-kharadi",
@@ -979,7 +1064,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Kati Basti in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Authentic Kati Basti in Kharadi, Pune for non-surgical slip disc & sciatica pain relief by Dr. Manjiri Musmade. Warm herbal oil reservoir therapy. Book now."
+    "metaDescription": "Authentic Kati Basti in Kharadi, Pune for non-surgical slip disc & sciatica pain relief by Dr. Manjiri Musmade / Lawande. Warm herbal oil reservoir therapy. Book now."
   },
   "janu-basti-treatment-in-kharadi": {
     "slug": "janu-basti-treatment-in-kharadi",
@@ -989,7 +1074,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Janu Basti Treatment?",
     "image": "/images/services/janu-basti-treatment-in-kharadi.webp",
     "imageAlt": "Janu Basti knee osteoarthritis and joint pain treatment with warm herbal oil at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Knee joint pain, osteoarthritis (Janu Sandhigata Vata), meniscus degeneration, and painful joint crepitus (cracking sounds) severely limit daily mobility for senior citizens and active adults across <strong>Kharadi, Wagholi, and Viman Nagar</strong>. In classical Ayurveda, knee cartilage wear-and-tear occurs when vitiated Vata dosha depletes the natural unctuous lubricating fluid (Shleshaka Kapha) within the joint capsule. <strong>Janu Basti</strong> is the premier non-surgical classical therapy specifically engineered to halt knee degeneration and nourish articular cartilage. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> places specially shaped dough reservoirs over the affected knee joints, within which warm, medicated classical herbal oils (such as Sahacharadi, Ksheerabala, and Mahanarayana Taila) are pooled for 30 to 45 minutes. This intensive transdermal therapy lubricates patellar cartilage, stimulates natural synovial fluid secretion, and relieves chronic knee pain without the risks of knee replacement surgery.",
+    "description": "Knee joint pain, osteoarthritis (Janu Sandhigata Vata), meniscus degeneration, and painful joint crepitus (cracking sounds) severely limit daily mobility for senior citizens and active adults across <strong>Kharadi, Wagholi, and Viman Nagar</strong>. In classical Ayurveda, knee cartilage wear-and-tear occurs when vitiated Vata dosha depletes the natural unctuous lubricating fluid (Shleshaka Kapha) within the joint capsule. <strong>Janu Basti</strong> is the premier non-surgical classical therapy specifically engineered to halt knee degeneration and nourish articular cartilage. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> places specially shaped dough reservoirs over the affected knee joints, within which warm, medicated classical herbal oils (such as Sahacharadi, Ksheerabala, and Mahanarayana Taila) are pooled for 30 to 45 minutes. This intensive transdermal therapy lubricates patellar cartilage, stimulates natural synovial fluid secretion, and relieves chronic knee pain without the risks of knee replacement surgery.",
     "subheading": "Comprehensive Non-Surgical Knee Rehabilitation Protocol",
     "subcontent": "Our clinical Janu Basti protocol combines sustained medicated thermal pooling with targeted herbal fomentation to restore natural knee cushioning and pain-free walking:",
     "checklist": [
@@ -1064,7 +1149,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Janu Basti in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Non-surgical Janu Basti treatment in Kharadi, Pune for knee osteoarthritis & joint pain by Dr. Manjiri Musmade. Restore mobility naturally. Book today."
+    "metaDescription": "Non-surgical Janu Basti treatment in Kharadi, Pune for knee osteoarthritis & joint pain by Dr. Manjiri Musmade / Lawande. Restore mobility naturally. Book today."
   },
   "manya-basti-treatment-in-kharadi": {
     "slug": "manya-basti-treatment-in-kharadi",
@@ -1074,7 +1159,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Manya Basti Treatment?",
     "image": "/images/services/manya-basti-treatment-in-kharadi.webp",
     "imageAlt": "Manya Basti cervical spondylosis and neck stiffness treatment with warm herbal oil at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Cervical spondylosis, herniated cervical discs (C5-C6, C6-C7), trapezius muscle knots, and \"Tech Neck\" syndrome are prevalent among software professionals and corporate executives in <strong>Kharadi, Wagholi, and Viman Nagar</strong> due to prolonged laptop hours, dual-monitor setups, and poor ergonomic posture. In Ayurveda, this condition stems from aggravated Vata dosha dehydrating the cervical discs (Manya Sandhigata Vata), causing chronic stiffness, radiating nerve pain down the arms, hand numbness, and tension headaches. <strong>Manya Basti</strong> is the classical non-surgical therapy specifically designed for cervical spine care. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> places a leak-proof dough dam over the nape of the neck, pooling warm, medicated herbal oils (such as Karpasasthiyadi, Ksheerabala 101, and Mahanarayana Taila) for 30 to 45 minutes. This intensive transdermal therapy rehydrates compressed cervical discs, decompresses the brachial plexus nerves, and restores full neck mobility.",
+    "description": "Cervical spondylosis, herniated cervical discs (C5-C6, C6-C7), trapezius muscle knots, and \"Tech Neck\" syndrome are prevalent among software professionals and corporate executives in <strong>Kharadi, Wagholi, and Viman Nagar</strong> due to prolonged laptop hours, dual-monitor setups, and poor ergonomic posture. In Ayurveda, this condition stems from aggravated Vata dosha dehydrating the cervical discs (Manya Sandhigata Vata), causing chronic stiffness, radiating nerve pain down the arms, hand numbness, and tension headaches. <strong>Manya Basti</strong> is the classical non-surgical therapy specifically designed for cervical spine care. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> places a leak-proof dough dam over the nape of the neck, pooling warm, medicated herbal oils (such as Karpasasthiyadi, Ksheerabala 101, and Mahanarayana Taila) for 30 to 45 minutes. This intensive transdermal therapy rehydrates compressed cervical discs, decompresses the brachial plexus nerves, and restores full neck mobility.",
     "subheading": "Comprehensive Cervical Spine & Radiculopathy Care in Kharadi",
     "subcontent": "Our clinical Manya Basti protocol systematically releases deep trapezius muscle tension, decompresses pinched cervical nerve roots, and rebuilds disc hydration:",
     "checklist": [
@@ -1145,11 +1230,11 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       {
         "question": "Is Manya Basti therapy safe and comfortable?",
-        "answer": "Yes, it is extremely soothing and comfortable. The therapy is performed while you rest in a comfortable prone position. Warm, aromatic herbal oils are gently maintained at optimal therapeutic temperatures by trained therapists under Dr. Manjiri Musmade supervision."
+        "answer": "Yes, it is extremely soothing and comfortable. The therapy is performed while you rest in a comfortable prone position. Warm, aromatic herbal oils are gently maintained at optimal therapeutic temperatures by trained therapists under Dr. Manjiri Musmade / Lawande supervision."
       }
     ],
     "metaTitle": "Manya Basti in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Specialized Manya Basti in Kharadi, Pune for cervical spondylosis & tech neck stiffness. Targeted herbal oil treatment by Dr. Manjiri Musmade. Book now."
+    "metaDescription": "Specialized Manya Basti in Kharadi, Pune for cervical spondylosis & tech neck stiffness. Targeted herbal oil treatment by Dr. Manjiri Musmade / Lawande. Book now."
   },
   "patra-pinda-sweda-in-kharadi": {
     "slug": "patra-pinda-sweda-in-kharadi",
@@ -1159,7 +1244,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Patra Pinda Sweda (Elakizhi)?",
     "image": "/images/services/patra-pinda-sweda-treatment-in-kharadi.webp",
     "imageAlt": "Patra Pinda Sweda Elakizhi herbal potli massage for spine and joint pain relief at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Patra Pinda Sweda (popularly celebrated as <strong>Elakizhi</strong> in classical Kerala Ayurveda) is one of the most potent, rejuvenating sudation therapies for chronic spine stiffness, joint inflammation, and neuromuscular pain. In this classical therapy, freshly harvested medicinal leaves renowned for anti-inflammatory and Vata-pacifying virtues (such as <em>Arka, Nirgundi, Eranda, Shigru, and Dhatura</em>) are finely chopped, fried in medicated herbal oils with rock salt, grated coconut, and lemon, and bound into warm cotton boluses (Potlis). At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade</strong> administers authentic Elakizhi therapy. Rhythmic, heated bolus tapping and warm herbal oil strokes are applied across the entire spine and affected joints. The combination of sustained thermal heat and therapeutic leaf phytochemicals dissolves stubborn muscular knots, drains toxic inflammation, and restores complete joint flexibility for residents of <strong>Kharadi, Wagholi, Viman Nagar, Hadapsar, and Magarpatta</strong>.",
+    "description": "Patra Pinda Sweda (popularly celebrated as <strong>Elakizhi</strong> in classical Kerala Ayurveda) is one of the most potent, rejuvenating sudation therapies for chronic spine stiffness, joint inflammation, and neuromuscular pain. In this classical therapy, freshly harvested medicinal leaves renowned for anti-inflammatory and Vata-pacifying virtues (such as <em>Arka, Nirgundi, Eranda, Shigru, and Dhatura</em>) are finely chopped, fried in medicated herbal oils with rock salt, grated coconut, and lemon, and bound into warm cotton boluses (Potlis). At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, <strong>Dr. Manjiri Musmade / Lawande</strong> administers authentic Elakizhi therapy. Rhythmic, heated bolus tapping and warm herbal oil strokes are applied across the entire spine and affected joints. The combination of sustained thermal heat and therapeutic leaf phytochemicals dissolves stubborn muscular knots, drains toxic inflammation, and restores complete joint flexibility for residents of <strong>Kharadi, Wagholi, Viman Nagar, Hadapsar, and Magarpatta</strong>.",
     "subheading": "Authentic Classical Elakizhi Procedure in Kharadi",
     "subcontent": "Our clinical Patra Pinda Sweda procedure follows strict classical standards to ensure deep tissue heating and instantaneous muscular decompression:",
     "checklist": [
@@ -1234,7 +1319,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Patra Pinda Sweda in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Classical Patra Pinda Sweda (Elakizhi potli massage) in Kharadi, Pune for joint stiffness, arthritis & muscle pain relief by Dr. Manjiri Musmade."
+    "metaDescription": "Classical Patra Pinda Sweda (Elakizhi potli massage) in Kharadi, Pune for joint stiffness, arthritis & muscle pain relief by Dr. Manjiri Musmade / Lawande."
   },
   "agnikarma-treatment-in-kharadi": {
     "slug": "agnikarma-treatment-in-kharadi",
@@ -1243,8 +1328,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Rapid Pain Relief & Vascular Therapies",
     "introHeading": "What is Agnikarma Therapy (Thermal Micro-Cautery)?",
     "image": "/images/services/agnikarma-treatment-in-kharadi.webp",
-    "imageAlt": "Agnikarma thermal micro-cautery pain management treatment for knee and joint pain by Dr. Manjiri Musmade at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Agnikarma is one of the most celebrated and potent parasurgical procedures detailed in classical Ayurvedic surgery (Sushruta Samhita). Acharya Sushruta famously declared that diseases treated by Agnikarma never recur, establishing it as superior to medications (Bheshaja) and herbal alkalization (Kshara). At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical stewardship of <strong>Dr. Manjiri Musmade</strong>, Agnikarma provides fast, non-invasive relief for acute and chronic musculoskeletal pain. Utilizing a red-hot sterilized <strong>Panchadhatu Shalaka</strong> (a specialized probe crafted from five therapeutic metals—copper, iron, zinc, silver, and lead), nanosecond micro-burns (Bindu) are precisely administered to localized pain trigger points, tendon insertions, and osteophytes. By transferring controlled therapeutic heat directly into deep sub-dermal tissues, Agnikarma instantly pacifies aggravated <strong>Vata and Kapha doshas</strong>, stimulates micro-vascular blood perfusion, dissolves cold metabolic stagnation (Ama), and deactivates hyper-sensitized pain receptors without cuts, stitches, or systemic medications.",
+    "imageAlt": "Agnikarma thermal micro-cautery pain management treatment for knee and joint pain by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    "description": "Agnikarma is one of the most celebrated and potent parasurgical procedures detailed in classical Ayurvedic surgery (Sushruta Samhita). Acharya Sushruta famously declared that diseases treated by Agnikarma never recur, establishing it as superior to medications (Bheshaja) and herbal alkalization (Kshara). At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical stewardship of <strong>Dr. Manjiri Musmade / Lawande</strong>, Agnikarma provides fast, non-invasive relief for acute and chronic musculoskeletal pain. Utilizing a red-hot sterilized <strong>Panchadhatu Shalaka</strong> (a specialized probe crafted from five therapeutic metals—copper, iron, zinc, silver, and lead), nanosecond micro-burns (Bindu) are precisely administered to localized pain trigger points, tendon insertions, and osteophytes. By transferring controlled therapeutic heat directly into deep sub-dermal tissues, Agnikarma instantly pacifies aggravated <strong>Vata and Kapha doshas</strong>, stimulates micro-vascular blood perfusion, dissolves cold metabolic stagnation (Ama), and deactivates hyper-sensitized pain receptors without cuts, stitches, or systemic medications.",
     "subheading": "Targeted Micro-Thermal Pain Management Protocol in Kharadi",
     "subcontent": "Our specialized Agnikarma protocol is conducted under rigorous aseptic standards and personalized to patient tolerance, providing targeted therapeutic relief:",
     "checklist": [
@@ -1303,7 +1388,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       {
         "question": "Is Agnikarma therapy painful or does it cause severe skin burns?",
-        "answer": "Agnikarma sounds intense, but it is remarkably tolerable and virtually painless when performed by an experienced practitioner like Dr. Manjiri Musmade. The Panchadhatu probe touches the skin for only a fraction of a second (nanoseconds), creating only a momentary pinprick or mosquito-bite sensation. Fresh Aloe Vera pulp and Shatadhauta Ghrita are applied immediately to soothe the skin instantly."
+        "answer": "Agnikarma sounds intense, but it is remarkably tolerable and virtually painless when performed by an experienced practitioner like Dr. Manjiri Musmade / Lawande. The Panchadhatu probe touches the skin for only a fraction of a second (nanoseconds), creating only a momentary pinprick or mosquito-bite sensation. Fresh Aloe Vera pulp and Shatadhauta Ghrita are applied immediately to soothe the skin instantly."
       },
       {
         "question": "How many sessions of Agnikarma are needed for heel spur or plantar fasciitis in Kharadi?",
@@ -1319,7 +1404,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Agnikarma Treatment in Kharadi | Shri Vishwavedhika",
-    "metaDescription": "Fast-acting Agnikarma therapy in Kharadi, Pune for instant relief from heel spur, frozen shoulder, tennis elbow & acute pain by Dr. Manjiri Musmade."
+    "metaDescription": "Fast-acting Agnikarma therapy in Kharadi, Pune for instant relief from heel spur, frozen shoulder, tennis elbow & acute pain by Dr. Manjiri Musmade / Lawande."
   },
   "jalaukavacharana-leech-therapy-in-kharadi": {
     "slug": "jalaukavacharana-leech-therapy-in-kharadi",
@@ -1328,8 +1413,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Rapid Pain Relief & Vascular Therapies",
     "introHeading": "What is Jalaukavacharana (Medicinal Leech Therapy)?",
     "image": "/images/services/jalaukavacharana-leech-therapy-in-kharadi.webp",
-    "imageAlt": "Jalaukavacharana medical leech therapy for varicose veins and joint inflammation by Dr. Manjiri Musmade at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Jalaukavacharana, or classical Ayurvedic medicinal leech therapy, is the most refined and painless method of blood purification (Raktamokshana) documented in the Sushruta Samhita. Specifically indicated for individuals with delicate constitutions, women, and children, it provides unmatched therapeutic relief for localized vascular congestion and deep tissue blood stagnation. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical guidance of <strong>Dr. Manjiri Musmade</strong>, sterile laboratory-certified <strong>Nirvisha Jalauka</strong> (non-poisonous medicinal leeches) are applied to affected zones such as bulging <strong>varicose veins, thrombophlebitis, stasis dermatitis, chronic eczema, and gout</strong>. As the leeches feed on impure venous blood, they simultaneously inject over 100 bioactive compounds—most notably <strong>Hirudin</strong> (a potent natural thrombin inhibitor), Calin, and Hyaluronidase—directly into the micro-capillary network. This enzymatic surge dissolves micro-thrombi, reverses venous valve hypertension, eliminates burning throbbing sensations, and dramatically accelerates the healing of chronic venous leg ulcers without surgical intervention.",
+    "imageAlt": "Jalaukavacharana medical leech therapy for varicose veins and joint inflammation by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    "description": "Jalaukavacharana, or classical Ayurvedic medicinal leech therapy, is the most refined and painless method of blood purification (Raktamokshana) documented in the Sushruta Samhita. Specifically indicated for individuals with delicate constitutions, women, and children, it provides unmatched therapeutic relief for localized vascular congestion and deep tissue blood stagnation. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical guidance of <strong>Dr. Manjiri Musmade / Lawande</strong>, sterile laboratory-certified <strong>Nirvisha Jalauka</strong> (non-poisonous medicinal leeches) are applied to affected zones such as bulging <strong>varicose veins, thrombophlebitis, stasis dermatitis, chronic eczema, and gout</strong>. As the leeches feed on impure venous blood, they simultaneously inject over 100 bioactive compounds—most notably <strong>Hirudin</strong> (a potent natural thrombin inhibitor), Calin, and Hyaluronidase—directly into the micro-capillary network. This enzymatic surge dissolves micro-thrombi, reverses venous valve hypertension, eliminates burning throbbing sensations, and dramatically accelerates the healing of chronic venous leg ulcers without surgical intervention.",
     "subheading": "Sterile Clinical Hirudotherapy Protocol in Kharadi",
     "subcontent": "Our Jalaukavacharana procedures comply with the highest hospital-grade aseptic standards ensuring a sterile, comfortable, and therapeutic healing experience:",
     "checklist": [
@@ -1404,7 +1489,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Leech Therapy in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Medical leech therapy (Jalaukavacharana) in Kharadi, Pune for varicose veins, deep vein thrombosis & skin disorders. Safe clinical care by Dr. Musmade."
+    "metaDescription": "Medical leech therapy (Jalaukavacharana) in Kharadi, Pune for varicose veins, deep vein thrombosis & skin disorders. Safe clinical care by Dr. Manjiri Musmade / Lawande."
   },
   "takradhara-treatment-in-kharadi": {
     "slug": "takradhara-treatment-in-kharadi",
@@ -1414,7 +1499,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Takradhara & Lepa Therapy?",
     "image": "/images/services/takradhara-lepa-therapy-in-kharadi.webp",
     "imageAlt": "Takradhara medicated buttermilk stream and herbal lepa therapy for skin and stress relief at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Takradhara and Lepa therapy are classical Ayurvedic cooling interventions engineered specifically to pacify acutely aggravated <strong>Pitta and Vata doshas</strong> located in the skin (Twacha), scalp (Shiro), and vascular micro-channels (Raktavaha Srotas). Takradhara involves the sustained, rhythmic pouring of customized medicinal buttermilk (Takra)—scientifically infused with potent decoctions of <strong>Musta (Nutgrass), Amalaki (Indian Gooseberry), and Chandana (Sandalwood)</strong>—over the forehead and scalp. Simultaneously, therapeutic herbal pastes (<strong>Lepa</strong>) crafted from cooling, anti-inflammatory botanicals (Manjistha, Nimba, Sariva, and Khadira) are applied over lesions. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical guidance of <strong>Dr. Manjiri Musmade</strong>, this dual therapeutic approach provides rapid clinical reversal for patients battling <strong>scalp psoriasis, stubborn eczema, severe dandruff, burning sensations (Pada Daha), stress-induced alopecia, and neuro-dermatitis</strong> across Kharadi, Wagholi, and Viman Nagar.",
+    "description": "Takradhara and Lepa therapy are classical Ayurvedic cooling interventions engineered specifically to pacify acutely aggravated <strong>Pitta and Vata doshas</strong> located in the skin (Twacha), scalp (Shiro), and vascular micro-channels (Raktavaha Srotas). Takradhara involves the sustained, rhythmic pouring of customized medicinal buttermilk (Takra)—scientifically infused with potent decoctions of <strong>Musta (Nutgrass), Amalaki (Indian Gooseberry), and Chandana (Sandalwood)</strong>—over the forehead and scalp. Simultaneously, therapeutic herbal pastes (<strong>Lepa</strong>) crafted from cooling, anti-inflammatory botanicals (Manjistha, Nimba, Sariva, and Khadira) are applied over lesions. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical guidance of <strong>Dr. Manjiri Musmade / Lawande</strong>, this dual therapeutic approach provides rapid clinical reversal for patients battling <strong>scalp psoriasis, stubborn eczema, severe dandruff, burning sensations (Pada Daha), stress-induced alopecia, and neuro-dermatitis</strong> across Kharadi, Wagholi, and Viman Nagar.",
     "subheading": "Cooling Neuro-Dermatological Protocol in Kharadi",
     "subcontent": "Our specialized Takradhara and Lepa protocol combines neuro-endocrine regulation with deep dermatological cellular restoration:",
     "checklist": [
@@ -1485,11 +1570,11 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       {
         "question": "Is Takradhara suitable for sinus patients or will it cause cold and congestion?",
-        "answer": "Dr. Manjiri Musmade customizes the herbs used in Takradhara based on your unique constitution. For patients prone to sinus congestion or Kapha imbalances, specific warming herbs like ginger (Shunti) and Maricha are incorporated into the processing to prevent cold while delivering deep scalp cooling."
+        "answer": "Dr. Manjiri Musmade / Lawande customizes the herbs used in Takradhara based on your unique constitution. For patients prone to sinus congestion or Kapha imbalances, specific warming herbs like ginger (Shunti) and Maricha are incorporated into the processing to prevent cold while delivering deep scalp cooling."
       }
     ],
     "metaTitle": "Takradhara Therapy in Kharadi | Shri Vishwavedhika",
-    "metaDescription": "Cooling Takradhara & herbal Lepa therapy in Kharadi, Pune for psoriasis, eczema, hair loss & Pitta conditions by Dr. Manjiri Musmade. Book appointment."
+    "metaDescription": "Cooling Takradhara & herbal Lepa therapy in Kharadi, Pune for psoriasis, eczema, hair loss & Pitta conditions by Dr. Manjiri Musmade / Lawande. Book appointment."
   },
   "netra-tarpana-treatment-in-kharadi": {
     "slug": "netra-tarpana-treatment-in-kharadi",
@@ -1499,7 +1584,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Netra Tarpana (Ocular Rejuvenation)?",
     "image": "/images/services/netra-tarpana-treatment-in-kharadi.webp",
     "imageAlt": "Classical Netra Tarpana eye treatment with medicated herbal ghee for computer vision syndrome at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Netra Tarpana (also known as Akshi Tarpana) is the premier classical Ayurvedic ocular therapy documented in the Sushruta Samhita under Netra Chikitsa. In today's digital era, extended screen exposure, air conditioning, and environmental pollution aggravate <strong>Pitta and Vata doshas</strong> within the eyes (Chakshu), causing severe <strong>Computer Vision Syndrome (CVS), dry eye syndrome, burning sensations, premature presbyopia, and optic nerve fatigue</strong>. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical guidance of <strong>Dr. Manjiri Musmade</strong>, Netra Tarpana provides profound restorative care for IT professionals, students, and seniors across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>. The procedure involves creating a leak-proof circular dam of black gram dough (Masha Pishti) around each orbital socket and gently pooling warm, sterile medicated herbal ghee—most notably <strong>Mahatriphala Ghrita</strong>. As the patient blinks and rotates the eyes within this herbal lipid bath, the lipophilic botanical nutrients penetrate deep through the cornea into internal ocular tissues, soothing inflamed scleral capillaries, hydrating dried tear glands, and revitalizing exhausted optical nerves without synthetic eye drops.",
+    "description": "Netra Tarpana (also known as Akshi Tarpana) is the premier classical Ayurvedic ocular therapy documented in the Sushruta Samhita under Netra Chikitsa. In today's digital era, extended screen exposure, air conditioning, and environmental pollution aggravate <strong>Pitta and Vata doshas</strong> within the eyes (Chakshu), causing severe <strong>Computer Vision Syndrome (CVS), dry eye syndrome, burning sensations, premature presbyopia, and optic nerve fatigue</strong>. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical guidance of <strong>Dr. Manjiri Musmade / Lawande</strong>, Netra Tarpana provides profound restorative care for IT professionals, students, and seniors across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>. The procedure involves creating a leak-proof circular dam of black gram dough (Masha Pishti) around each orbital socket and gently pooling warm, sterile medicated herbal ghee—most notably <strong>Mahatriphala Ghrita</strong>. As the patient blinks and rotates the eyes within this herbal lipid bath, the lipophilic botanical nutrients penetrate deep through the cornea into internal ocular tissues, soothing inflamed scleral capillaries, hydrating dried tear glands, and revitalizing exhausted optical nerves without synthetic eye drops.",
     "subheading": "Authentic Netra Tarpana Protocol in Kharadi",
     "subcontent": "Our specialized ocular rejuvenation protocol follows strict medical sterility and classical guidelines to ensure maximum optical comfort and vision restoration:",
     "checklist": [
@@ -1574,7 +1659,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Netra Tarpana in Kharadi, Pune | Shri Vishwavedhika",
-    "metaDescription": "Rejuvenating Netra Tarpana eye treatment in Kharadi, Pune for computer vision syndrome, dry eyes & refractive errors. Consult Dr. Manjiri Musmade."
+    "metaDescription": "Rejuvenating Netra Tarpana eye treatment in Kharadi, Pune for computer vision syndrome, dry eyes & refractive errors. Consult Dr. Manjiri Musmade / Lawande."
   },
   "abhyanga-and-swedana-in-kharadi": {
     "slug": "abhyanga-and-swedana-in-kharadi",
@@ -1584,7 +1669,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     "introHeading": "What is Classical Abhyanga & Swedana Therapy?",
     "image": "/images/services/abhyanga-and-swedana-in-kharadi.webp",
     "imageAlt": "Authentic full body Abhyanga massage and wooden box herbal steam Swedana at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    "description": "Abhyanga and Swedana represent the foundational pillar of classical Ayurvedic preventative and curative healthcare. As documented in the Charaka Samhita, daily oil application nourishes all seven Dhatus, pacifies aggravated <strong>Vata dosha</strong>, enhances musculoskeletal vitality, and retards premature aging. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical stewardship of <strong>Dr. Manjiri Musmade</strong>, Abhyanga is performed on authentic hand-carved teakwood Droni tables using warm, dosha-customized medicated oils such as <strong>Dhanwantharam, Sahacharadi, and Mahanarayana</strong>. Our trained therapists execute synchronized, rhythmic strokes in seven classical postures along energy meridians and lymph vessels. This is followed immediately by <strong>Bashpa Swedana</strong>—a whole-body medicated herbal steam bath using vapors of Dashamoola and Nirgundi while keeping the head cool. The synergistic thermogenic effect opens micro-channels (Srotas), liquefies deep cellular metabolic toxins (<strong>Ama</strong>), and guides them toward the digestive tract for expulsion, leaving you feeling profoundly rejuvenated, light, and mentally centered.",
+    "description": "Abhyanga and Swedana represent the foundational pillar of classical Ayurvedic preventative and curative healthcare. As documented in the Charaka Samhita, daily oil application nourishes all seven Dhatus, pacifies aggravated <strong>Vata dosha</strong>, enhances musculoskeletal vitality, and retards premature aging. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the expert clinical stewardship of <strong>Dr. Manjiri Musmade / Lawande</strong>, Abhyanga is performed on authentic hand-carved teakwood Droni tables using warm, dosha-customized medicated oils such as <strong>Dhanwantharam, Sahacharadi, and Mahanarayana</strong>. Our trained therapists execute synchronized, rhythmic strokes in seven classical postures along energy meridians and lymph vessels. This is followed immediately by <strong>Bashpa Swedana</strong>—a whole-body medicated herbal steam bath using vapors of Dashamoola and Nirgundi while keeping the head cool. The synergistic thermogenic effect opens micro-channels (Srotas), liquefies deep cellular metabolic toxins (<strong>Ama</strong>), and guides them toward the digestive tract for expulsion, leaving you feeling profoundly rejuvenated, light, and mentally centered.",
     "subheading": "Comprehensive 5-Step Snehana & Swedana Protocol in Kharadi",
     "subcontent": "Our Abhyanga and Swedana protocol adheres strictly to classical Ayurvedic tenets, ensuring optimal therapeutic lipid absorption and systemic detoxification:",
     "checklist": [
@@ -1655,11 +1740,11 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       {
         "question": "Can individuals with high blood pressure or diabetes take herbal steam?",
-        "answer": "Yes, under clinical supervision. Dr. Manjiri Musmade calibrates the steam temperature, duration, and specific herbs to ensure complete safety and cardiovascular comfort for patients with hypertension or metabolic conditions."
+        "answer": "Yes, under clinical supervision. Dr. Manjiri Musmade / Lawande calibrates the steam temperature, duration, and specific herbs to ensure complete safety and cardiovascular comfort for patients with hypertension or metabolic conditions."
       }
     ],
     "metaTitle": "Abhyanga & Swedana in Kharadi | Shri Vishwavedhika",
-    "metaDescription": "Authentic Ayurvedic Abhyanga massage & herbal steam (Swedana) in Kharadi, Pune. Relieve body fatigue & stress with Dr. Manjiri Musmade. Book session."
+    "metaDescription": "Authentic Ayurvedic Abhyanga massage & herbal steam (Swedana) in Kharadi, Pune. Relieve body fatigue & stress with Dr. Manjiri Musmade / Lawande. Book session."
   },
   "stroke-rehabilitation-in-kharadi": {
     "slug": "stroke-rehabilitation-in-kharadi",
@@ -1668,8 +1753,8 @@ export const servicesData: Record<string, ServiceDetail> = {
     "category": "Stress, Neuro & Head Care",
     "introHeading": "What is Ayurvedic Stroke Rehabilitation (Pakshaghata Chikitsa)?",
     "image": "/images/services/stroke-rehabilitation-in-kharadi.webp",
-    "imageAlt": "Ayurvedic stroke rehabilitation and neuro motor recovery under Dr. Manjiri Musmade at Shri Vishwavedhika Clinic Kharadi Pune",
-    "description": "Stroke (known as Pakshaghata or Pakshavadha in classical Ayurveda) is one of the most debilitating neurological crises, occurring when severely vitiated <strong>Vata dosha</strong> invades cerebral channels (Siras), damaging motor and sensory pathways on one side of the body. Once acute hospital management stabilizes the patient, secondary recovery challenges—including <strong>hemiplegia, facial palsy (Ardita), speech slurring (Mukatva), muscle flaccidity followed by spasticity, and joint contractures</strong>—require specialized, sustained rehabilitation. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the compassionate medical supervision of <strong>Dr. Manjiri Musmade</strong>, our evidence-grounded neuro-rehabilitation protocols stimulate dormant brain plasticity, restore arterial perfusion to ischemic penumbra tissues, and prevent permanent muscular deformities for patients across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>. Combining intensive therapies—such as <strong>Njavarakizhi</strong> (medicated rice poultice), Shirovasthi, Tailadhara, and Matra Basti—with integrated physical therapy, we actively rebuild neural connections, retrain voluntary motor control, and empower patients to regain independent standing, walking, and dignified daily self-care.",
+    "imageAlt": "Ayurvedic stroke rehabilitation and neuro motor recovery under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
+    "description": "Stroke (known as Pakshaghata or Pakshavadha in classical Ayurveda) is one of the most debilitating neurological crises, occurring when severely vitiated <strong>Vata dosha</strong> invades cerebral channels (Siras), damaging motor and sensory pathways on one side of the body. Once acute hospital management stabilizes the patient, secondary recovery challenges—including <strong>hemiplegia, facial palsy (Ardita), speech slurring (Mukatva), muscle flaccidity followed by spasticity, and joint contractures</strong>—require specialized, sustained rehabilitation. At <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in <strong>Parmar Square, Kharadi, Pune</strong>, under the compassionate medical supervision of <strong>Dr. Manjiri Musmade / Lawande</strong>, our evidence-grounded neuro-rehabilitation protocols stimulate dormant brain plasticity, restore arterial perfusion to ischemic penumbra tissues, and prevent permanent muscular deformities for patients across <strong>Kharadi, Wagholi, Viman Nagar, and Hadapsar</strong>. Combining intensive therapies—such as <strong>Njavarakizhi</strong> (medicated rice poultice), Shirovasthi, Tailadhara, and Matra Basti—with integrated physical therapy, we actively rebuild neural connections, retrain voluntary motor control, and empower patients to regain independent standing, walking, and dignified daily self-care.",
     "subheading": "Comprehensive Neuro-Restorative Recovery Protocol in Kharadi",
     "subcontent": "Each stroke rehabilitation program is customized to the patient's stage of onset, muscle tone (flaccid vs. spastic), and mobility index, delivering cohesive physical and neurological restoration:",
     "checklist": [
@@ -1732,7 +1817,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       },
       {
         "question": "Can Ayurvedic stroke therapies safely continue alongside prescribed allopathic medications?",
-        "answer": "Yes, absolutely. Our external classical therapies (Abhyanga, Njavarakizhi, Shirodhara) and internal adaptogenic formulations are non-conflicting and safely complement prescribed blood thinners, anti-hypertensives, and statins under Dr. Manjiri Musmade watchful medical supervision."
+        "answer": "Yes, absolutely. Our external classical therapies (Abhyanga, Njavarakizhi, Shirodhara) and internal adaptogenic formulations are non-conflicting and safely complement prescribed blood thinners, anti-hypertensives, and statins under Dr. Manjiri Musmade / Lawande watchful medical supervision."
       },
       {
         "question": "What is Njavarakizhi and why is it essential for stroke patients?",
@@ -1744,7 +1829,7 @@ export const servicesData: Record<string, ServiceDetail> = {
       }
     ],
     "metaTitle": "Stroke Rehabilitation in Kharadi | Shri Vishwavedhika",
-    "metaDescription": "Comprehensive Ayurvedic stroke rehabilitation & paralysis recovery in Kharadi, Pune by Dr. Manjiri Musmade. Neuro-nourishing Rasayanas & Panchakarma."
+    "metaDescription": "Comprehensive Ayurvedic stroke rehabilitation & paralysis recovery in Kharadi, Pune by Dr. Manjiri Musmade / Lawande. Neuro-nourishing Rasayanas & Panchakarma."
   }
 };
 

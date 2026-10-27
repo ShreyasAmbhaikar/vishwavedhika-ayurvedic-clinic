@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "/images/services/panchakarma-treatment-in-kharadi.webp",
         width: 1024,
         height: 682,
-        alt: "Shri Vishwavedhika Ayurvedic Clinic Treatment Gallery",
+        alt: "Authentic Five-Fold Panchakarma Therapies at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
       },
     ],
   },

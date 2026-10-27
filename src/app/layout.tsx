@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Top-rated classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune. Expert consultations by Dr. Manjiri Musmade (BAMS, PGFC). Book an appointment.",
+    "Top-rated classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune. Expert consultations by Dr. Manjiri Musmade / Lawande (BAMS, PGFC). Book an appointment.",
   keywords: [
     "Ayurvedic clinic in Kharadi Pune",
     "Best Ayurvedic doctor in Kharadi",
     "Panchakarma treatment in Kharadi",
     "Garbhsanskar centre in Kharadi Pune",
     "Shri Vishwavedhika Ayurvedic Clinic",
-    "Dr Manjiri Musmade Ayurvedic Doctor",
+    "Dr Manjiri Musmade / Lawande Ayurvedic Doctor",
     "Panchakarma Pune",
     "Ayurvedic clinic near me",
     "Ayurvedic clinic near Zensar Kharadi",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     "Nadi Pariksha Pune",
     "Infertility Ayurvedic treatment Pune",
   ],
-  authors: [{ name: "Dr. Manjiri Musmade — Shri Vishwavedhika Ayurvedic Clinic" }],
+  authors: [{ name: "Dr. Manjiri Musmade / Lawande — Shri Vishwavedhika Ayurvedic Clinic" }],
   creator: "Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre",
   metadataBase: new URL("https://vishwavedhikaayurveda.com"),
   alternates: {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shri Vishwavedhika Ayurvedic Clinic | Kharadi, Pune",
     description:
-      "Authentic Ayurvedic healing, traditional Panchakarma therapies, and Garbha Sanskar care in Kharadi, Pune under Dr. Manjiri Musmade at Parmar Square.",
+      "Authentic Ayurvedic healing, traditional Panchakarma therapies, and Garbha Sanskar care in Kharadi, Pune under Dr. Manjiri Musmade / Lawande at Parmar Square.",
     url: "https://vishwavedhikaayurveda.com",
     siteName: siteConfig.name,
     images: [

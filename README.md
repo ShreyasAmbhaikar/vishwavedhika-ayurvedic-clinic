@@ -43,8 +43,8 @@ This project is configured for seamless deployment on **Cloudflare Pages**:
 - Images are pre-configured with `unoptimized: true` for zero-configuration Cloudflare Pages compatibility.
 
 ## Clinic Details
-- **Address:** Flat no.104, IT Park, Parmar Square, near Zensar, above redchilli hotel, Kharadi, Pune, Maharashtra 411014
-- **Contact:** 096049 95998 / 097302 93777
+- **Address:** Flat no.104, IT Park, Parmar Square, near Zensar, above Hotel Kwality, Kharadi, Pune, Maharashtra 411014
+- **Contact:** 076203 41397 / 096049 95998 / 097302 93777 (WhatsApp: +91 97302 93777)
 - **Operating Hours:**
   - Mon – Sat: 11:30 AM – 5:30 PM
-  - SUN: 11:30 AM – 2:00 PM
+  - Sun: Closed

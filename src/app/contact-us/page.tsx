@@ -10,14 +10,14 @@ import { siteConfig } from "@/data/siteData";
 export const metadata: Metadata = {
   title: "Contact Vishwavedhika Ayurvedic Clinic | Kharadi, Pune",
   description:
-    "Visit Shri Vishwavedhika Ayurvedic Clinic at Parmar Square, near Zensar, Kharadi, Pune. Call 096049 95998 or book your doctor consultation online today.",
+    "Visit Shri Vishwavedhika Ayurvedic Clinic at Parmar Square, near Zensar, Kharadi, Pune. Call 076203 41397 / 096049 95998 / 097302 93777 or book your doctor consultation online today.",
   alternates: {
     canonical: "/contact-us",
   },
   openGraph: {
     title: "Contact Vishwavedhika Ayurvedic Clinic | Kharadi, Pune",
     description:
-      "Visit Shri Vishwavedhika Ayurvedic Clinic at Parmar Square, near Zensar, Kharadi, Pune. Call 096049 95998 or book your doctor consultation online today.",
+      "Visit Shri Vishwavedhika Ayurvedic Clinic at Parmar Square, near Zensar, Kharadi, Pune. Call 076203 41397 / 096049 95998 / 097302 93777 or book your doctor consultation online today.",
     url: "https://vishwavedhikaayurveda.com/contact-us",
     siteName: siteConfig.name,
     images: [
@@ -128,7 +128,7 @@ export default function ContactUsPage() {
                   </h2>
                   <p className="text-xs sm:text-[13px] text-[#555555] font-normal leading-relaxed group-hover:text-[#16231B] transition-colors">
                     Flat no.104, IT Park, Parmar Square, near Zensar, above
-                    redchilli hotel, Kharadi, Pune, Maharashtra 411014
+                    Hotel Kwality, Kharadi, Pune, Maharashtra 411014
                   </p>
                 </div>
               </a>
@@ -152,8 +152,8 @@ export default function ContactUsPage() {
                     <span className="text-[#666666] font-medium whitespace-nowrap">
                       Sunday:
                     </span>
-                    <span className="text-[#16231B] font-semibold whitespace-nowrap">
-                      11:30 AM – 2:00 PM
+                    <span className="text-red-700 font-bold uppercase tracking-wider text-xs px-2.5 py-0.5 rounded-full bg-red-50 border border-red-200 inline-block w-fit">
+                      Closed
                     </span>
                   </div>
                 </div>
@@ -180,6 +180,12 @@ export default function ContactUsPage() {
                       className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
                     >
                       {siteConfig.phone2}
+                    </a>
+                    <a
+                      href={`tel:${siteConfig.phone3}`}
+                      className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
+                    >
+                      {siteConfig.phone3}
                     </a>
                   </div>
                 </div>

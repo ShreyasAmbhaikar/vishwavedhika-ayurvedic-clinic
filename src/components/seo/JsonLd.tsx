@@ -10,7 +10,7 @@ export const JsonLd: React.FC = () => {
       siteConfig.shortName,
       "Vishwavedhika Ayurvedic Clinic Kharadi",
       "Vishwavedhika Panchkarma Centre",
-      "Dr Manjiri Musmade Ayurvedic Clinic",
+      "Dr Manjiri Musmade / Lawande Ayurvedic Clinic",
     ],
     url: "https://vishwavedhikaayurveda.com",
     logo: "https://vishwavedhikaayurveda.com/images/logo-emblem.webp",
@@ -18,6 +18,13 @@ export const JsonLd: React.FC = () => {
     description: siteConfig.description,
     telephone: siteConfig.phone1,
     contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+91-76203-41397",
+        contactType: "consultations",
+        areaServed: "IN",
+        availableLanguage: ["English", "Hindi", "Marathi"],
+      },
       {
         "@type": "ContactPoint",
         telephone: "+91-96049-95998",
@@ -72,12 +79,7 @@ export const JsonLd: React.FC = () => {
         opens: "11:30",
         closes: "17:30",
       },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Sunday"],
-        opens: "11:30",
-        closes: "14:00",
-      },
+
     ],
     hasMap: siteConfig.googleMapsUrl,
     priceRange: "₹₹",
@@ -99,7 +101,7 @@ export const JsonLd: React.FC = () => {
     ],
     founder: {
       "@type": "Physician",
-      name: "Dr. Manjiri Musmade",
+      name: "Dr. Manjiri Musmade / Lawande",
       jobTitle: "Chief Ayurvedic Physician & Panchakarma Specialist",
       medicalSpecialty: "Ayurvedic Medicine",
       description:

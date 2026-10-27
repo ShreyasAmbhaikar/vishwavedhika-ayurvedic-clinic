@@ -1,14 +1,14 @@
 # Shri Vishwavedhika Ayurvedic Clinic
 
-> Authentic classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune, led by Dr. Manjiri Musmade (B.A.M.S., PGFC in Panchakarma).
+> Authentic classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune, led by Dr. Manjiri Musmade / Lawande (B.A.M.S., PGFC in Panchakarma).
 
 Shri Vishwavedhika Ayurvedic Clinic provides root-cause classical Ayurvedic healing, Nadi Pariksha (pulse diagnosis), five-fold Panchakarma bio-purification, Garbha Sanskar antenatal care, and non-surgical spine and joint rehabilitation in Kharadi, Pune.
 
 ## Core Navigation
 
 - [Home](https://vishwavedhikaayurveda.com/): Official homepage with clinic overview, physician credentials, and appointment booking.
-- [About Us](https://vishwavedhikaayurveda.com/about-us): Clinical philosophy, Dr. Manjiri Musmade's credentials (BAMS, PGFC MUHS Nashik), and patient recovery statistics.
-- [Treatments Directory](https://vishwavedhikaayurveda.com/treatments): Complete directory of all 20 classical Ayurvedic and Panchakarma therapies available.
+- [About Us](https://vishwavedhikaayurveda.com/about-us): Clinical philosophy, Dr. Manjiri Musmade / Lawande's credentials (BAMS, PGFC MUHS Nashik), and patient recovery statistics.
+- [Treatments Directory](https://vishwavedhikaayurveda.com/treatments): Complete directory of all 21 classical Ayurvedic and Panchakarma therapies available.
 - [Treatment Gallery](https://vishwavedhikaayurveda.com/treatment-gallery): High-resolution clinical treatment gallery and procedure photos.
 - [Contact Us](https://vishwavedhikaayurveda.com/contact-us): Clinic address at Parmar Square, Kharadi, consultation timings, Google Maps location, and appointment booking.
 
@@ -20,6 +20,7 @@ Shri Vishwavedhika Ayurvedic Clinic provides root-cause classical Ayurvedic heal
 - [Manya Basti (Cervical & Neck Care)](https://vishwavedhikaayurveda.com/treatments/manya-basti-treatment-in-kharadi): Targeted cervical spine oil pooling for cervical spondylosis, neck stiffness, brachial radiculopathy, and tech neck syndrome.
 - [Shirodhara Therapy](https://vishwavedhikaayurveda.com/treatments/shirodhara-treatment-in-kharadi): Continuous warm herbal oil stream over the forehead (Ajna chakra) for clinical insomnia, work stress, anxiety, and migraines.
 - [Garbha Sanskar Program](https://vishwavedhikaayurveda.com/treatments/garbha-sanskar-in-kharadi): Classical Vedic antenatal science, Beej Shuddhi preconception detox, Masanumasik Ahara diet, and Garbha Samvad for holistic fetal wellness.
+- [Suvarna Prashan (Child Immunity)](https://vishwavedhikaayurveda.com/treatments/suvarna-prashan-in-kharadi): Auspicious monthly Pushya Nakshatra pediatric gold bhasma & medhya ghrita drops to boost memory, intellect, and physical immunity for children from newborn to 16 years.
 - [Infertility & PCOD Treatment](https://vishwavedhikaayurveda.com/treatments/infertility-treatment-in-kharadi): Root-cause Ayurvedic fertility enhancement for PCOS/PCOD, ovulatory dysfunction, low AMH, and natural conception support.
 - [Uttar Basti Therapy](https://vishwavedhikaayurveda.com/treatments/uttar-basti-treatment-in-kharadi): Specialized intrauterine medicated oil therapy for non-surgical fallopian tubal recanalization and uterine lining rejuvenation.
 - [Stroke Rehabilitation](https://vishwavedhikaayurveda.com/treatments/stroke-rehabilitation-in-kharadi): Ayurvedic neuro-restorative protocol combining Njavarakizhi, Shirodhara, and Medhya Rasayanas for paralysis and hemiplegia recovery.
@@ -38,14 +39,14 @@ Shri Vishwavedhika Ayurvedic Clinic provides root-cause classical Ayurvedic heal
 ## Clinic Details & Contact
 
 - **Institution:** Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre
-- **Chief Physician:** Dr. Manjiri Musmade (B.A.M.S., PGFC in Panchakarma, MUHS Nashik)
-- **Address:** Flat no. 104, IT Park, Parmar Square, near Zensar Technologies, above Red Chilli Hotel, Kharadi, Pune, Maharashtra 411014, India
-- **Phone:** +91 96049 95998 / +91 97302 93777
-- **WhatsApp:** +91 96049 95998
-- **Hours:** Monday to Saturday 11:30 AM - 5:30 PM, Sunday 11:30 AM - 2:00 PM
+- **Chief Physician:** Dr. Manjiri Musmade / Lawande (B.A.M.S., PGFC in Panchakarma, MUHS Nashik)
+- **Address:** Flat no. 104, IT Park, Parmar Square, near Zensar Technologies, above Hotel Kwality, Kharadi, Pune, Maharashtra 411014, India
+- **Phone:** +91 76203 41397 / +91 96049 95998 / +91 97302 93777
+- **WhatsApp:** +91 97302 93777
+- **Hours:** Monday to Saturday 11:30 AM - 5:30 PM, Sunday: Closed
 - **Google Rating:** 5.0 ★ (20+ Verified Patient Reviews)
 
 ## Optional
 
-- [Full LLM Knowledge Base](https://vishwavedhikaayurveda.com/llms-full.txt): Complete extended medical documentation, protocol stages, transparent pricing, and 100 clinical FAQs.
+- [Full LLM Knowledge Base](https://vishwavedhikaayurveda.com/llms-full.txt): Complete extended medical documentation, protocol stages, transparent pricing, and 105 clinical FAQs.
 - [XML Sitemap](https://vishwavedhikaayurveda.com/sitemap.xml): Machine-readable XML sitemap indexing all canonical pages.
