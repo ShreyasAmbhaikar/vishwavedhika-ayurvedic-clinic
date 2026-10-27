@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Home, Heart, Clock } from "lucide-react";
+import { Phone, Home, Heart, Clock, Mail } from "lucide-react";
 import { siteConfig } from "@/data/siteData";
 
 export const Footer: React.FC = () => {
@@ -180,6 +180,18 @@ export const Footer: React.FC = () => {
                     {siteConfig.phone3}
                   </a>
                 </div>
+              </div>
+
+              {/* Email Address */}
+              <div className="flex items-center gap-3">
+                <Mail size={18} className="text-[#A4E88C] shrink-0" />
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="leading-relaxed text-[#FDF4E5]/90 hover:text-[#A4E88C] transition-colors underline-offset-2 hover:underline text-sm"
+                  title="Send email to Dr. Manjiri Musmade / Lawande"
+                >
+                  {siteConfig.email}
+                </a>
               </div>
 
               {/* Address linked to Google Maps */}

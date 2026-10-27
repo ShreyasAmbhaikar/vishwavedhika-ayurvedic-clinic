@@ -17,6 +17,7 @@ export const JsonLd: React.FC = () => {
     image: "https://vishwavedhikaayurveda.com/images/medicines.webp",
     description: siteConfig.description,
     telephone: siteConfig.phone1,
+    email: siteConfig.email,
     contactPoint: [
       {
         "@type": "ContactPoint",

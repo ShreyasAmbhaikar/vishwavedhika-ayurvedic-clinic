@@ -66,7 +66,7 @@ export const siteConfig = {
   phone2: "096049 95998",
   phone3: "097302 93777",
   whatsapp: "+919730293777",
-  email: "care@vishwavedhika.com",
+  email: "dr.manjiri87@gmail.com",
   workingHours: "Mon - Sat: 11:30 AM - 5:30 PM | Sun: Closed",
   hoursDetail: {
     monday: "11:30–17:30",

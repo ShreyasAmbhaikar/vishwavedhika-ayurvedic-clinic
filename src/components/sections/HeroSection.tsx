@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
         {/* Main Hero Container with signature curved top-right corner.
             Extended min-height ensures the hero section seamlessly fills the initial viewport,
             matching Image Attachment 1 without revealing lower sections until scrolling. */}
-        <div className="relative overflow-hidden corner-curve-hero shadow-2xl p-6 sm:p-10 lg:p-14 xl:p-16 py-10 sm:py-12 lg:py-14 xl:py-16 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center bg-[#145E3F]">
+        <div className="relative overflow-hidden rounded-[20px] rounded-tr-[75px] sm:rounded-none sm:corner-curve-hero shadow-2xl p-3.5 pt-3.5 sm:p-10 lg:p-14 xl:p-16 py-6 sm:py-12 lg:py-14 xl:py-16 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center bg-[#145E3F]">
           {/* LCP Discoverable High-Priority Background Image */}
           <Image
             src="/images/bg.webp"
@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             {/* Left Column: Clinic Image Carousel (5 cols) - Order 1 on mobile to sit at top */}
             <div className="lg:col-span-5 order-1 lg:order-1 flex justify-center">
-              <div className="relative w-full max-w-[480px] h-[260px] sm:h-[450px] lg:h-[490px] xl:h-[530px] corner-curve-slider overflow-hidden shadow-2xl bg-black/20">
+              <div className="relative w-full max-w-[480px] h-[260px] sm:h-[450px] lg:h-[490px] xl:h-[530px] rounded-[14px] rounded-tr-[60px] sm:rounded-none sm:corner-curve-slider overflow-hidden shadow-2xl bg-black/20">
                 {heroSlides.map((slide, index) => (
                   <div
                     key={slide.src}
@@ -57,7 +57,7 @@ export const HeroSection: React.FC = () => {
                       priority={index === 0}
                       fetchPriority={index === 0 ? "high" : "auto"}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 480px, 480px"
-                      className="object-cover corner-curve-slider"
+                      className="object-cover rounded-[14px] rounded-tr-[60px] sm:rounded-none sm:corner-curve-slider"
                     />
                   </div>
                 ))}
