@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { Sparkles, HeartHandshake, ShieldCheck } from "lucide-react";
+import { Stethoscope, HeartHandshake, ShieldCheck } from "lucide-react";
 import { whyChooseUsFeatures } from "@/data/siteData";
 
 export const WhyChooseUs: React.FC = () => {
   const icons = [
-    <Sparkles key="1" size={26} className="text-[#F59E0B]" />,
+    <Stethoscope key="1" size={26} className="text-[#F59E0B]" />,
     <HeartHandshake key="2" size={26} className="text-[#F59E0B]" />,
     <ShieldCheck key="3" size={26} className="text-[#F59E0B]" />,
   ];
@@ -34,7 +34,7 @@ export const WhyChooseUs: React.FC = () => {
 
           <div className="relative z-10 space-y-10 sm:space-y-12">
             {/* Header */}
-            <div className="text-left sm:text-center space-y-2 max-w-3xl mx-auto pr-6 sm:pr-0">
+            <div className="text-center space-y-2 max-w-3xl mx-auto">
               <p className="font-serif-heading text-xs sm:text-base font-bold uppercase tracking-[1px] text-[#A4E88C]">
                 Why Patients Trust Shri Vishwavedhika
               </p>
