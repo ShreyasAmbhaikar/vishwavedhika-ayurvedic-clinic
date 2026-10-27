@@ -108,7 +108,7 @@ export default function ContactUsPage() {
           </div>
         </section>
 
-        {/* THREE CONTACT CARDS ROW - Clearly distinguishable with white background, clear borders and bold serif headings */}
+        {/* FOUR CONTACT CARDS ROW - Clearly distinguishable with white background, clear borders and bold serif headings */}
         <section className="py-4 sm:py-6">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -126,7 +126,7 @@ export default function ContactUsPage() {
                   <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-1.5">
                     Locate Us
                   </h2>
-                  <p className="text-xs sm:text-[13px] text-[#16231B] font-semibold leading-relaxed group-hover:text-[#145E3F] transition-colors">
+                  <p className="text-xs sm:text-[13px] font-semibold text-[#16231B] leading-relaxed group-hover:text-[#145E3F] transition-colors">
                     Flat no.104, IT Park, Parmar Square, near Zensar, above
                     Hotel Kwality, Kharadi, Pune, Maharashtra 411014
                   </p>
@@ -144,7 +144,7 @@ export default function ContactUsPage() {
                   </h2>
                   <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 text-xs sm:text-[13px] leading-relaxed">
                     <span className="text-[#666666] font-medium whitespace-nowrap">
-                       Mon – Sat:
+                      Mon – Sat:
                     </span>
                     <span className="text-[#16231B] font-semibold whitespace-nowrap">
                       11:30 AM – 5:30 PM
@@ -200,15 +200,12 @@ export default function ContactUsPage() {
                   <Mail size={20} className="text-white" />
                 </div>
                 <div>
-                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-1.5">
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
                     Email Us
                   </h2>
-                  <p className="text-xs sm:text-[13px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors break-all leading-snug">
+                  <p className="text-xs sm:text-[13.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-relaxed break-all">
                     {siteConfig.email}
                   </p>
-                  <span className="text-[11px] text-[#666666] font-medium pt-1.5 block leading-tight">
-                    Online consultation &amp; queries
-                  </span>
                 </div>
               </a>
             </div>

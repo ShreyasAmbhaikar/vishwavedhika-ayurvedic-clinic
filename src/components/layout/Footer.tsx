@@ -182,13 +182,12 @@ export const Footer: React.FC = () => {
                 </div>
               </div>
 
-              {/* Email Address */}
+              {/* Email */}
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-[#A4E88C] shrink-0" />
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="leading-relaxed text-[#FDF4E5]/90 hover:text-[#A4E88C] transition-colors underline-offset-2 hover:underline text-sm"
-                  title="Send email to Dr. Manjiri Musmade / Lawande"
+                  className="text-[#FDF4E5]/90 hover:text-[#A4E88C] transition-colors break-all text-xs sm:text-sm"
                 >
                   {siteConfig.email}
                 </a>
