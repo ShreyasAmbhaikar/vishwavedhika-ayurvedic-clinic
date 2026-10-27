@@ -20,8 +20,8 @@ export const HeroSection: React.FC = () => {
   return (
     <section id="hero" className="pt-2 sm:pt-4 pb-12 sm:pb-16 lg:pb-20">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Hero Container: rounded-[24px] on mobile matching Image Attachment 2, corner-curve-hero on tablet/desktop */}
-        <div className="relative overflow-hidden rounded-[24px] sm:rounded-none sm:corner-curve-hero shadow-2xl p-5 sm:p-10 lg:p-14 xl:p-16 py-8 sm:py-12 lg:py-14 xl:py-16 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center bg-[#145E3F]">
+        {/* Main Hero Container: rounded-[24px] on mobile, signature 200px top-right arch on tablet and desktop */}
+        <div className="relative overflow-hidden rounded-[24px] sm:rounded-[20px] sm:rounded-tr-[200px] shadow-2xl p-5 sm:p-10 lg:p-14 xl:p-16 py-8 sm:py-12 lg:py-14 xl:py-16 text-white min-h-[calc(100vh-80px)] lg:min-h-[calc(100vh-50px)] flex flex-col justify-center bg-[#145E3F]">
           {/* LCP Discoverable High-Priority Background Image */}
           <Image
             src="/images/bg.webp"
@@ -38,7 +38,7 @@ export const HeroSection: React.FC = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             {/* Left Column: Clinic Image Carousel (5 cols) - Order 1 on mobile to sit at top */}
             <div className="lg:col-span-5 order-1 lg:order-1 flex justify-center">
-              <div className="relative w-full max-w-[480px] h-[260px] sm:h-[450px] lg:h-[490px] xl:h-[530px] rounded-[18px] sm:rounded-none sm:corner-curve-slider overflow-hidden shadow-2xl bg-black/20">
+              <div className="relative w-full max-w-[480px] h-[260px] sm:h-[450px] lg:h-[490px] xl:h-[530px] rounded-[18px] sm:rounded-[20px] sm:rounded-tr-[100px] overflow-hidden shadow-2xl bg-black/20">
                 {heroSlides.map((slide, index) => (
                   <div
                     key={slide.src}
@@ -55,7 +55,7 @@ export const HeroSection: React.FC = () => {
                       priority={index === 0}
                       fetchPriority={index === 0 ? "high" : "auto"}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 480px, 480px"
-                      className="object-cover rounded-[18px] sm:rounded-none sm:corner-curve-slider"
+                      className="object-cover rounded-[18px] sm:rounded-[20px] sm:rounded-tr-[100px]"
                     />
                   </div>
                 ))}
