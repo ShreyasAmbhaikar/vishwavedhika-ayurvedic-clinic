@@ -111,44 +111,48 @@ export default function ContactUsPage() {
         {/* FOUR CONTACT CARDS ROW - Clearly distinguishable with white background, clear borders and bold serif headings */}
         <section className="py-4 sm:py-6">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
               {/* Card 1: LOCATE US (linked to Google Maps) */}
               <a
                 href={googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white border border-[#E4D7C5] rounded-2xl p-6 sm:p-7 flex items-start gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-200 group"
+                className="bg-white border border-[#E4D7C5] rounded-2xl p-5 sm:p-6 flex flex-col justify-start shadow-sm hover:shadow-md transition-all duration-200 group h-full"
               >
-                <div className="w-12 h-12 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:bg-[#0E432D] transition-colors">
-                  <MapPin size={20} className="text-white" />
-                </div>
-                <div>
-                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-1.5">
+                <div className="flex items-center gap-3 mb-3.5">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:bg-[#0E432D] transition-colors">
+                    <MapPin size={20} className="text-white" />
+                  </div>
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug">
                     Locate Us
                   </h2>
-                  <p className="text-xs sm:text-[13px] font-semibold text-[#16231B] leading-relaxed group-hover:text-[#145E3F] transition-colors">
-                    Flat no.104, IT Park, Parmar Square, near Zensar, above
-                    Hotel Kwality, Kharadi, Pune, Maharashtra 411014
-                  </p>
                 </div>
+                <p className="text-xs sm:text-[13px] font-semibold text-[#16231B] leading-relaxed group-hover:text-[#145E3F] transition-colors">
+                  Flat no.104, IT Park, Parmar Square, near Zensar, above
+                  Hotel Kwality, Kharadi, Pune, Maharashtra 411014
+                </p>
               </a>
 
               {/* Card 2: OPENING HOURS */}
-              <div className="bg-white border border-[#E4D7C5] rounded-2xl p-6 sm:p-7 flex items-start gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="w-12 h-12 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <Clock size={20} className="text-white" />
-                </div>
-                <div>
-                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
+              <div className="bg-white border border-[#E4D7C5] rounded-2xl p-5 sm:p-6 flex flex-col justify-start shadow-sm hover:shadow-md transition-all duration-200 h-full">
+                <div className="flex items-center gap-3 mb-3.5">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm">
+                    <Clock size={20} className="text-white" />
+                  </div>
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug">
                     Opening Hours
                   </h2>
-                  <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 text-xs sm:text-[13px] leading-relaxed">
+                </div>
+                <div className="space-y-2 text-xs sm:text-[13px] leading-relaxed">
+                  <div className="flex items-center justify-between gap-2">
                     <span className="text-[#666666] font-medium whitespace-nowrap">
                       Mon – Sat:
                     </span>
                     <span className="text-[#16231B] font-semibold whitespace-nowrap">
                       11:30 AM – 5:30 PM
                     </span>
+                  </div>
+                  <div className="flex items-center justify-between gap-2">
                     <span className="text-[#666666] font-medium whitespace-nowrap">
                       Sunday:
                     </span>
@@ -160,52 +164,57 @@ export default function ContactUsPage() {
               </div>
 
               {/* Card 3: CALL US */}
-              <div className="bg-white border border-[#E4D7C5] rounded-2xl p-6 sm:p-7 flex items-start gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="w-12 h-12 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <Phone size={20} className="text-white" />
-                </div>
-                <div>
-                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
+              <div className="bg-white border border-[#E4D7C5] rounded-2xl p-5 sm:p-6 flex flex-col justify-start shadow-sm hover:shadow-md transition-all duration-200 h-full">
+                <div className="flex items-center gap-3 mb-3.5">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm">
+                    <Phone size={20} className="text-white" />
+                  </div>
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug">
                     Call Us
                   </h2>
-                  <div className="space-y-1">
-                    <a
-                      href={`tel:${siteConfig.phone1}`}
-                      className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
-                    >
-                      {siteConfig.phone1}
-                    </a>
-                    <a
-                      href={`tel:${siteConfig.phone2}`}
-                      className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
-                    >
-                      {siteConfig.phone2}
-                    </a>
-                    <a
-                      href={`tel:${siteConfig.phone3}`}
-                      className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
-                    >
-                      {siteConfig.phone3}
-                    </a>
-                  </div>
+                </div>
+                <div className="space-y-1">
+                  <a
+                    href={`tel:${siteConfig.phone1}`}
+                    className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
+                  >
+                    {siteConfig.phone1}
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.phone2}`}
+                    className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
+                  >
+                    {siteConfig.phone2}
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.phone3}`}
+                    className="text-sm sm:text-[15px] font-semibold text-[#16231B] hover:text-[#145E3F] transition-colors block leading-snug"
+                  >
+                    {siteConfig.phone3}
+                  </a>
                 </div>
               </div>
 
               {/* Card 4: EMAIL US */}
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="bg-white border border-[#E4D7C5] rounded-2xl p-6 sm:p-7 flex items-start gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-200 group"
+                className="bg-white border border-[#E4D7C5] rounded-2xl p-5 sm:p-6 flex flex-col justify-start shadow-sm hover:shadow-md transition-all duration-200 group h-full"
               >
-                <div className="w-12 h-12 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:bg-[#0E432D] transition-colors">
-                  <Mail size={20} className="text-white" />
-                </div>
-                <div>
-                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug mb-2">
+                <div className="flex items-center gap-3 mb-3.5">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#145E3F] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:bg-[#0E432D] transition-colors">
+                    <Mail size={20} className="text-white" />
+                  </div>
+                  <h2 className="font-serif-heading text-lg sm:text-[19px] font-bold text-[#145E3F] leading-snug">
                     Email Us
                   </h2>
-                  <p className="text-xs sm:text-[13.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-relaxed break-all">
+                </div>
+                <div>
+                  <p className="text-xs sm:text-[13.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-relaxed break-normal">
                     {siteConfig.email}
                   </p>
+                  <span className="text-[11.5px] text-[#666666] font-medium pt-1.5 block leading-tight">
+                    Drop us an email anytime
+                  </span>
                 </div>
               </a>
             </div>
