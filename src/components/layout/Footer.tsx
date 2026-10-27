@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/siteData";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#093F29] text-white border-t border-[#145E3F] pt-14 pb-24 sm:pb-8">
+    <footer className="bg-[#093F29] text-white border-t border-[#145E3F] pt-12 sm:pt-14 pb-6 sm:pb-8">
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top 4-Column Grid Layout matching reference layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12">
@@ -200,7 +200,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Card Container with Rounded Corners (Harmoniously Blended Brand Green) */}
-        <div className="bg-[#145E3F] border border-white/15 rounded-2xl p-4 sm:px-7 sm:py-3.5 shadow-md mb-4 sm:mb-0">
+        <div className="bg-[#145E3F] border border-white/15 rounded-2xl p-4 sm:px-7 sm:py-3.5 shadow-md">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-3 text-xs sm:text-sm text-white/90 font-sans-body text-center sm:text-left">
             {/* Left: Copyright */}
             <p className="leading-relaxed">

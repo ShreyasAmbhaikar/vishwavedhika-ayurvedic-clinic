@@ -51,8 +51,8 @@ export const Testimonials: React.FC = () => {
               </p>
             </div>
 
-            {/* Testimonial Card with signature corner-curve-card-br */}
-            <div className="bg-[#FDF4E5] corner-curve-card-br p-5 sm:p-8 lg:p-9 border border-[#DBDBDB] shadow-md flex flex-col justify-between w-full min-h-[280px] sm:h-[330px] lg:h-[310px] select-none">
+            {/* Testimonial Card with signature corner-curve-card-br adjusted for mobile */}
+            <div className="bg-[#FDF4E5] rounded-[20px] rounded-br-[65px] sm:rounded-br-[100px] p-5 sm:p-8 lg:p-9 border border-[#DBDBDB] shadow-md flex flex-col justify-between w-full min-h-[290px] sm:h-[330px] lg:h-[310px] select-none">
               <div className="space-y-3 sm:space-y-4 overflow-hidden">
                 {/* 5-Star Rating & Google Verified Badge */}
                 <div className="flex items-center justify-between gap-3 flex-wrap">
@@ -92,43 +92,43 @@ export const Testimonials: React.FC = () => {
                       className="w-11 h-11 sm:w-13 sm:h-13 rounded-full object-cover border-2 border-[#145E3F]/30 shadow-sm shrink-0 bg-white"
                     />
                   )}
-                  <div className="min-w-0">
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                      <h3 className="font-serif-heading text-base sm:text-xl font-bold text-[#145E3F] leading-snug">
-                        {current.name}
-                      </h3>
-                      {current.isLocalGuide && (
-                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10.5px] sm:text-[11px] font-bold bg-[#E8F5E9] text-[#2E7D32] border border-[#A5D6A7] leading-none shrink-0">
+                  <div className="min-w-0 flex flex-col justify-center">
+                    <h3 className="font-serif-heading text-base sm:text-xl font-bold text-[#145E3F] leading-snug">
+                      {current.name}
+                    </h3>
+                    {current.isLocalGuide && (
+                      <div className="pt-0.5">
+                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold bg-[#E8F5E9] text-[#2E7D32] border border-[#A5D6A7] leading-none shrink-0">
                           <svg className="w-3 h-3 fill-[#F57C00] text-[#F57C00]" viewBox="0 0 24 24">
                             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                           </svg>
                           Local Guide
                         </span>
-                      )}
-                    </div>
+                      </div>
+                    )}
                     {current.location && current.location.toLowerCase() !== "local guide" && (
-                      <p className="font-sans-body text-xs text-[#5E695F] truncate">
+                      <p className="font-sans-body text-xs text-[#5E695F] truncate pt-0.5">
                         {current.location}
                       </p>
                     )}
                   </div>
                 </div>
 
-                {/* Arrows */}
-                <div className="flex items-center gap-2 shrink-0">
+                {/* Arrows with safe mobile margin inside the curved boundary */}
+                <div className="flex items-center gap-1.5 sm:gap-2 shrink-0 mr-1 sm:mr-0">
                   <button
                     onClick={prevReview}
-                    className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
+                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous patient story"
                   >
-                    <ChevronLeft size={20} />
+                    <ChevronLeft size={18} />
                   </button>
                   <button
                     onClick={nextReview}
-                    className="w-11 h-11 sm:w-10 sm:h-10 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
+                    className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-[#145E3F] hover:bg-[#145E3F] hover:text-white text-[#145E3F] flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next patient story"
                   >
-                    <ChevronRight size={20} />
+                    <ChevronRight size={18} />
                   </button>
                 </div>
               </div>

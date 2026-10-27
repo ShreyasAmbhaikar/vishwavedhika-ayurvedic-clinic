@@ -18,6 +18,20 @@ export const HealingProcess: React.FC = () => {
               </h2>
             </div>
 
+            {/* Mobile Image: Positioned below heading and above the 3 points on mobile screens only */}
+            <div className="block lg:hidden pt-2 pb-2">
+              <div className="relative w-full max-w-[460px] mx-auto h-[260px] sm:h-[340px] corner-curve-slider overflow-hidden shadow-xl bg-white border-2 border-white/60">
+                <Image
+                  src="/images/services/shirodhara-treatment-in-kharadi.webp"
+                  alt="Ayurvedic Shirodhara Therapy and Healing Process"
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 1024px) 100vw, 460px"
+                  className="object-cover corner-curve-slider"
+                />
+              </div>
+            </div>
+
             {/* Steps List */}
             <div className="space-y-8">
               {healingSteps.map((step) => (
@@ -44,8 +58,8 @@ export const HealingProcess: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Shirodhara Treatment Image with corner-curve-slider (5 cols) */}
-          <div className="lg:col-span-5 flex justify-center">
+          {/* Right Column: Shirodhara Treatment Image with corner-curve-slider (5 cols, hidden on mobile) */}
+          <div className="hidden lg:flex lg:col-span-5 justify-center">
             <div className="relative w-full max-w-[460px] h-[400px] sm:h-[480px] corner-curve-slider overflow-hidden shadow-2xl bg-white border-2 border-white/60">
               <Image
                 src="/images/services/shirodhara-treatment-in-kharadi.webp"

@@ -38,9 +38,9 @@ export const HeroSection: React.FC = () => {
           <div className="absolute inset-0 bg-[#145E3F]/92 pointer-events-none z-[1]" />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-            {/* Left Column: Clinic Image Carousel (5 cols) */}
-            <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center">
-              <div className="relative w-full max-w-[480px] h-[380px] sm:h-[450px] lg:h-[490px] xl:h-[530px] corner-curve-slider overflow-hidden shadow-2xl bg-black/20">
+            {/* Left Column: Clinic Image Carousel (5 cols) - Order 1 on mobile to sit at top */}
+            <div className="lg:col-span-5 order-1 lg:order-1 flex justify-center">
+              <div className="relative w-full max-w-[480px] h-[260px] sm:h-[450px] lg:h-[490px] xl:h-[530px] corner-curve-slider overflow-hidden shadow-2xl bg-black/20">
                 {heroSlides.map((slide, index) => (
                   <div
                     key={slide.src}
@@ -84,8 +84,8 @@ export const HeroSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Column: Hero Content & Expanded Typography (7 cols) */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-5 lg:space-y-6">
+            {/* Right Column: Hero Content & Expanded Typography (7 cols) - Order 2 on mobile */}
+            <div className="lg:col-span-7 order-2 lg:order-2 space-y-5 lg:space-y-6">
               {/* Eyebrow */}
               <p className="font-serif-heading text-xs sm:text-sm lg:text-base font-bold uppercase tracking-[1.5px] text-[#A4E88C]">
                 Authentic Ayurveda, Panchakarma &amp; Garbhsanskar In Kharadi, Pune
@@ -146,15 +146,15 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* Right Sub-column: Prominent Medicines Photo with corner-curve-medicine */}
-                <div className="sm:col-span-5 flex justify-center sm:justify-end min-h-[165px] sm:min-h-0">
-                  <div className="relative w-[280px] sm:w-full max-w-[280px] sm:max-w-none h-[165px] sm:h-[190px] lg:h-[210px] xl:h-[225px] shrink-0 corner-curve-medicine overflow-hidden shadow-2xl border-2 border-white/25 bg-[#0E422C]/40">
+                <div className="sm:col-span-5 flex justify-center sm:justify-end min-h-[165px] sm:min-h-0 pt-4 sm:pt-0">
+                  <div className="relative w-full max-w-[340px] sm:w-full sm:max-w-none h-[180px] sm:h-[190px] lg:h-[210px] xl:h-[225px] shrink-0 corner-curve-medicine overflow-hidden shadow-2xl border-2 border-white/25 bg-[#0E422C]/40">
                     <Image
                       src="/images/medicines.webp"
                       alt="Authentic Ayurvedic Medicines & Therapies"
                       fill
                       priority
                       fetchPriority="high"
-                      sizes="(max-width: 640px) 280px, 300px"
+                      sizes="(max-width: 640px) 100vw, 300px"
                       className="object-cover corner-curve-medicine hover:scale-105 transition-transform duration-700 ease-out"
                     />
                   </div>
