@@ -25,8 +25,8 @@ export const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-16 sm:py-24 bg-white border-y border-[#E4E4E4]">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Kizhi Poultice Photo with corner-curve-slider (5 cols) */}
-          <div className="lg:col-span-5 flex justify-center order-2 lg:order-1">
+          {/* Left Column: Kizhi Poultice Photo with corner-curve-slider (5 cols, hidden on mobile) */}
+          <div className="hidden lg:flex lg:col-span-5 justify-center">
             <div className="relative w-full max-w-[460px] h-[400px] sm:h-[470px] corner-curve-slider overflow-hidden shadow-2xl bg-white border-2 border-[#E4E4E4]">
               <Image
                 src="/images/thumb-testimonials.webp"
@@ -51,9 +51,9 @@ export const Testimonials: React.FC = () => {
               </p>
             </div>
 
-            {/* Testimonial Card with strictly fixed size & signature corner-curve-card-br */}
-            <div className="bg-[#FDF4E5] corner-curve-card-br p-6 sm:p-8 lg:p-9 border border-[#DBDBDB] shadow-md flex flex-col justify-between w-full h-[380px] sm:h-[330px] lg:h-[310px] select-none">
-              <div className="space-y-4 overflow-hidden">
+            {/* Testimonial Card with signature corner-curve-card-br */}
+            <div className="bg-[#FDF4E5] corner-curve-card-br p-5 sm:p-8 lg:p-9 border border-[#DBDBDB] shadow-md flex flex-col justify-between w-full min-h-[280px] sm:h-[330px] lg:h-[310px] select-none">
+              <div className="space-y-3 sm:space-y-4 overflow-hidden">
                 {/* 5-Star Rating & Google Verified Badge */}
                 <div className="flex items-center justify-between gap-3 flex-wrap">
                   <div className="flex items-center gap-1.5" aria-hidden="true">
@@ -73,33 +73,33 @@ export const Testimonials: React.FC = () => {
                 </div>
 
                 {/* Review Text */}
-                <blockquote className="font-sans-body text-sm sm:text-[15px] text-[#383838] leading-[26px]">
+                <blockquote className="font-sans-body text-sm sm:text-[15px] text-[#383838] leading-[24px] sm:leading-[26px]">
                   {current.content}
                 </blockquote>
               </div>
 
               {/* Reviewer Details & Navigation */}
-              <div className="pt-4 border-t border-[#E8DCC9] flex items-center justify-between gap-4 mt-auto">
-                <div className="flex items-center gap-3.5">
+              <div className="pt-3.5 sm:pt-4 border-t border-[#E8DCC9] flex items-center justify-between gap-3 sm:gap-4 mt-auto">
+                <div className="flex items-center gap-3 sm:gap-3.5 min-w-0">
                   {current.image && (
                     <Image
                       src={current.image}
                       alt={current.name}
-                      width={52}
-                      height={52}
+                      width={48}
+                      height={48}
                       unoptimized
                       priority
-                      className="w-13 h-13 rounded-full object-cover border-2 border-[#145E3F]/30 shadow-sm shrink-0 bg-white"
+                      className="w-11 h-11 sm:w-13 sm:h-13 rounded-full object-cover border-2 border-[#145E3F]/30 shadow-sm shrink-0 bg-white"
                     />
                   )}
-                  <div>
-                    <div className="flex flex-wrap items-center gap-2">
-                      <h3 className="font-serif-heading text-lg sm:text-xl font-bold text-[#145E3F]">
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                      <h3 className="font-serif-heading text-base sm:text-xl font-bold text-[#145E3F] leading-snug">
                         {current.name}
                       </h3>
                       {current.isLocalGuide && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#E8F5E9] text-[#2E7D32] border border-[#A5D6A7]">
-                          <svg className="w-3.5 h-3.5 fill-[#F57C00] text-[#F57C00]" viewBox="0 0 24 24">
+                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10.5px] sm:text-[11px] font-bold bg-[#E8F5E9] text-[#2E7D32] border border-[#A5D6A7] leading-none shrink-0">
+                          <svg className="w-3 h-3 fill-[#F57C00] text-[#F57C00]" viewBox="0 0 24 24">
                             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                           </svg>
                           Local Guide
@@ -107,7 +107,7 @@ export const Testimonials: React.FC = () => {
                       )}
                     </div>
                     {current.location && current.location.toLowerCase() !== "local guide" && (
-                      <p className="font-sans-body text-xs text-[#5E695F]">
+                      <p className="font-sans-body text-xs text-[#5E695F] truncate">
                         {current.location}
                       </p>
                     )}

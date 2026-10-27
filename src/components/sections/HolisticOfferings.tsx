@@ -29,7 +29,7 @@ export const HolisticOfferings: React.FC = () => {
               className="group bg-white rounded-[24px] rounded-br-[64px] sm:rounded-br-[76px] border border-[#EAE1D2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row overflow-hidden cursor-pointer block"
             >
               {/* Left Column: Treatment Photo with Arched Top-Right Curve */}
-              <div className="relative w-full sm:w-[42%] md:w-[40%] shrink-0 h-52 sm:h-auto sm:self-stretch overflow-hidden rounded-tl-[24px] rounded-bl-[24px] rounded-tr-[70px] sm:rounded-tr-[80px] rounded-br-[14px]">
+              <div className="relative w-full sm:w-[42%] md:w-[40%] shrink-0 h-52 sm:h-auto sm:self-stretch overflow-hidden rounded-t-[23px] sm:rounded-t-none sm:rounded-tl-[24px] sm:rounded-bl-[24px] sm:rounded-tr-[80px] rounded-br-[14px]">
                 <Image
                   src={offering.image}
                   alt={offering.title}

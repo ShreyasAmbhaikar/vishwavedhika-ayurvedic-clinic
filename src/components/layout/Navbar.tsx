@@ -455,7 +455,7 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* 3. Right CTA Button */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
             <Link
               href="/contact-us"
               className="px-6 py-2.5 rounded-full bg-[#145E3F] text-white text-sm font-semibold hover:bg-[#0E432D] shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"

@@ -19,8 +19,8 @@ export const WhyChooseUs: React.FC = () => {
       }}
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Mahogany Dark Container with corner-curve-hero */}
-        <div className="relative overflow-hidden corner-curve-hero shadow-2xl p-8 sm:p-12 lg:p-16 text-white bg-[#20100B]">
+        {/* Mahogany Dark Container with adjusted mobile curve */}
+        <div className="relative overflow-hidden rounded-[20px] rounded-tr-[60px] sm:rounded-tr-[200px] shadow-2xl p-6 pt-9 sm:p-12 lg:p-16 text-white bg-[#20100B]">
           <Image
             src="/images/bg.webp"
             alt=""
@@ -32,13 +32,13 @@ export const WhyChooseUs: React.FC = () => {
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-[#20100B]/92 pointer-events-none z-[1]" />
 
-          <div className="relative z-10 space-y-12">
+          <div className="relative z-10 space-y-10 sm:space-y-12">
             {/* Header */}
-            <div className="text-center space-y-2 max-w-3xl mx-auto">
-              <p className="font-serif-heading text-sm sm:text-base font-bold uppercase tracking-[1px] text-[#A4E88C]">
+            <div className="text-left sm:text-center space-y-2 max-w-3xl mx-auto pr-6 sm:pr-0">
+              <p className="font-serif-heading text-xs sm:text-base font-bold uppercase tracking-[1px] text-[#A4E88C]">
                 Why Patients Trust Shri Vishwavedhika
               </p>
-              <h2 className="font-serif-heading text-3xl sm:text-5xl font-medium text-white tracking-[0.5px]">
+              <h2 className="font-serif-heading text-2xl sm:text-5xl font-medium text-white tracking-[0.5px] leading-tight">
                 Authentic Ayurveda Rooted In Classical Principles
               </h2>
             </div>
