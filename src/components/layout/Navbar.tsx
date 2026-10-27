@@ -27,11 +27,28 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close mobile menus on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setMobileServicesOpen(false);
+  }, [pathname]);
+
+  // Lock body scroll when mobile menu is open to prevent background scrolling
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
+    }
+  }, [mobileMenuOpen]);
+
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-[#FDF4E5]/95 backdrop-blur-md shadow-sm py-2.5 sm:py-3"
+        isScrolled || mobileMenuOpen
+          ? "bg-[#FDF4E5] shadow-sm py-2.5 sm:py-3"
           : "bg-[#FDF4E5] py-[18px] sm:py-5"
       }`}
     >
@@ -461,309 +478,350 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="xl:hidden mt-3 pb-5 pt-3 border-t border-[#145E3F]/15 bg-[#FDF4E5] rounded-b-2xl">
-            <div className="flex flex-col space-y-2 text-sm font-semibold uppercase tracking-wider text-[#145E3F]">
+          <div className="xl:hidden mt-2 pt-2.5 pb-8 border-t border-[#145E3F]/15 bg-[#FDF4E5] max-h-[calc(100dvh-75px)] overflow-y-auto overscroll-contain pr-1">
+            <div className="flex flex-col space-y-1.5 text-sm font-semibold uppercase tracking-wider text-[#145E3F]">
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`px-3 py-2 rounded-lg hover:bg-[#145E3F]/10 ${
-                  isHome ? "bg-[#145E3F]/15 font-bold" : ""
+                className={`min-h-[42px] flex items-center px-3.5 py-2 rounded-xl transition-colors ${
+                  isHome ? "bg-[#145E3F]/15 font-bold text-[#145E3F]" : "text-[#145E3F] hover:bg-[#145E3F]/10"
                 }`}
               >
                 Home
               </Link>
+
               <Link
                 href="/about-us"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`px-3 py-2 rounded-lg hover:bg-[#145E3F]/10 ${
-                  isAbout ? "bg-[#145E3F]/15 font-bold" : ""
+                className={`min-h-[42px] flex items-center px-3.5 py-2 rounded-xl transition-colors ${
+                  isAbout ? "bg-[#145E3F]/15 font-bold text-[#145E3F]" : "text-[#145E3F] hover:bg-[#145E3F]/10"
                 }`}
               >
                 About Us
               </Link>
+
               <div>
-                <div className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-[#145E3F]/10">
-                  <Link
-                    href="/treatments"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={`${
-                      isServices ? "text-[#48A547] font-bold" : ""
+                <button
+                  type="button"
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  className={`w-full min-h-[42px] flex items-center justify-between px-3.5 py-2 rounded-xl transition-colors text-left uppercase tracking-wider text-sm ${
+                    isServices || mobileServicesOpen
+                      ? "bg-[#145E3F]/15 font-bold text-[#145E3F]"
+                      : "font-semibold text-[#145E3F] hover:bg-[#145E3F]/10"
+                  }`}
+                  aria-expanded={mobileServicesOpen}
+                >
+                  <span>Treatments</span>
+                  <ChevronDown
+                    size={18}
+                    className={`text-[#145E3F] transform transition-transform duration-200 shrink-0 ${
+                      mobileServicesOpen ? "rotate-180" : ""
                     }`}
-                  >Treatments</Link>
-                  <button
-                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                    className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-[#145E3F]"
-                    aria-label="Toggle services categories"
-                  >
-                    <ChevronDown
-                      size={16}
-                      className={`transform transition-transform duration-200 ${
-                        mobileServicesOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                </div>
+                  />
+                </button>
 
                 {mobileServicesOpen && (
-                  <div className="pl-3 pr-2 py-2 space-y-3 bg-[#145E3F]/6 rounded-xl my-1 border border-[#145E3F]/10 text-xs normal-case">
-                    {/* Spine & Joint */}
-                    <div>
-                      <div className="px-2.5 py-1 mb-1 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/20">
-                        <p className="font-extrabold text-[#145E3F] text-[11px] uppercase tracking-wider">
+                  <div className="mt-2 mb-1 p-3 rounded-2xl bg-white/75 backdrop-blur-sm border border-[#145E3F]/15 shadow-sm space-y-3.5 text-xs normal-case">
+                    {/* Spine & Joint Care */}
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
                           Spine &amp; Joint Care
-                        </p>
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          4 Therapies
+                        </span>
                       </div>
-                      <div className="space-y-1 pl-2">
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
                         <Link
                           href="/treatments/kati-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Kati Basti (Back Pain &amp; Sciatica)
+                          <span>Kati Basti (Back Pain &amp; Sciatica)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/janu-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Janu Basti (Knee Joint Arthritis)
+                          <span>Janu Basti (Knee Joint Arthritis)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/manya-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Manya Basti (Cervical &amp; Tech Neck)
+                          <span>Manya Basti (Cervical &amp; Tech Neck)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/patra-pinda-sweda-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Patra Pinda Sweda (Elakizhi Bolus)
+                          <span>Patra Pinda Sweda (Elakizhi Bolus)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                       </div>
                     </div>
 
                     {/* Panchakarma & Detox */}
-                    <div>
-                      <div className="px-2.5 py-1 mb-1 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/20">
-                        <p className="font-extrabold text-[#145E3F] text-[11px] uppercase tracking-wider">
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
                           Panchakarma &amp; Detox
-                        </p>
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          5-Fold
+                        </span>
                       </div>
-                      <div className="space-y-1 pl-2">
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
                         <Link
                           href="/treatments/panchakarma-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Panchakarma (5-Fold Detox)
+                          <span>Panchakarma (5-Fold Detox)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/vamana-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Vamana Therapy (Kapha Detox)
+                          <span>Vamana Therapy (Kapha Detox)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/virechana-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Virechana (Pitta &amp; Liver Detox)
+                          <span>Virechana (Pitta &amp; Liver Detox)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Basti Karma (Medicated Enema)
+                          <span>Basti Karma (Medicated Enema)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/abhyanga-and-swedana-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Abhyanga &amp; Swedana (Herbal Steam)
+                          <span>Abhyanga &amp; Swedana (Herbal Steam)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                       </div>
                     </div>
 
                     {/* Fertility & Women's Health */}
-                    <div>
-                      <div className="px-2.5 py-1 mb-1 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/20">
-                        <p className="font-extrabold text-[#145E3F] text-[11px] uppercase tracking-wider">
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
                           Fertility &amp; Women&apos;s Health
-                        </p>
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          4 Therapies
+                        </span>
                       </div>
-                      <div className="space-y-1 pl-2">
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
                         <Link
                           href="/treatments/garbha-sanskar-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Garbha Sanskar Program
+                          <span>Garbha Sanskar Program</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/suvarna-prashan-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Suvarna Prashan (Child Immunity)
+                          <span>Suvarna Prashan (Child Immunity)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/infertility-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Infertility &amp; PCOD Care
+                          <span>Infertility &amp; PCOD Care</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/uttar-basti-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Uttar Basti (Tubal Block Relief)
+                          <span>Uttar Basti (Tubal Block Relief)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                       </div>
                     </div>
 
-                    {/* Stress & Neuro Care */}
-                    <div>
-                      <div className="px-2.5 py-1 mb-1 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/20">
-                        <p className="font-extrabold text-[#145E3F] text-[11px] uppercase tracking-wider">
+                    {/* Stress, Neuro & Head Care */}
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
                           Stress, Neuro &amp; Head Care
-                        </p>
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          3 Therapies
+                        </span>
                       </div>
-                      <div className="space-y-1 pl-2">
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
                         <Link
                           href="/treatments/shirodhara-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Shirodhara (Stress &amp; Sleep)
+                          <span>Shirodhara (Stress &amp; Sleep)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/nasya-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Nasya Therapy (Migraine &amp; Sinus)
+                          <span>Nasya Therapy (Migraine &amp; Sinus)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/stroke-rehabilitation-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Stroke Rehabilitation (Pakshaghata)
+                          <span>Stroke Rehabilitation (Pakshaghata)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                       </div>
                     </div>
 
-                    {/* Skin & Eye Care */}
-                    <div>
-                      <div className="px-2.5 py-1 mb-1 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/20">
-                        <p className="font-extrabold text-[#145E3F] text-[11px] uppercase tracking-wider">
+                    {/* Skin, Hair & Eye Care */}
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
                           Skin, Hair &amp; Eye Care
-                        </p>
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          2 Therapies
+                        </span>
                       </div>
-                      <div className="space-y-1 pl-2">
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
                         <Link
                           href="/treatments/raktamokshana-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Raktamokshana (Blood Cleansing)
+                          <span>Raktamokshana (Blood Cleansing)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/netra-tarpana-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Netra Tarpana (Eye Care &amp; Dry Eyes)
+                          <span>Netra Tarpana (Eye Care &amp; Dry Eyes)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                       </div>
                     </div>
 
                     {/* Rapid Pain Relief & Vascular */}
-                    <div>
-                      <div className="px-2.5 py-1 mb-1 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/20">
-                        <p className="font-extrabold text-[#145E3F] text-[11px] uppercase tracking-wider">
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
                           Rapid Pain Relief &amp; Vascular
-                        </p>
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          3 Therapies
+                        </span>
                       </div>
-                      <div className="space-y-1 pl-2">
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
                         <Link
                           href="/treatments/agnikarma-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Agnikarma (Instant Pain Relief)
+                          <span>Agnikarma (Instant Pain Relief)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/jalaukavacharana-leech-therapy-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Jalaukavacharana (Leech Therapy)
+                          <span>Jalaukavacharana (Leech Therapy)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
                           href="/treatments/takradhara-treatment-in-kharadi"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="block py-0.5 text-gray-700 hover:text-[#145E3F]"
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
-                          Takradhara &amp; Lepa (Psoriasis &amp; Scalp)
+                          <span>Takradhara &amp; Lepa (Psoriasis &amp; Scalp)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                       </div>
                     </div>
 
-                    <div className="pt-2 border-t border-[#145E3F]/10">
+                    <div className="pt-2 border-t border-[#145E3F]/15">
                       <Link
                         href="/treatments"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block font-bold text-[#145E3F] text-center hover:text-[#48A547]"
+                        className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#145E3F] hover:bg-[#0E432D] text-white text-xs font-bold tracking-wide uppercase shadow-sm transition-colors"
                       >
-                        View All 21 Treatments &rarr;
+                        <span>View All 21 Treatments Directory</span>
+                        <ArrowRight size={13} />
                       </Link>
                     </div>
                   </div>
                 )}
               </div>
+
               <Link
                 href="/treatment-gallery"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`px-3 py-2 rounded-lg hover:bg-[#145E3F]/10 ${
-                  isGallery ? "bg-[#145E3F]/15 font-bold text-[#48A547]" : ""
+                className={`min-h-[42px] flex items-center px-3.5 py-2 rounded-xl transition-colors ${
+                  isGallery ? "bg-[#145E3F]/15 font-bold text-[#145E3F]" : "text-[#145E3F] hover:bg-[#145E3F]/10"
                 }`}
               >
                 Gallery
               </Link>
+
               <Link
                 href="/contact-us"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`px-3 py-2 rounded-lg hover:bg-[#145E3F]/10 ${
-                  isContact ? "bg-[#145E3F]/15 font-bold text-[#48A547]" : ""
+                className={`min-h-[42px] flex items-center px-3.5 py-2 rounded-xl transition-colors ${
+                  isContact ? "bg-[#145E3F]/15 font-bold text-[#145E3F]" : "text-[#145E3F] hover:bg-[#145E3F]/10"
                 }`}
               >
                 Contact Us
               </Link>
 
-              <div className="pt-3 flex flex-col gap-2">
+              <div className="pt-3.5 mt-2 border-t border-[#145E3F]/15 flex flex-col gap-2">
                 <Link
                   href="/contact-us"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full text-center py-2.5 rounded-full bg-[#145E3F] text-white font-semibold text-sm"
+                  className="w-full text-center py-2.5 rounded-full bg-[#145E3F] hover:bg-[#0E432D] text-white font-bold text-sm tracking-wide shadow-sm transition-colors"
                 >
                   Book Appointment
                 </Link>
                 <a
                   href={`tel:${siteConfig.phone1}`}
-                  className="w-full flex items-center justify-center gap-2 py-2 rounded-full border border-[#145E3F] text-[#145E3F] text-sm font-semibold"
+                  className="w-full flex items-center justify-center gap-2 py-2 rounded-full border border-[#145E3F] text-[#145E3F] hover:bg-[#145E3F]/10 text-sm font-semibold transition-colors"
                 >
                   <Phone size={14} />
-                  <span>{siteConfig.phone1}</span>
+                  <span>Call: {siteConfig.phone1}</span>
                 </a>
               </div>
             </div>
