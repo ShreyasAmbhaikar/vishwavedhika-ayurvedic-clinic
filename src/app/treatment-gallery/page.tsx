@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/services/panchakarma-treatment-in-kharadi.webp",
-        width: 1024,
-        height: 682,
-        alt: "Authentic Five-Fold Panchakarma Therapies at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+        url: "/images/gallery/panchakarma-droni-shirodhara-treatment-setup-kharadi.webp",
+        width: 1600,
+        height: 1200,
+        alt: "Authentic Panchakarma and Shirodhara Treatment Facility at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
       },
     ],
   },
@@ -81,7 +81,7 @@ export default function TreatmentGalleryPage() {
           </div>
         </section>
 
-        {/* 20-Image Authentic Clinical Gallery Section */}
+        {/* 16-Image Authentic Clinical Gallery Section */}
         <section className="pb-16 sm:pb-20 lg:pb-24">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
             <GalleryGrid />

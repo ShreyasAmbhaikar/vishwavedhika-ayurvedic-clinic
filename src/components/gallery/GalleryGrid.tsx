@@ -12,134 +12,108 @@ export interface GalleryItem {
 }
 
 export const galleryItems: GalleryItem[] = [
-  // Row 1: Balanced mix of overview, neuro stream, spinal care, and consultation
+  // 1. Clinic Entrance & Arrival
   {
     id: "g1",
-    src: "/images/services/panchakarma-treatment-in-kharadi.webp",
-    alt: "Authentic five-fold Panchakarma therapies (Vamana, Virechana, Basti, Nasya, Raktamokshan) administered at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Panchakarma Five-Fold Detoxification",
+    src: "/images/gallery/clinic-entrance-maharishi-charaka-emblem-kharadi.webp",
+    alt: "Frosted glass entrance of Shri Vishwavedhika Ayurvedic Clinic featuring Maharishi Charaka artwork and Dr. Manjiri Lawande nameplate in Kharadi Pune",
+    title: "Clinic Entrance & Maharishi Charaka Emblem",
   },
   {
     id: "g2",
-    src: "/images/services/shirodhara-treatment-in-kharadi.webp",
-    alt: "Authentic classical Shirodhara medicated oil flow therapy for stress insomnia and migraine by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Kharadi Pune",
-    title: "Shirodhara Stress & Sleep Care",
+    src: "/images/gallery/ayurvedic-clinic-door-logo-sanskrit-shloka-kharadi.webp",
+    alt: "Shri Vishwavedhika clinic door emblem with Goddess Saraswati and classical Ayurvedic Sanskrit health shloka in Kharadi Pune",
+    title: "Ayurvedic Door Emblem & Sanskrit Shloka",
   },
   {
     id: "g3",
-    src: "/images/services/kati-basti-treatment-in-kharadi.webp",
-    alt: "Authentic Kati Basti warm medicated oil pool therapy for lumbar spine and sciatica relief at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Kati Basti Spine & Sciatica Care",
+    src: "/images/gallery/ayurvedic-clinic-reception-waiting-lounge-kharadi.webp",
+    alt: "Air-conditioned patient waiting lounge with comfortable seating and clean reception area at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    title: "Patient Waiting Lounge & Reception",
   },
   {
     id: "g4",
-    src: "/images/services/infertility-treatment-in-kharadi.webp",
-    alt: "Ayurvedic fertility and PCOD clinical consultation with Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Fertility & PCOD Consultation",
+    src: "/images/gallery/doctor-consultation-desk-reception-kharadi.webp",
+    alt: "Reception counter and doctor consultation desk with Ayurvedic herbal wellness display at Shri Vishwavedhika Clinic Kharadi Pune",
+    title: "Doctor Consultation Desk & Reception",
   },
 
-  // Row 2: Potli fomentation, optical care, thermal cautery, and neuro recovery
+  // 2. Panchakarma & Shirodhara Suite
   {
     id: "g5",
-    src: "/images/services/patra-pinda-sweda-treatment-in-kharadi.webp",
-    alt: "Patra Pinda Sweda authentic herbal leaf bolus fomentation for neuromuscular and joint relief at Shri Vishwavedhika Clinic Kharadi Pune",
-    title: "Patra Pinda Sweda Herbal Potli",
+    src: "/images/gallery/shirodhara-medicated-oil-therapy-live-kharadi.webp",
+    alt: "Patient receiving classical Shirodhara continuous warm medicated herbal oil therapy on forehead for stress and migraine relief at Shri Vishwavedhika Kharadi Pune",
+    title: "Live Shirodhara Medicated Oil Therapy",
   },
   {
     id: "g6",
-    src: "/images/services/netra-tarpana-treatment-in-kharadi.webp",
-    alt: "Classical Netra Tarpana eye treatment with medicated herbal ghee for computer vision syndrome at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Netra Tarpana Eye Care",
+    src: "/images/gallery/panchakarma-droni-shirodhara-treatment-setup-kharadi.webp",
+    alt: "Hygienic Panchakarma treatment room equipped with traditional wooden massage droni and copper Shirodhara apparatus at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    title: "Panchakarma Droni & Shirodhara Setup",
   },
   {
     id: "g7",
-    src: "/images/services/agnikarma-treatment-in-kharadi.webp",
-    alt: "Sterile Agnikarma thermal micro-cautery therapy for instant musculoskeletal pain relief under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
-    title: "Agnikarma Thermal Pain Management",
+    src: "/images/gallery/panchakarma-therapy-room-steam-boiler-kharadi.webp",
+    alt: "Spacious Panchakarma therapy room with wooden droni bed, herbal steam boiler unit, and clean therapy amenities at Shri Vishwavedhika Clinic Kharadi",
+    title: "Panchakarma Therapy Room & Steam Unit",
   },
   {
     id: "g8",
-    src: "/images/services/stroke-rehabilitation-in-kharadi.webp",
-    alt: "Ayurvedic stroke rehabilitation and neuro motor recovery under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
-    title: "Stroke Neurological Recovery",
+    src: "/images/gallery/ayurvedic-massage-droni-bed-shirodhara-vessel-kharadi.webp",
+    alt: "Classical handcrafted wooden Panchakarma droni bed with overhead copper Shirodhara vessel at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    title: "Wooden Droni & Copper Shirodhara Vessel",
   },
 
-  // Row 3: Medicated enema apparatus, pregnancy wellness, knee joint care, cranial drops
+  // 3. Clinical Procedures (Netra Tarpana, Mukhalepa, Leech Therapy)
   {
     id: "g9",
-    src: "/images/services/basti-treatment-in-kharadi.webp",
-    alt: "Classical Basti karma medicated herbal oil enema therapy using traditional brass vessel apparatus at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Basti Karma Medicated Enema",
+    src: "/images/gallery/netra-tarpana-eye-care-treatment-kharadi.webp",
+    alt: "Patient receiving classical Netra Tarpana treatment with medicated herbal ghee for eye strain, dry eyes, and computer vision syndrome at Shri Vishwavedhika Kharadi",
+    title: "Netra Tarpana Medicated Eye Care",
   },
   {
     id: "g10",
-    src: "/images/services/garbha-sanskar-in-kharadi.webp",
-    alt: "Garbha Sanskar prenatal herbal therapy and Ayurvedic pregnancy care under Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Clinic Kharadi Pune",
-    title: "Garbha Sanskar Prenatal Care",
+    src: "/images/gallery/mukhalepa-ayurvedic-herbal-face-pack-kharadi.webp",
+    alt: "Authentic Ayurvedic Mukhalepa herbal paste facial therapy with cooling eye pads for skin radiance, acne, and detox at Shri Vishwavedhika Clinic Kharadi",
+    title: "Mukhalepa Herbal Facial Therapy",
   },
   {
     id: "g11",
-    src: "/images/services/janu-basti-treatment-in-kharadi.webp",
-    alt: "Authentic Janu Basti medicated herbal oil therapy for knee osteoarthritis and joint care at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Janu Basti Knee Joint Relief",
+    src: "/images/gallery/jalaukavacharana-leech-therapy-back-kharadi.webp",
+    alt: "Sterile Jalaukavacharana medicinal leech therapy applied on patient back for localized blood purification and chronic pain at Shri Vishwavedhika Clinic Kharadi",
+    title: "Jalaukavacharana Leech Therapy on Back",
   },
   {
     id: "g12",
-    src: "/images/services/nasya-therapy-in-kharadi.webp",
-    alt: "Classical Ayurvedic Nasya nasal therapy for migraine sinusitis and cervical care by Dr. Manjiri Musmade / Lawande at Shri Vishwavedhika Kharadi Pune",
-    title: "Nasya Cranial & ENT Care",
+    src: "/images/gallery/jalaukavacharana-leech-therapy-knee-joint-kharadi.webp",
+    alt: "Medicinal leech therapy (Jalaukavacharana) applied on knee joint for osteoarthritis swelling and chronic inflammation at Shri Vishwavedhika Ayurvedic Clinic Kharadi",
+    title: "Knee Joint Jalaukavacharana Therapy",
   },
-
-  // Row 4: Leech therapy, massage & steam box, cervical spine care, purgative detox
   {
     id: "g13",
-    src: "/images/services/jalaukavacharana-leech-therapy-in-kharadi.webp",
-    alt: "Sterile Jalaukavacharana medicinal leech therapy for varicose veins and skin disorders at Shri Vishwavedhika Clinic Kharadi Pune",
-    title: "Jalaukavacharana Leech Therapy",
+    src: "/images/gallery/jalaukavacharana-varicose-veins-leg-kharadi.webp",
+    alt: "Sterile medicinal leech application on lower leg and ankle for varicose veins and micro-circulation improvement at Shri Vishwavedhika Clinic Kharadi Pune",
+    title: "Leech Therapy for Varicose Veins",
   },
+
+  // 4. In-House Pharmacy & Authentic Formulations
   {
     id: "g14",
-    src: "/images/services/abhyanga-and-swedana-in-kharadi.webp",
-    alt: "Authentic full body Abhyanga massage and wooden box herbal steam Swedana at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Abhyanga Massage & Herbal Swedana",
+    src: "/images/gallery/ayurvedic-herbal-pharmacy-dispensary-shelves-kharadi.webp",
+    alt: "Authentic Ayurvedic dispensary shelves stocked with classical churnas, gutikas, asavas, and rasashastra medicines at Shri Vishwavedhika Clinic Kharadi",
+    title: "Ayurvedic Medicine Dispensary Shelves",
   },
   {
     id: "g15",
-    src: "/images/services/manya-basti-treatment-in-kharadi.webp",
-    alt: "Classical Manya Basti therapy for cervical spondylosis and neck pain at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Manya Basti Cervical Spine Care",
+    src: "/images/gallery/ayurvedic-medicine-dispensing-counter-kharadi.webp",
+    alt: "Organized herbal medicine dispensing counter with authentic botanical extracts and formulations at Shri Vishwavedhika Ayurvedic Clinic Kharadi",
+    title: "Herbal Medicine Dispensing Counter",
   },
   {
     id: "g16",
-    src: "/images/services/virechana-therapy-in-kharadi.webp",
-    alt: "Virechana herbal purgation therapy for Pitta detox and liver cleanse under Dr. Manjiri Musmade / Lawande at Kharadi Ayurvedic Clinic",
-    title: "Virechana Herbal Purgation Therapy",
-  },
-
-  // Row 5: Intrauterine care, buttermilk stream & mask, bloodletting, emesis setup
-  {
-    id: "g17",
-    src: "/images/services/uttar-basti-treatment-in-kharadi.webp",
-    alt: "Authentic Uttar Basti therapy administered by Dr. Manjiri Musmade / Lawande for tubal blockage and natural fertility at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Uttar Basti Uterine & Tubal Care",
-  },
-  {
-    id: "g18",
-    src: "/images/services/takradhara-lepa-therapy-in-kharadi.webp",
-    alt: "Takradhara medicated buttermilk therapy and herbal Lepa application for psoriasis and stress at Shri Vishwavedhika Clinic Kharadi Pune",
-    title: "Takradhara & Herbal Lepa Therapy",
-  },
-  {
-    id: "g19",
-    src: "/images/services/raktamokshana-treatment-in-kharadi.webp",
-    alt: "Classical Raktamokshana bloodletting therapy for chronic skin conditions, eczema, and psoriasis at Shri Vishwavedhika Clinic Kharadi Pune",
-    title: "Classical Raktamokshana Bloodletting",
-  },
-  {
-    id: "g20",
-    src: "/images/services/vamana-therapy-in-kharadi.webp",
-    alt: "Classical Vamana therapeutic emesis clinical setup for Kapha detox at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
-    title: "Vamana Classical Emesis Therapy",
+    src: "/images/gallery/ayurvedic-pharmacy-consultation-room-kharadi.webp",
+    alt: "In-house Ayurvedic pharmacy and consultation preparation room with wooden cabinets at Shri Vishwavedhika Ayurvedic Clinic Kharadi Pune",
+    title: "Ayurvedic Pharmacy & Preparation Room",
   },
 ];
 
