@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Top-rated classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune. Expert consultations by Dr. Manjiri Musmade / Lawande (BAMS, PGFC). Book an appointment.",
+    "Top-rated classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune. Expert consultations by Dr. Manjiri Musmade / Lawande (BAMS, PGPP). Book an appointment.",
   keywords: [
     "Ayurvedic clinic in Kharadi Pune",
     "Best Ayurvedic doctor in Kharadi",

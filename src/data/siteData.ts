@@ -246,7 +246,7 @@ export const whyChooseUsFeatures = [
   {
     title: "Led by Dr. Manjiri Musmade / Lawande",
     description:
-      "Benefit from dedicated clinical consultations and treatments designed by Dr. Manjiri Musmade / Lawande (BAMS, PGFC in Panchakarma) with 100% individual patient attention.",
+      "Benefit from dedicated clinical consultations and treatments designed by Dr. Manjiri Musmade / Lawande (BAMS, PGPP in Panchakarma) with 100% individual patient attention.",
   },
   {
     title: "100% Classical & Chemical-Free Ayurveda",
@@ -297,6 +297,7 @@ export const servicesList = [
   "Panchakarma 5-Fold Detoxification",
   "Garbha Sanskar & Antenatal Care",
   "Suvarna Prashan (Child Immunity & Memory Drops)",
+  "Child Health, Nutrition & Growth Monitoring",
   "Kati Basti (Spine & Sciatica Relief)",
   "Janu Basti (Knee Osteoarthritis Care)",
   "Manya Basti (Cervical Spondylosis Care)",
@@ -315,4 +316,8 @@ export const servicesList = [
   "Abhyanga & Swedana (Herbal Massage & Steam)",
   "Netra Tarpana (Ayurvedic Eye Care)",
   "Stroke Rehabilitation & Neuro Care",
+  "Lifestyle & Metabolic Care (Diabetes, Thyroid, BP & Obesity)",
+  "Digestive & Gut Health (Acidity, IBS, Colitis & Constipation)",
+  "Piles, Fissure & Fistula Care (Anorectal Management)",
+  "Kidney Stone & Gallstone Care (Calculi Expulsion)",
 ];

@@ -16,17 +16,21 @@ const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   "Panchakarma & Detoxification":
     "Root-cause 5-fold classical cellular bio-cleansing therapies designed to eradicate deep-seated Ama toxins and restore metabolic equilibrium.",
   "Fertility & Women's Health":
-    "Sacred Vedic antenatal Garbha Sanskar, Suvarna Prashan pediatric immunity drops, specialized Uttar Basti, and holistic Ayurvedic care for PCOD/PCOS and natural conception.",
+    "Sacred Vedic antenatal Garbha Sanskar, specialized Uttar Basti, and holistic Ayurvedic care for PCOD/PCOS and natural conception.",
+  "Child Health & Pediatric Care":
+    "Classical Kaumarbhritya pediatric healthcare, Suvarna Prashan immunity drops, nutritional optimization, and growth milestone monitoring for infants, toddlers, and children.",
   "Stress, Neuro & Head Care":
     "Targeted Ayurvedic neurological rehabilitation, mind-calming Shirodhara, ENT Nasya therapy, and neuro-motor restoration.",
   "Skin, Hair & Blood Purification":
     "Classical chronic dermatological care (Eczema, Psoriasis), Ayurvedic bloodletting, and Netra Tarpana eye rejuvenation.",
   "Rapid Pain Relief & Vascular Therapies":
     "Fast-acting, non-surgical classical interventions including Agnikarma thermal micro-cautery, Jalaukavacharana leech therapy, and cooling Takradhara for acute joint, tendon, vascular, and inflammatory skin relief.",
+  "Holistic Ayurvedic Healthcare & Wellness":
+    "Root-cause Ayurvedic treatments for chronic metabolic disorders, diabetes, thyroid, digestive and gut ailments, non-surgical anorectal care, and natural kidney stone and gallstone expulsion.",
 };
 
 export const ServicesDirectory: React.FC<ServicesDirectoryProps> = ({ services }) => {
-  // Use services directly (guaranteed to be the 20 canonical services)
+  // Use services directly (guaranteed to be canonical services)
   const canonicalServices = useMemo(() => {
     const seen = new Set<string>();
     return services.filter((s) => {
@@ -68,55 +72,71 @@ export const ServicesDirectory: React.FC<ServicesDirectoryProps> = ({ services }
             <div className="shrink-0">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold text-[#145E3F] bg-[#145E3F]/10 border border-[#145E3F]/15">
                 <span>
-                  {group.items.length}{" "}
-                  {group.items.length === 1 ? "Treatment" : "Treatments"}
+                  {group.items.length > 0
+                    ? `${group.items.length} ${group.items.length === 1 ? "Treatment" : "Treatments"}`
+                    : "Programs Announced Soon"}
                 </span>
               </span>
             </div>
           </div>
 
-          {/* Services Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {group.items.map((service) => (
+          {/* Services Cards Grid or Empty State Banner */}
+          {group.items.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {group.items.map((service) => (
+                <Link
+                  key={service.slug}
+                  href={`/treatments/${service.slug}`}
+                  className="group block focus:outline-none h-full"
+                >
+                  <article className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-[#145E3F]/12 group-hover:border-[#145E3F]/35 transition-all duration-300 flex flex-col h-full">
+                    {/* Card Image */}
+                    <div className="relative h-60 w-full overflow-hidden bg-gray-100">
+                      <Image
+                        src={service.image}
+                        alt={service.imageAlt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+
+                    {/* Card Body */}
+                    <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
+                      <div>
+                        <h3 className="font-serif-heading text-lg sm:text-xl font-bold text-[#16231B] group-hover:text-[#145E3F] transition-colors line-clamp-2">
+                          {service.title}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-gray-600 line-clamp-3 mt-2.5 leading-relaxed">
+                          {service.description.replace(/<[^>]*>/g, "")}
+                        </p>
+                      </div>
+
+                      <div className="pt-3 border-t border-[#145E3F]/10 flex items-center justify-between">
+                        <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#145E3F] group-hover:text-[#48A547] transition-colors group-hover:translate-x-1 duration-200">
+                          <span>Explore Treatment</span>
+                          <ArrowRight size={15} />
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="p-8 sm:p-10 rounded-3xl bg-white/80 border border-[#145E3F]/15 text-center space-y-3.5 shadow-xs">
+              <p className="text-xs sm:text-sm text-gray-600 max-w-xl mx-auto leading-relaxed">
+                Comprehensive integrative lifestyle, preventive healthcare, and personalized wellness regimens are tailored during clinical consultations with Dr. Manjiri Musmade / Lawande. Specialized service programs will be published here shortly.
+              </p>
               <Link
-                key={service.slug}
-                href={`/treatments/${service.slug}`}
-                className="group block focus:outline-none h-full"
+                href="/contact-us"
+                className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-full bg-[#145E3F] text-white text-xs font-semibold hover:bg-[#0E432D] transition-colors shadow-sm"
               >
-                <article className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-[#145E3F]/12 group-hover:border-[#145E3F]/35 transition-all duration-300 flex flex-col h-full">
-                  {/* Card Image */}
-                  <div className="relative h-60 w-full overflow-hidden bg-gray-100">
-                    <Image
-                      src={service.image}
-                      alt={service.imageAlt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-
-                  {/* Card Body */}
-                  <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between space-y-4">
-                    <div>
-                      <h3 className="font-serif-heading text-lg sm:text-xl font-bold text-[#16231B] group-hover:text-[#145E3F] transition-colors line-clamp-2">
-                        {service.title}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-gray-600 line-clamp-3 mt-2.5 leading-relaxed">
-                        {service.description.replace(/<[^>]*>/g, "")}
-                      </p>
-                    </div>
-
-                    <div className="pt-3 border-t border-[#145E3F]/10 flex items-center justify-between">
-                      <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#145E3F] group-hover:text-[#48A547] transition-colors group-hover:translate-x-1 duration-200">
-                        <span>Explore Treatment</span>
-                        <ArrowRight size={15} />
-                      </span>
-                    </div>
-                  </div>
-                </article>
+                <span>Book Holistic Wellness Consultation</span>
+                <ArrowRight size={13} />
               </Link>
-            ))}
-          </div>
+            </div>
+          )}
         </section>
       ))}
     </div>

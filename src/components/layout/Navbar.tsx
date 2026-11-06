@@ -131,7 +131,7 @@ export const Navbar: React.FC = () => {
                   </Link>
 
                 {servicesDropdown && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[880px] max-w-[94vw] z-50">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[1040px] max-w-[96vw] z-50">
                     <div className="bg-[#FAFFF4] rounded-3xl shadow-2xl border border-[#145E3F]/20 p-6 overflow-hidden text-left normal-case tracking-normal">
                       {/* Top Header */}
                       <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#145E3F]/15">
@@ -149,7 +149,7 @@ export const Navbar: React.FC = () => {
                             Ayurvedic Treatments by Category
                           </span>
                           <span className="hidden sm:inline-block text-[11px] text-gray-500 font-normal ml-0.5">
-                            (21 Specialized Therapies)
+                            (26 Specialized Therapies)
                           </span>
                         </div>
                         <Link
@@ -162,15 +162,15 @@ export const Navbar: React.FC = () => {
                         </Link>
                       </div>
 
-                      {/* 3-Column Categorized Grid */}
-                      <div className="grid grid-cols-3 gap-6">
+                      {/* 4-Column Categorized Grid */}
+                      <div className="grid grid-cols-4 gap-5">
                         {/* Col 1: Spine & Joint + Rapid Pain Relief */}
                         <div className="space-y-4">
                           {/* Spine & Joint */}
                           <div>
                             <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
-                              <span className="text-[12.5px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Spine &amp; Joint Care</span>
-                              <span className="text-[10px] text-[#145E3F] font-bold bg-white/90 px-2 py-0.5 rounded-md border border-[#145E3F]/15">Orthopedic</span>
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Spine &amp; Joint</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">Orthopedic</span>
                             </div>
                             <div className="space-y-0.5">
                               <Link
@@ -179,7 +179,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Kati Basti</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Lower back pain &amp; sciatica</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Lower back &amp; sciatica</span>
                               </Link>
                               <Link
                                 href="/treatments/janu-basti-treatment-in-kharadi"
@@ -187,7 +187,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Janu Basti</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Knee arthritis &amp; joint care</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Knee arthritis &amp; joints</span>
                               </Link>
                               <Link
                                 href="/treatments/manya-basti-treatment-in-kharadi"
@@ -195,7 +195,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Manya Basti</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Cervical &amp; tech neck relief</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Cervical &amp; neck relief</span>
                               </Link>
                               <Link
                                 href="/treatments/patra-pinda-sweda-in-kharadi"
@@ -203,7 +203,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Patra Pinda Sweda</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Warm herbal leaf bolus</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Warm leaf bolus potli</span>
                               </Link>
                             </div>
                           </div>
@@ -211,8 +211,8 @@ export const Navbar: React.FC = () => {
                           {/* Rapid Pain Relief & Vascular */}
                           <div className="pt-2 border-t border-[#145E3F]/12">
                             <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
-                              <span className="text-[12.5px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Rapid Pain &amp; Vascular</span>
-                              <span className="text-[10px] text-[#145E3F] font-bold bg-white/90 px-2 py-0.5 rounded-md border border-[#145E3F]/15">Fast Relief</span>
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Pain &amp; Vascular</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">Fast Relief</span>
                             </div>
                             <div className="space-y-0.5">
                               <Link
@@ -221,15 +221,15 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Agnikarma Therapy</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Heel spur &amp; tendon pain</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Heel spur &amp; tendon pain</span>
                               </Link>
                               <Link
                                 href="/treatments/jalaukavacharana-leech-therapy-in-kharadi"
                                 onClick={() => setServicesDropdown(false)}
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
-                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Jalaukavacharana (Leech)</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Varicose veins &amp; blood detox</span>
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Jalaukavacharana</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Varicose veins &amp; blood detox</span>
                               </Link>
                               <Link
                                 href="/treatments/takradhara-treatment-in-kharadi"
@@ -237,18 +237,18 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Takradhara &amp; Lepa</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Scalp psoriasis &amp; Pitta cooling</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Psoriasis &amp; scalp cooling</span>
                               </Link>
                             </div>
                           </div>
                         </div>
 
-                        {/* Col 2: Panchakarma & Skin Care */}
+                        {/* Col 2: Panchakarma Detox + Skin & Eye Care */}
                         <div className="space-y-4">
                           <div>
                             <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
-                              <span className="text-[12.5px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Panchakarma Detox</span>
-                              <span className="text-[10px] text-[#145E3F] font-bold bg-white/90 px-2 py-0.5 rounded-md border border-[#145E3F]/15">5-Fold</span>
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Panchakarma Detox</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">5-Fold</span>
                             </div>
                             <div className="space-y-0.5">
                               <Link
@@ -257,7 +257,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Panchakarma (5-Fold)</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Cellular metabolic cleansing</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Cellular bio-cleansing</span>
                               </Link>
                               <Link
                                 href="/treatments/vamana-therapy-in-kharadi"
@@ -265,7 +265,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Vamana Therapy</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Kapha &amp; respiratory detox</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Kapha &amp; respiratory detox</span>
                               </Link>
                               <Link
                                 href="/treatments/virechana-therapy-in-kharadi"
@@ -273,7 +273,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Virechana Therapy</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Pitta &amp; liver purification</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Pitta &amp; liver purification</span>
                               </Link>
                               <Link
                                 href="/treatments/basti-treatment-in-kharadi"
@@ -281,7 +281,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Basti Karma</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Medicated colon &amp; spine care</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Colon &amp; spinal detox</span>
                               </Link>
                               <Link
                                 href="/treatments/abhyanga-and-swedana-in-kharadi"
@@ -289,7 +289,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Abhyanga &amp; Swedana</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Herbal massage &amp; steam detox</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Herbal massage &amp; steam</span>
                               </Link>
                             </div>
                           </div>
@@ -297,8 +297,8 @@ export const Navbar: React.FC = () => {
                           {/* Skin & Eye Care */}
                           <div className="pt-2 border-t border-[#145E3F]/12">
                             <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
-                              <span className="text-[12.5px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Skin &amp; Eye Care</span>
-                              <span className="text-[10px] text-[#145E3F] font-bold bg-white/90 px-2 py-0.5 rounded-md border border-[#145E3F]/15">Purification</span>
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Skin &amp; Eye Care</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">Purification</span>
                             </div>
                             <div className="space-y-0.5">
                               <Link
@@ -307,7 +307,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Raktamokshana</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Bloodletting &amp; skin cleansing</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Bloodletting &amp; skin cleanse</span>
                               </Link>
                               <Link
                                 href="/treatments/netra-tarpana-treatment-in-kharadi"
@@ -315,18 +315,18 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Netra Tarpana</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Computer vision &amp; dry eyes</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Computer vision &amp; dry eyes</span>
                               </Link>
                             </div>
                           </div>
                         </div>
 
-                        {/* Col 3: Fertility & Neuro Wellness */}
+                        {/* Col 3: Fertility & Women + Stress & Neuro Care */}
                         <div className="space-y-4">
                           <div>
                             <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
-                              <span className="text-[12.5px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Fertility &amp; Women</span>
-                              <span className="text-[10px] text-[#145E3F] font-bold bg-white/90 px-2 py-0.5 rounded-md border border-[#145E3F]/15">Specialty</span>
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Fertility &amp; Women</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">Specialty</span>
                             </div>
                             <div className="space-y-0.5">
                               <Link
@@ -335,15 +335,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Garbha Sanskar</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Vedic antenatal classes</span>
-                              </Link>
-                              <Link
-                                href="/treatments/suvarna-prashan-in-kharadi"
-                                onClick={() => setServicesDropdown(false)}
-                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
-                              >
-                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Suvarna Prashan</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Child immunity &amp; memory drops</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Vedic antenatal classes</span>
                               </Link>
                               <Link
                                 href="/treatments/infertility-treatment-in-kharadi"
@@ -351,7 +343,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Infertility &amp; PCOD Care</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Hormone balance &amp; conception</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Hormone balance &amp; conception</span>
                               </Link>
                               <Link
                                 href="/treatments/uttar-basti-treatment-in-kharadi"
@@ -359,7 +351,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Uttar Basti</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Tubal block &amp; uterine health</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Tubal block &amp; uterine health</span>
                               </Link>
                             </div>
                           </div>
@@ -367,8 +359,8 @@ export const Navbar: React.FC = () => {
                           {/* Stress & Neuro Care */}
                           <div className="pt-2 border-t border-[#145E3F]/12">
                             <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
-                              <span className="text-[12.5px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Stress &amp; Neuro Care</span>
-                              <span className="text-[10px] text-[#145E3F] font-bold bg-white/90 px-2 py-0.5 rounded-md border border-[#145E3F]/15">Rehab</span>
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Stress &amp; Neuro</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">Rehab</span>
                             </div>
                             <div className="space-y-0.5">
                               <Link
@@ -377,7 +369,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Shirodhara Therapy</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Stress, anxiety &amp; sleep care</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Stress, anxiety &amp; sleep care</span>
                               </Link>
                               <Link
                                 href="/treatments/nasya-therapy-in-kharadi"
@@ -385,7 +377,7 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Nasya Therapy</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Migraine, sinus &amp; cervical</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Migraine, sinus &amp; cervical</span>
                               </Link>
                               <Link
                                 href="/treatments/stroke-rehabilitation-in-kharadi"
@@ -393,7 +385,94 @@ export const Navbar: React.FC = () => {
                                 className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
                               >
                                 <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Stroke Rehabilitation</div>
-                                <span className="text-[10.5px] text-gray-500 font-normal leading-tight">Pakshaghata neuro-motor care</span>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Pakshaghata neuro-motor care</span>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Col 4: Child Health & Pediatric Care + Holistic Ayurvedic Healthcare */}
+                        <div className="space-y-4">
+                          {/* Child Health and Pediatric Care */}
+                          <div>
+                            <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Child Health &amp; Care</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">Pediatric</span>
+                            </div>
+                            <div className="space-y-0.5">
+                              <Link
+                                href="/treatments/suvarna-prashan-in-kharadi"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Suvarna Prashan</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Immunity &amp; memory drops</span>
+                              </Link>
+                              <Link
+                                href="/treatments/child-health-and-pediatric-care-in-kharadi#child-health"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Child Health Increase</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Balya chikitsa &amp; natural immunity</span>
+                              </Link>
+                              <Link
+                                href="/treatments/child-health-and-pediatric-care-in-kharadi#child-nutrition"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Child Nutrition</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Ahara vidhi &amp; healthy weight</span>
+                              </Link>
+                              <Link
+                                href="/treatments/child-health-and-pediatric-care-in-kharadi#child-growth"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Child Growth Monitoring</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Milestones, height &amp; speech</span>
+                              </Link>
+                            </div>
+                          </div>
+
+                          {/* Holistic Ayurvedic Healthcare and Wellness */}
+                          <div className="pt-2 border-t border-[#145E3F]/12">
+                            <div className="flex items-center justify-between px-3 py-1.5 mb-2 rounded-xl bg-[#145E3F]/10 border border-[#145E3F]/20">
+                              <span className="text-[12px] font-extrabold text-[#145E3F] tracking-wide uppercase font-serif-heading">Holistic Wellness</span>
+                              <span className="text-[9.5px] text-[#145E3F] font-bold bg-white/90 px-1.5 py-0.5 rounded-md border border-[#145E3F]/15">Healthcare</span>
+                            </div>
+                            <div className="space-y-0.5">
+                              <Link
+                                href="/treatments/lifestyle-and-metabolic-disorders-in-kharadi"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Lifestyle &amp; Metabolic Care</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Diabetes, thyroid, BP &amp; obesity</span>
+                              </Link>
+                              <Link
+                                href="/treatments/digestive-and-gut-health-in-kharadi"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Digestive &amp; Gut Health</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Acidity, IBS, colitis &amp; constipation</span>
+                              </Link>
+                              <Link
+                                href="/treatments/piles-fissure-fistula-treatment-in-kharadi"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Piles, Fissure &amp; Fistula</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Anorectal &amp; rectal bleeding care</span>
+                              </Link>
+                              <Link
+                                href="/treatments/kidney-stone-and-gallstone-treatment-in-kharadi"
+                                onClick={() => setServicesDropdown(false)}
+                                className="block px-2.5 py-1.5 rounded-xl hover:bg-[#145E3F]/8 transition-colors group"
+                              >
+                                <div className="text-[12.5px] font-semibold text-[#16231B] group-hover:text-[#145E3F] transition-colors leading-tight">Kidney &amp; Gallstone Care</div>
+                                <span className="text-[10px] text-gray-500 font-normal leading-tight">Ashmari stone expulsion &amp; prevention</span>
                               </Link>
                             </div>
                           </div>
@@ -629,7 +708,7 @@ export const Navbar: React.FC = () => {
                           Fertility &amp; Women&apos;s Health
                         </span>
                         <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
-                          4 Therapies
+                          3 Therapies
                         </span>
                       </div>
                       <div className="flex flex-col divide-y divide-[#145E3F]/8">
@@ -639,14 +718,6 @@ export const Navbar: React.FC = () => {
                           className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
                           <span>Garbha Sanskar Program</span>
-                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
-                        </Link>
-                        <Link
-                          href="/treatments/suvarna-prashan-in-kharadi"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
-                        >
-                          <span>Suvarna Prashan (Child Immunity)</span>
                           <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                         <Link
@@ -663,6 +734,52 @@ export const Navbar: React.FC = () => {
                           className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
                         >
                           <span>Uttar Basti (Tubal Block Relief)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Child Health and Pediatric Care */}
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
+                          Child Health &amp; Pediatric Care
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          4 Services
+                        </span>
+                      </div>
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
+                        <Link
+                          href="/treatments/suvarna-prashan-in-kharadi"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <span>Suvarna Prashan (Child Immunity)</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                        <Link
+                          href="/treatments/child-health-and-pediatric-care-in-kharadi#child-health"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <span>Child Health Increase</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                        <Link
+                          href="/treatments/child-health-and-pediatric-care-in-kharadi#child-nutrition"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <span>Child Nutrition</span>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                        <Link
+                          href="/treatments/child-health-and-pediatric-care-in-kharadi#child-growth"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <span>Child Growth Monitoring</span>
                           <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
                         </Link>
                       </div>
@@ -774,13 +891,71 @@ export const Navbar: React.FC = () => {
                       </div>
                     </div>
 
+                    {/* Holistic Ayurvedic Healthcare & Wellness */}
+                    <div className="space-y-1">
+                      <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-[#145E3F]/10 border border-[#145E3F]/15">
+                        <span className="font-serif-heading text-[11.5px] font-bold text-[#145E3F] uppercase tracking-wider">
+                          Holistic Healthcare &amp; Wellness
+                        </span>
+                        <span className="text-[10px] font-semibold text-[#145E3F]/70 bg-white/70 px-1.5 py-0.5 rounded">
+                          Integrated
+                        </span>
+                      </div>
+                      <div className="flex flex-col divide-y divide-[#145E3F]/8">
+                        <Link
+                          href="/treatments/lifestyle-and-metabolic-disorders-in-kharadi"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <div>
+                            <div>Lifestyle &amp; Metabolic Care</div>
+                            <span className="text-[10.5px] text-gray-400 font-normal">Diabetes, thyroid, BP &amp; obesity</span>
+                          </div>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                        <Link
+                          href="/treatments/digestive-and-gut-health-in-kharadi"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <div>
+                            <div>Digestive &amp; Gut Health</div>
+                            <span className="text-[10.5px] text-gray-400 font-normal">Acidity, IBS, colitis &amp; constipation</span>
+                          </div>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                        <Link
+                          href="/treatments/piles-fissure-fistula-treatment-in-kharadi"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <div>
+                            <div>Piles, Fissure &amp; Fistula</div>
+                            <span className="text-[10.5px] text-gray-400 font-normal">Anorectal &amp; rectal bleeding care</span>
+                          </div>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                        <Link
+                          href="/treatments/kidney-stone-and-gallstone-treatment-in-kharadi"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center justify-between py-2 px-2.5 text-[13px] font-medium text-gray-700 hover:text-[#145E3F] hover:bg-[#145E3F]/8 active:bg-[#145E3F]/12 rounded-lg transition-colors"
+                        >
+                          <div>
+                            <div>Kidney &amp; Gallstone Care</div>
+                            <span className="text-[10.5px] text-gray-400 font-normal">Ashmari stone expulsion &amp; prevention</span>
+                          </div>
+                          <ChevronRight size={13} className="text-[#145E3F]/40 shrink-0" />
+                        </Link>
+                      </div>
+                    </div>
+
                     <div className="pt-2 border-t border-[#145E3F]/15">
                       <Link
                         href="/treatments"
                         onClick={() => setMobileMenuOpen(false)}
                         className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#145E3F] hover:bg-[#0E432D] text-white text-xs font-bold tracking-wide uppercase shadow-sm transition-colors"
                       >
-                        <span>View All 21 Treatments Directory</span>
+                        <span>View All 26 Treatments Directory</span>
                         <ArrowRight size={13} />
                       </Link>
                     </div>

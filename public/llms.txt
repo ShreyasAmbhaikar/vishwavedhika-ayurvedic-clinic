@@ -1,14 +1,14 @@
 # Shri Vishwavedhika Ayurvedic Clinic
 
-> Authentic classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune, led by Dr. Manjiri Musmade / Lawande (B.A.M.S., PGFC in Panchakarma).
+> Authentic classical Ayurvedic clinic & Panchakarma centre in Kharadi, Pune, led by Dr. Manjiri Musmade / Lawande (B.A.M.S., PGPP in Panchakarma).
 
 Shri Vishwavedhika Ayurvedic Clinic provides root-cause classical Ayurvedic healing, Nadi Pariksha (pulse diagnosis), five-fold Panchakarma bio-purification, Garbha Sanskar antenatal care, and non-surgical spine and joint rehabilitation in Kharadi, Pune.
 
 ## Core Navigation
 
 - [Home](https://vishwavedhikaayurveda.com/): Official homepage with clinic overview, physician credentials, and appointment booking.
-- [About Us](https://vishwavedhikaayurveda.com/about-us): Clinical philosophy, Dr. Manjiri Musmade / Lawande's credentials (BAMS, PGFC MUHS Nashik), and patient recovery statistics.
-- [Treatments Directory](https://vishwavedhikaayurveda.com/treatments): Complete directory of all 21 classical Ayurvedic and Panchakarma therapies available.
+- [About Us](https://vishwavedhikaayurveda.com/about-us): Clinical philosophy, Dr. Manjiri Musmade / Lawande's credentials (BAMS, PGPP MUHS Nashik), and patient recovery statistics.
+- [Treatments Directory](https://vishwavedhikaayurveda.com/treatments): Complete directory of all 26 classical Ayurvedic and Panchakarma therapies available.
 - [Treatment Gallery](https://vishwavedhikaayurveda.com/treatment-gallery): High-resolution clinical treatment gallery and procedure photos.
 - [Contact Us](https://vishwavedhikaayurveda.com/contact-us): Clinic address at Parmar Square, Kharadi, consultation timings, Google Maps location, and appointment booking.
 
@@ -21,6 +21,7 @@ Shri Vishwavedhika Ayurvedic Clinic provides root-cause classical Ayurvedic heal
 - [Shirodhara Therapy](https://vishwavedhikaayurveda.com/treatments/shirodhara-treatment-in-kharadi): Continuous warm herbal oil stream over the forehead (Ajna chakra) for clinical insomnia, work stress, anxiety, and migraines.
 - [Garbha Sanskar Program](https://vishwavedhikaayurveda.com/treatments/garbha-sanskar-in-kharadi): Classical Vedic antenatal science, Beej Shuddhi preconception detox, Masanumasik Ahara diet, and Garbha Samvad for holistic fetal wellness.
 - [Suvarna Prashan (Child Immunity)](https://vishwavedhikaayurveda.com/treatments/suvarna-prashan-in-kharadi): Auspicious monthly Pushya Nakshatra pediatric gold bhasma & medhya ghrita drops to boost memory, intellect, and physical immunity for children from newborn to 16 years.
+- [Child Health, Nutrition & Growth](https://vishwavedhikaayurveda.com/treatments/child-health-and-pediatric-care-in-kharadi): Comprehensive Kaumarbhritya pediatric healthcare, Balya immunity boosters, Ayurvedic nutrition (Ahara Vidhi), and milestone growth monitoring.
 - [Infertility & PCOD Treatment](https://vishwavedhikaayurveda.com/treatments/infertility-treatment-in-kharadi): Root-cause Ayurvedic fertility enhancement for PCOS/PCOD, ovulatory dysfunction, low AMH, and natural conception support.
 - [Uttar Basti Therapy](https://vishwavedhikaayurveda.com/treatments/uttar-basti-treatment-in-kharadi): Specialized intrauterine medicated oil therapy for non-surgical fallopian tubal recanalization and uterine lining rejuvenation.
 - [Stroke Rehabilitation](https://vishwavedhikaayurveda.com/treatments/stroke-rehabilitation-in-kharadi): Ayurvedic neuro-restorative protocol combining Njavarakizhi, Shirodhara, and Medhya Rasayanas for paralysis and hemiplegia recovery.
@@ -35,11 +36,15 @@ Shri Vishwavedhika Ayurvedic Clinic provides root-cause classical Ayurvedic heal
 - [Patra Pinda Sweda (Elakizhi)](https://vishwavedhikaayurveda.com/treatments/patra-pinda-sweda-in-kharadi): Herbal bolus potli massage with medicinal leaves (Nirgundi, Eranda, Arka) fried in herbal oils for joint stiffness and arthritis.
 - [Abhyanga & Swedana](https://vishwavedhikaayurveda.com/treatments/abhyanga-and-swedana-in-kharadi): Full-body warm medicated oil synchronization massage followed by individualized herbal steam box therapy for cellular detox.
 - [Netra Tarpana Eye Care](https://vishwavedhikaayurveda.com/treatments/netra-tarpana-treatment-in-kharadi): Medicated herbal ghee pooling over the ocular orbits for computer vision syndrome, dry eyes, eye fatigue, and refractive strain.
+- [Lifestyle & Metabolic Care](https://vishwavedhikaayurveda.com/treatments/lifestyle-and-metabolic-disorders-in-kharadi): Root-cause Ayurvedic protocols for Type 2 Diabetes (Madhumeha), Thyroid dysfunction (Galaganda), Hypertension, and Obesity (Sthaulya).
+- [Digestive & Gut Health](https://vishwavedhikaayurveda.com/treatments/digestive-and-gut-health-in-kharadi): Classical Agni-balancing therapies for Chronic Acidity (Amlapitta), Indigestion, Constipation, Ulcerative Colitis, and Dysentery.
+- [Piles, Fissure & Fistula Care](https://vishwavedhikaayurveda.com/treatments/piles-fissure-fistula-treatment-in-kharadi): Non-surgical Ayurvedic proctology care, Kshara Karma, sitz bath Avagaha, and bleeding per rectum management.
+- [Kidney Stone & Gallstone Management](https://vishwavedhikaayurveda.com/treatments/kidney-stone-and-gallstone-treatment-in-kharadi): Ashmari lithotriptic herbal disintegration, diuretic flushing, and recurrence prevention for renal calculi and biliary sludge.
 
 ## Clinic Details & Contact
 
 - **Institution:** Shri Vishwavedhika Ayurvedic Clinic & Garbhsanskar, Panchkarma Centre
-- **Chief Physician:** Dr. Manjiri Musmade / Lawande (B.A.M.S., PGFC in Panchakarma, MUHS Nashik)
+- **Chief Physician:** Dr. Manjiri Musmade / Lawande (B.A.M.S., PGPP in Panchakarma, MUHS Nashik)
 - **Address:** Flat no. 104, IT Park, Parmar Square, near Zensar Technologies, above Hotel Kwality, Kharadi, Pune, Maharashtra 411014, India
 - **Phone:** +91 76203 41397 / +91 96049 95998 / +91 97302 93777
 - **WhatsApp:** +91 97302 93777

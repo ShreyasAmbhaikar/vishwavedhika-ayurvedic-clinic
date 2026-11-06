@@ -22,14 +22,14 @@ import { siteConfig } from "@/data/siteData";
 export const metadata: Metadata = {
   title: "About Dr. Manjiri Musmade / Lawande / Lawande | Ayurvedic Doctor Kharadi Pune",
   description:
-    "Meet Dr. Manjiri Musmade / Lawande (BAMS, PGFC Panchakarma, MUHS Nashik) at Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune. Classical healing rooted in Samhitas.",
+    "Meet Dr. Manjiri Musmade / Lawande (BAMS, PGPP Panchakarma, MUHS Nashik) at Shri Vishwavedhika Ayurvedic Clinic in Kharadi, Pune. Classical healing rooted in Samhitas.",
   alternates: {
     canonical: "/about-us",
   },
   openGraph: {
     title: "About Dr. Manjiri Musmade / Lawande / Lawande | Ayurvedic Doctor Kharadi Pune",
     description:
-      "A clinic you can trust in Kharadi, Pune. Led by Dr. Manjiri Musmade / Lawande with specialized PGFC in Panchakarma and authentic classical Ayurvedic care.",
+      "A clinic you can trust in Kharadi, Pune. Led by Dr. Manjiri Musmade / Lawande with specialized PGPP in Panchakarma and authentic classical Ayurvedic care.",
     url: "https://vishwavedhikaayurveda.com/about-us",
     siteName: siteConfig.name,
     images: [
@@ -123,7 +123,7 @@ export default function AboutUsPage() {
                 </div>
 
                 <p className="text-[#4A4A4A] text-sm sm:text-[15px] leading-relaxed">
-                  Founded and led by <strong>Dr. Manjiri Musmade / Lawande</strong> (B.A.M.S., PGFC in Panchakarma),{" "}
+                  Founded and led by <strong>Dr. Manjiri Musmade / Lawande</strong> (B.A.M.S., PGPP in Panchakarma),{" "}
                   <strong>Shri Vishwavedhika Ayurvedic Clinic &amp; Garbhsanskar, Panchakarma Center</strong> in Kharadi,
                   Pune provides authentic, personalized Ayurvedic healthcare and traditional Panchakarma
                   therapies. We are dedicated to restoring health naturally through root-cause diagnosis,
@@ -262,14 +262,14 @@ export default function AboutUsPage() {
                   </div>
                 </div>
 
-                {/* Plaque 2: PGFC in Panchakarma */}
+                {/* Plaque 2: PGPP in Panchakarma */}
                 <div className="bg-[#FAF6EF] rounded-[22px] p-6 sm:p-7 border border-[#E8DEC9] border-l-[5px] border-l-[#145E3F] shadow-sm">
                   {/* Top Row: Icon + Eyebrow on left, Pill badge on right */}
                   <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
                     <div className="flex items-center gap-2 text-[#145E3F]">
                       <Award className="w-5 h-5 shrink-0" />
                       <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[1.8px] text-[#145E3F]">
-                        POST GRADUATE FELLOWSHIP
+                        POST GRADUATE PROFICIENCY
                       </span>
                     </div>
                     <span className="text-[11px] sm:text-xs font-semibold text-[#145E3F] bg-white px-3.5 py-1 rounded-full border border-[#145E3F]/25 shadow-2xs shrink-0">
@@ -279,12 +279,12 @@ export default function AboutUsPage() {
 
                   {/* Main Degree Title */}
                   <h3 className="font-serif-heading text-xl sm:text-2xl font-bold text-[#16231B] leading-snug mt-1 mb-1">
-                    PGFC in Panchakarma
+                    PGPP in Panchakarma
                   </h3>
 
                   {/* Subtitle */}
                   <p className="text-xs sm:text-[13px] font-bold text-[#145E3F] tracking-wide mb-4">
-                    POST GRADUATE FELLOWSHIP COURSE IN PANCHAKARMA
+                    POST GRADUATE PROFICIENCY PROGRAMME IN PANCHAKARMA
                   </p>
 
                   {/* Thin Divider Line */}

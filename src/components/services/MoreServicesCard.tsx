@@ -62,7 +62,7 @@ export const MoreServicesCard: React.FC<MoreServicesCardProps> = ({ currentSlug 
           Need Guidance?
         </p>
         <p className="text-xs text-[#FDF4E5]/80 mb-3 leading-snug">
-          Consult Dr. Manjiri Musmade / Lawande (B.A.M.S., PGFC in Panchakarma) to discuss your symptoms and customize a tailored therapy plan.
+          Consult Dr. Manjiri Musmade / Lawande (B.A.M.S., PGPP in Panchakarma) to discuss your symptoms and customize a tailored therapy plan.
         </p>
         <div className="flex flex-col gap-2">
           <a

@@ -98,6 +98,7 @@ export const JsonLd: React.FC = () => {
       "Infertility & Reproductive Health",
       "Spine and Joint Orthopedics",
       "Neurological Rehabilitation",
+      "Pediatric Care (Kaumarbhritya)",
       "Physiotherapy",
     ],
     founder: {
@@ -106,7 +107,7 @@ export const JsonLd: React.FC = () => {
       jobTitle: "Chief Ayurvedic Physician & Panchakarma Specialist",
       medicalSpecialty: "Ayurvedic Medicine",
       description:
-        "BAMS, PGFC in Panchakarma, Fellowship in Garbhasanskar & Infertility with over a decade of clinical experience in root-cause healing.",
+        "BAMS, PGPP in Panchakarma, Fellowship in Garbhasanskar & Infertility with over a decade of clinical experience in root-cause healing.",
     },
     availableService: servicesList.map((service) => ({
       "@type": "MedicalTherapy",
